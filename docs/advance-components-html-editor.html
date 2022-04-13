@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title></title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top header started -->
+    <header>
+        <!-- Left Hamburger menu, only visible in small devices  -->
+        <a class="btn-left-menu" uk-icon="menu"></a>
+
+        <!-- Header links started -->
+        <div class="links">
+            <a href="index.html">Docs</a>
+            <a href="icons.html">Icons</a>
+            <!-- Dropdown link started -->
+            <a href="#">Dropdown</a>
+            <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">I'm below the divider</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown link ended -->
+
+            <!-- Two column dropdown link startd -->
+            <a href="#">Two Columns</a>
+            <div class="uk-width-large" uk-dropdown>
+                <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                    <!-- First column -->
+                    <div>
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <!-- Non-clickable header -->
+                            <li class="uk-nav-header">Header 1</li>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <!-- Divider item -->
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">I'm below the divider</a></li>
+                        </ul>
+                    </div>
+                    <!-- Second column -->
+                    <div>
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <!-- Non-clickable header -->
+                            <li class="uk-nav-header">Header 2</li>
+                            <!-- Already active item -->
+                            <li class="uk-active"><a href="#">I'm Active</a></li>
+                            <li><a href="#">Item 5</a></li>
+                            <li><a href="#">Item 6</a></li>
+                            <li><a href="#">Item 8</a></li>
+                            <li><a href="#">Item 9</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Two column dropdown link ended -->
+        </div>
+        <!-- Header links ended -->
+
+        <!-- Search started -->
+        <div class="search">
+            <!-- Search input form -->
+            <form class="uk-search uk-search-default">
+                <span class="uk-search-icon-flip" uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Type abc...">
+            </form>
+    
+            <!-- Search result started -->
+            <div class="search-result">
+                <div>
+                    <!-- Single search result -->
+                    <a href="pages-comments.html">
+                        <strong>Apple</strong><br />
+                        <span>Click to navigate to Comments page</span>
+                    </a>
+    
+                    <!-- Single search result -->
+                    <a href="icons.html">
+                        <strong>About</strong><br />
+                        <span>Click to navigate to Icons page</span>
+                    </a>
+    
+                    <!-- Single search result -->
+                    <a href="advance-components-md-editor.html">
+                        <strong>Abc</strong><br />
+                        <span>Click to navigate to MD Editor</span>
+                    </a>
+
+                    <!-- Single search result, without link -->
+                    <a href="#">
+                        <strong>Lorem Ipsum</strong><br />
+                        <span>Lorem ipsum dqlwory sitfh jamexzt</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Search result ended -->
+        </div>
+        <!-- Search ended -->
+
+        <!-- Right side hamburger menu used, only visible in small screens -->
+        <a class="btn-right-menu" uk-icon="more-vertical"></a>
+        <div uk-dropdown="mode: click; pos: bottom-right">
+            <ul class="uk-nav uk-dropdown-nav main-menu-items"></ul>
+        </div>
+    </header>
+    <!-- Top header ended -->
+
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/logo.svg" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />Home</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="home-light.html">Home Light</a></li>
+                        <li><a href="home-dark.html">Home Dark</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/layouts.svg" />Layouts</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="layouts-left-side.html">Left Side</a></li>
+                        <li><a href="layouts-right-side.html">Right Side</a></li>
+                        <li><a href="layouts-both-sides.html">Both Sides</a></li>
+                        <li><a href="layouts-colored-header.html">Colored Header</a></li>
+                        <li><a href="layouts-multiple-columns.html">Multiple Columns</a></li>
+                        <li><a href="layouts-without-hash-links.html">Without Hash Links</a></li>
+                        <li><a href="layouts-menu-without-icons.html">Menu Without Icons</a></li>
+                        <li><a href="layouts-text-without-logo.html">Text without logo</a></li>
+                        <li><a href="layouts-sidebar-without-pattern.html">Sidebar without pattern</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/basic.svg" />Basic Components</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="basic-components-button.html">Button</a></li>
+                        <li><a href="basic-components-alert.html">Alert</a></li>
+                        <li><a href="basic-components-form.html">Form</a></li>
+                        <li><a href="basic-components-table.html">Table</a></li>
+                        <li><a href="basic-components-label.html">Label</a></li>
+                        <li><a href="basic-components-dropdown.html">Dropdown</a></li>
+                        <li><a href="basic-components-tooltip.html">Tooltip</a></li>
+                        <li><a href="basic-components-popover.html">Popover</a></li>
+                        <li><a href="basic-components-loader.html">Loader</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/advance.svg" />Advance Components</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="advance-components-code.html">Code</a></li>
+                        <li><a href="advance-components-tab.html">Tabs</a></li>
+                        <li><a href="advance-components-md-editor.html">MD Editor</a></li>
+                        <li class="uk-active"><a href="advance-components-html-editor.html">HTML Editor</a></li>
+                        <li><a href="advance-components-modal.html">Modal</a></li>
+                        <li><a href="advance-components-accordion.html">Accordion</a></li>
+                        <li><a href="advance-components-animations.html">Animations</a></li>
+                        <li><a href="advance-components-card.html">Cards</a></li>
+                        <li><a href="advance-components-image-slider.html">Image Slider</a></li>
+                        <li><a href="advance-components-slideshow.html">Slideshow</a></li>
+                        <li><a href="advance-components-lightbox.html">Lightbox</a></li>
+                        <li><a href="advance-components-notification.html">Notification</a></li>
+                        <li><a href="advance-components-overlay.html">Overlay</a></li>
+                        <li><a href="advance-components-progress-bar.html">Progress-bar</a></li>
+                        <li><a href="advance-components-sortable.html">Sortable</a></li>
+                        <li><a href="advance-components-transitions.html">Transitions</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/pages.svg" />Pages</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="pages-faq.html">FAQ Page</a></li>
+                        <li><a href="pages-single-page.html">Single Page</a></li>
+                        <li><a href="pages-api-page.html">API Page</a></li>
+                        <li><a href="pages-404.html">404 Page</a></li>
+                        <li><a href="pages-articles.html">Articles Page</a></li>
+                        <li><a href="pages-comments.html">Comments Page</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="icons.html"><img src="./assets/img/menu-items/icons.svg" />Icons</a>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/patterns.svg" />Sidebar Patterns</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="sidebar-pattern-1.html">Pattern 1</a></li>
+                        <li><a href="sidebar-pattern-2.html">Pattern 2</a></li>
+                        <li><a href="sidebar-pattern-3.html">Pattern 3</a></li>
+                        <li><a href="sidebar-pattern-4.html">Pattern 4</a></li>
+                        <li><a href="sidebar-pattern-5.html">Pattern 5</a></li>
+                        <li><a href="sidebar-pattern-6.html">Pattern 6</a></li>
+                        <li><a href="sidebar-pattern-7.html">Pattern 7</a></li>
+                        <li><a href="sidebar-pattern-8.html">Pattern 8</a></li>
+                        <li><a href="sidebar-pattern-9.html">Pattern 9</a></li>
+                        <li><a href="sidebar-pattern-10.html">Pattern 10</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/colors.svg" />Colors</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="colors-1.html">#27399A <span class="color-box" style="background: #27399A"></span></a></li>
+                        <li><a href="colors-2.html">#E91E63 <span class="color-box" style="background: #E91E63"></span></a></li>
+                        <li><a href="colors-3.html">#1E87F0 <span class="color-box" style="background: #1E87F0"></span></a></li>
+                        <li><a href="colors-4.html">#086E80 <span class="color-box" style="background: #086E80"></span></a></li>
+                        <li><a href="colors-5.html">#C5801A <span class="color-box" style="background: #C5801A"></span></a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/menus.svg" />Menus</a>
+                    <ul class="uk-nav-sub">
+                        <!-- First layer menu -->
+                        <li><a href="#">Item 1</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Item 2</a>
+                            <ul class="uk-nav-sub">
+                                <!-- Second layer menu -->
+                                <li><a href="#">Item 2-1</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Item 2-2</a>
+                                    <ul class="uk-nav-sub">
+                                        <!-- Third layer menu -->
+                                        <li><a href="#">Item 2-2-1</a></li>
+                                        <li class="uk-parent">
+                                            <a href="#">Item 2-2-2</a>
+                                            <ul class="uk-nav-sub">
+                                                <!-- Fourth layer menu -->
+                                                <li><a href="#">Item 2-2-2-1</a></li>
+                                                <li><a href="#">Item 2-2-2-2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="index.html"><img src="./assets/img/menu-items/docs.svg" />Docs</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+    
+    <main>
+        <div id="editor">
+            <h1>Hello World!</h1>
+            <br />
+            <p>Some initial <strong>bold</strong> text</p>
+            <br>
+            <ul>
+                <li>What is Lorem Ipsum?</li>
+                <li>Why do we use it?</li>
+                <li>Where does it come from?</li>
+                <li>Where can I get some?</li>
+            </ul>
+            <p><br></p>
+        </div>
+    </main>
+    
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script>
+        window.onload = () => {
+            var quill = new Quill('#editor', {
+                theme: 'snow'
+            });
+        }
+    </script>
+</body>
+</html>

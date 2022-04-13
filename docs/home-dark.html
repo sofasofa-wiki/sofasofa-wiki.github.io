@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title></title>
+</head>
+<body>
+    <!-- Top header started -->
+    <header class="uk-light uk-background-secondary">
+        <!-- Left Hamburger menu, only visible in small devices  -->
+        <a class="btn-left-menu" uk-icon="menu"></a>
+
+        <!-- Header links started -->
+        <div class="links">
+            <a href="index.html">Docs</a>
+            <a href="icons.html">Icons</a>
+            <!-- Dropdown link started -->
+            <a href="#">Dropdown</a>
+            <div uk-dropdown class="uk-background-secondary uk-light">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">I'm below the divider</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown link ended -->
+
+            <!-- Two column dropdown link startd -->
+            <a href="#">Two Columns</a>
+            <div class="uk-width-large uk-background-secondary uk-light" uk-dropdown>
+                <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                    <!-- First column -->
+                    <div>
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <!-- Non-clickable header -->
+                            <li class="uk-nav-header">Header 1</li>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <!-- Divider item -->
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">I'm below the divider</a></li>
+                        </ul>
+                    </div>
+                    <!-- Second column -->
+                    <div>
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <!-- Non-clickable header -->
+                            <li class="uk-nav-header">Header 2</li>
+                            <!-- Already active item -->
+                            <li class="uk-active"><a href="#">I'm Active</a></li>
+                            <li><a href="#">Item 5</a></li>
+                            <li><a href="#">Item 6</a></li>
+                            <li><a href="#">Item 8</a></li>
+                            <li><a href="#">Item 9</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Two column dropdown link ended -->
+        </div>
+        <!-- Header links ended -->
+
+        <!-- Search started -->
+        <div class="search">
+            <!-- Search input form -->
+            <form class="uk-search uk-search-default">
+                <span class="uk-search-icon-flip" uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Type abc...">
+            </form>
+    
+            <!-- Search result started -->
+            <div class="search-result">
+                <div>
+                    <!-- Single search result -->
+                    <a href="pages-comments.html">
+                        <strong>Apple</strong><br />
+                        <span>Click to navigate to Comments page</span>
+                    </a>
+    
+                    <!-- Single search result -->
+                    <a href="icons.html">
+                        <strong>About</strong><br />
+                        <span>Click to navigate to Icons page</span>
+                    </a>
+    
+                    <!-- Single search result -->
+                    <a href="advance-components-md-editor.html">
+                        <strong>Abc</strong><br />
+                        <span>Click to navigate to MD Editor</span>
+                    </a>
+
+                    <!-- Single search result, without link -->
+                    <a href="#">
+                        <strong>Lorem Ipsum</strong><br />
+                        <span>Lorem ipsum dqlwory sitfh jamexzt</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Search result ended -->
+        </div>
+        <!-- Search ended -->
+
+        <!-- Right side hamburger menu used, only visible in small screens -->
+        <a class="btn-right-menu" uk-icon="more-vertical"></a>
+        <div uk-dropdown="mode: click; pos: bottom-right" class="uk-background-secondary uk-light">
+            <ul class="uk-nav uk-dropdown-nav main-menu-items"></ul>
+        </div>
+    </header>
+    <!-- Top header ended -->
+
+    <aside class="dark">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/logo.svg" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />Home</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="home-light.html">Home Light</a></li>
+                        <li class="uk-active"><a href="home-dark.html">Home Dark</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/layouts.svg" />Layouts</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="layouts-left-side.html">Left Side</a></li>
+                        <li><a href="layouts-right-side.html">Right Side</a></li>
+                        <li><a href="layouts-both-sides.html">Both Sides</a></li>
+                        <li><a href="layouts-colored-header.html">Colored Header</a></li>
+                        <li><a href="layouts-multiple-columns.html">Multiple Columns</a></li>
+                        <li><a href="layouts-without-hash-links.html">Without Hash Links</a></li>
+                        <li><a href="layouts-menu-without-icons.html">Menu Without Icons</a></li>
+                        <li><a href="layouts-text-without-logo.html">Text without logo</a></li>
+                        <li><a href="layouts-sidebar-without-pattern.html">Sidebar without pattern</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/basic.svg" />Basic Components</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="basic-components-button.html">Button</a></li>
+                        <li><a href="basic-components-alert.html">Alert</a></li>
+                        <li><a href="basic-components-form.html">Form</a></li>
+                        <li><a href="basic-components-table.html">Table</a></li>
+                        <li><a href="basic-components-label.html">Label</a></li>
+                        <li><a href="basic-components-dropdown.html">Dropdown</a></li>
+                        <li><a href="basic-components-tooltip.html">Tooltip</a></li>
+                        <li><a href="basic-components-popover.html">Popover</a></li>
+                        <li><a href="basic-components-loader.html">Loader</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/advance.svg" />Advance Components</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="advance-components-code.html">Code</a></li>
+                        <li><a href="advance-components-tab.html">Tabs</a></li>
+                        <li><a href="advance-components-md-editor.html">MD Editor</a></li>
+                        <li><a href="advance-components-html-editor.html">HTML Editor</a></li>
+                        <li><a href="advance-components-modal.html">Modal</a></li>
+                        <li><a href="advance-components-accordion.html">Accordion</a></li>
+                        <li><a href="advance-components-animations.html">Animations</a></li>
+                        <li><a href="advance-components-card.html">Cards</a></li>
+                        <li><a href="advance-components-image-slider.html">Image Slider</a></li>
+                        <li><a href="advance-components-slideshow.html">Slideshow</a></li>
+                        <li><a href="advance-components-lightbox.html">Lightbox</a></li>
+                        <li><a href="advance-components-notification.html">Notification</a></li>
+                        <li><a href="advance-components-overlay.html">Overlay</a></li>
+                        <li><a href="advance-components-progress-bar.html">Progress-bar</a></li>
+                        <li><a href="advance-components-sortable.html">Sortable</a></li>
+                        <li><a href="advance-components-transitions.html">Transitions</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/pages.svg" />Pages</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="pages-faq.html">FAQ Page</a></li>
+                        <li><a href="pages-single-page.html">Single Page</a></li>
+                        <li><a href="pages-api-page.html">API Page</a></li>
+                        <li><a href="pages-404.html">404 Page</a></li>
+                        <li><a href="pages-articles.html">Articles Page</a></li>
+                        <li><a href="pages-comments.html">Comments Page</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="icons.html"><img src="./assets/img/menu-items/icons.svg" />Icons</a>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/patterns.svg" />Sidebar Patterns</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="sidebar-pattern-1.html">Pattern 1</a></li>
+                        <li><a href="sidebar-pattern-2.html">Pattern 2</a></li>
+                        <li><a href="sidebar-pattern-3.html">Pattern 3</a></li>
+                        <li><a href="sidebar-pattern-4.html">Pattern 4</a></li>
+                        <li><a href="sidebar-pattern-5.html">Pattern 5</a></li>
+                        <li><a href="sidebar-pattern-6.html">Pattern 6</a></li>
+                        <li><a href="sidebar-pattern-7.html">Pattern 7</a></li>
+                        <li><a href="sidebar-pattern-8.html">Pattern 8</a></li>
+                        <li><a href="sidebar-pattern-9.html">Pattern 9</a></li>
+                        <li><a href="sidebar-pattern-10.html">Pattern 10</a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/colors.svg" />Colors</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="colors-1.html">#27399A <span class="color-box" style="background: #27399A"></span></a></li>
+                        <li><a href="colors-2.html">#E91E63 <span class="color-box" style="background: #E91E63"></span></a></li>
+                        <li><a href="colors-3.html">#1E87F0 <span class="color-box" style="background: #1E87F0"></span></a></li>
+                        <li><a href="colors-4.html">#086E80 <span class="color-box" style="background: #086E80"></span></a></li>
+                        <li><a href="colors-5.html">#C5801A <span class="color-box" style="background: #C5801A"></span></a></li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#"><img src="./assets/img/menu-items/menus.svg" />Menus</a>
+                    <ul class="uk-nav-sub">
+                        <!-- First layer menu -->
+                        <li><a href="#">Item 1</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Item 2</a>
+                            <ul class="uk-nav-sub">
+                                <!-- Second layer menu -->
+                                <li><a href="#">Item 2-1</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Item 2-2</a>
+                                    <ul class="uk-nav-sub">
+                                        <!-- Third layer menu -->
+                                        <li><a href="#">Item 2-2-1</a></li>
+                                        <li class="uk-parent">
+                                            <a href="#">Item 2-2-2</a>
+                                            <ul class="uk-nav-sub">
+                                                <!-- Fourth layer menu -->
+                                                <li><a href="#">Item 2-2-2-1</a></li>
+                                                <li><a href="#">Item 2-2-2-2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="index.html"><img src="./assets/img/menu-items/docs.svg" />Docs</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <div class="menu-btn-scrollspy">
+        Links on this page
+    </div>
+
+    <section class="scrollspy uk-light">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li>
+            <li class="spy-item"><a href="#article-1">What is Lorem Ipsum?</a></li>
+            <li class="spy-item"><a href="#article-2">Why do we use it?</a></li>
+            <li class="spy-item"><a href="#article-3">Where does it come from?</a></li>
+            <li class="spy-item"><a href="#article-4">Where can I get some?</a></li>
+            <li class="spy-item"><a href="#article-5">How can I get it?</a></li>
+            <li class="spy-item"><a href="#article-6">Finally I got it!</a></li>
+            
+            <li style="margin-top: 50px;"></li>
+
+            <!-- Right sidebar bottom icons started -->
+            <li>
+                <a href="#">
+                    <span uk-icon="warning" class="uk-margin-small-right"></span> 
+                    <span class="uk-text-middle">Report issue</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span uk-icon="commenting" class="uk-margin-small-right uk-icon"></span>
+                    <span class="uk-text-middle">Get help</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span uk-icon="pencil" class="uk-margin-small-right uk-icon"></span>
+                    <span class="uk-text-middle">Edit this page</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span uk-icon="push" class="uk-margin-small-right uk-icon"></span>
+                    <span class="uk-text-middle">Order a feature</span>
+                </a>
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li><a>Was this page helpful?</a></li>
+            <li>
+                <a href="#" style="display: inline;">
+                    <img src="./assets/img/thumbs-up.svg" style="width: 42px"/>
+                </a>
+                <a href="#" style="display: inline;">
+                    <img src="./assets/img/thumbs-down.svg" style="width: 42px"/>
+                </a>
+            </li>
+            <!-- Right sidebar bottom icons ended -->
+        </ul>
+    </section>
+
+    <main class="uk-light uk-background-secondary">
+        <!-- Heading Article -->
+        <h1 id="heading"><a href="#heading">Lorem Ipsum</a></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl risus, maximus molestie dolor fermentum vitae. Cras a eros sed orci gravida tempus sit amet at odio. Integer rhoncus est nec neque ultrices, vel tristique odio fermentum. Pellentesque non maximus magna, eget posuere eros. Donec id tortor gravida, suscipit tortor nec, euismod nisl. Phasellus dictum commodo dolor, eget varius dui euismod id. Aliquam id maximus ex. Donec id elit non ex tempor luctus vel maximus mauris. Nunc sed condimentum turpis. Quisque at ex vehicula, vestibulum lacus eleifend, tristique est.</p>
+        <p>Quisque et placerat est. Sed tincidunt, augue sit amet porttitor dignissim, arcu dui iaculis sapien, eget molestie lectus lacus in lorem. In fringilla commodo finibus. Vivamus varius mollis consequat. Proin auctor varius congue. Sed condimentum neque non turpis semper, in facilisis odio maximus. Ut enim nulla, aliquam id ligula id, ultrices aliquam elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce et elit porttitor, convallis tellus in, pretium ipsum. Etiam vulputate, orci nec vulputate ullamcorper, ante nibh lobortis ante, at vestibulum ante eros quis felis. Etiam quis malesuada diam. Maecenas sagittis rutrum aliquam. Cras ac odio quis ligula varius luctus.</p>
+        <p>Some of the ipsum are:</p>
+        <ul class="uk-list uk-list-hyphen uk-list-primary">
+            <li><a href="#article-1">What is Lorem Ipsum?</a></li>
+            <li><a href="#article-2">Why do we use it?</a></li>
+            <li><a href="#article-3">Where does it come from?</a></li>
+            <li><a href="#article-4">Where can I get some?</a></li>
+            <li><a href="#article-5">How can I get it?</a></li>
+            <li><a href="#article-6">Finally I got it!</a></li>
+        </ul>
+        
+        
+        <!-- Article 1 -->
+        <h2 id="article-1"><a href="#article-1">What is Lorem Ipsum?</a></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+        <!-- Javascript coding started -->
+        <pre><code class="javascript">
+        // JavaScript program to find the area of a triangle
+
+        let side1 = prompt('Enter side1: ');
+        let side2 = prompt('Enter side2: ');
+        let side3 = prompt('Enter side3: ');
+        
+        // calculate the semi-perimeter
+        let s = (side1 + side2 + side3) / 2;
+        
+        //calculate the area
+        let areaValue = Math.sqrt(
+            s * (s - side1) * (s - side2) * (s - side3)
+        );
+        
+        console.log(
+            `The area of the triangle is ${areaValue}`
+        );
+        </code></pre>
+        <!-- Javascript coding ended -->
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <div class="uk-alert-primary uk-alert-icon" uk-alert>
+            <span uk-icon="warning"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+
+        <!-- Article 2 -->
+        <h2 id="article-2"><a href="#article-2">Why do we use it?</a></h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <table class="uk-table uk-table-hover uk-table-divider">
+            <thead>
+                <tr>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                </tr>
+                <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                </tr>
+                <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Article 3 -->
+        <h2 id="article-3"><a href="#article-3">Where does it come from?</a></h2>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+        <!-- Article 4 -->
+        <h2 id="article-4"><a href="#article-4">Where can I get some?</a></h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        
+        <!-- Transitions started -->
+        <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-match uk-grid-small" uk-grid>
+            <div class="uk-text-center">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <img src="assets/img/sample/dark.jpg" alt="">
+                    <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                        <p class="uk-h4 uk-margin-remove">Fade</p>
+                    </div>
+                </div>
+                <p class="uk-margin-small-top">Fade</p>
+            </div>
+            <div class="uk-text-center">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <img src="assets/img/sample/dark.jpg" alt="">
+                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                        <p class="uk-h4 uk-margin-remove">Bottom</p>
+                    </div>
+                </div>
+                <p class="uk-margin-small-top">Bottom</p>
+            </div>
+            <div class="uk-text-center">
+                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                    <img src="assets/img/sample/dark.jpg" alt="">
+                    <div class="uk-position-center">
+                        <span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
+                    </div>
+                </div>
+                <p class="uk-margin-small-top">Icon</p>
+            </div>
+            <div class="uk-text-center">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <img src="assets/img/sample/dark.jpg" alt="">
+                    <img class="uk-transition-scale-up uk-position-cover" src="assets/img/sample/light.jpg" alt="">
+                </div>
+                <p class="uk-margin-small-top">2 Images</p>
+            </div>
+            <div class="uk-text-center">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="assets/img/sample/dark.jpg" alt="">
+                </div>
+                <p class="uk-margin-small-top">Scale Up Image</p>
+            </div>
+            <div class="uk-text-center">
+                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                    <img src="assets/img/sample/dark.jpg" alt="">
+                    <div class="uk-position-center">
+                        <div class="uk-transition-slide-top-small"><h4 class="uk-margin-remove">Headline</h4></div>
+                        <div class="uk-transition-slide-bottom-small"><h4 class="uk-margin-remove">Subheadline</h4></div>
+                    </div>
+                </div>
+                <p class="uk-margin-small-top">Small Top + Bottom</p>
+            </div>
+        </div>
+        <!-- Transitions ended -->
+
+        <!-- Article 5 -->
+        <h2 id="article-5"><a href="#article-5">How can I get it?</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, arcu at pharetra interdum, dolor risus hendrerit nisi, nec euismod diam mi id sapien. Fusce et tempus tortor, ac interdum nisl. Nunc eget metus mollis, consectetur arcu aliquet, bibendum odio. Suspendisse potenti. Morbi at dui sem. Pellentesque eleifend, leo in vulputate tincidunt, nisl est consectetur lorem, sed molestie dolor arcu ac ipsum. Curabitur dictum mauris urna, non egestas lacus venenatis ut. Quisque id ipsum nibh. Donec facilisis tortor arcu, eu accumsan tellus consectetur eget. Sed hendrerit augue et velit ornare, at luctus massa placerat. Curabitur congue metus quis interdum congue.</p>
+        <p>Duis congue condimentum enim a mattis. Phasellus varius pharetra leo, nec ultricies nibh eleifend et. Donec ultrices justo at quam tristique vulputate. Curabitur vel elementum massa, tristique vestibulum massa. Suspendisse non rhoncus lorem, quis tempus leo. Sed in diam enim. Nulla facilisi. Aliquam erat volutpat. Suspendisse vel orci vitae arcu sagittis scelerisque vitae id mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <p>Cras consequat fermentum elit a finibus. Nullam sodales eget felis vel laoreet. Quisque rutrum vel leo non laoreet. Nullam lacinia consectetur nunc ac aliquet. Nulla blandit turpis maximus nibh suscipit porttitor sed eget justo. Mauris odio diam, accumsan blandit luctus in, blandit ac purus. Etiam leo lacus, maximus sit amet felis in, egestas dictum sem. Aenean sagittis leo at sem sagittis dapibus. Fusce sollicitudin felis turpis, nec pulvinar sapien lobortis volutpat.</p>
+
+        <!-- Article 6 -->
+        <h2 id="article-6"><a href="#article-6">Finally I got it!</a></h2>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        <p>Quisque et placerat est. Sed tincidunt, augue sit amet porttitor dignissim, arcu dui iaculis sapien, eget molestie lectus lacus in lorem. In fringilla commodo finibus. Vivamus varius mollis consequat. Proin auctor varius congue. Sed condimentum neque non turpis semper, in facilisis odio maximus. Ut enim nulla, aliquam id ligula id, ultrices aliquam elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce et elit porttitor, convallis tellus in, pretium ipsum. Etiam vulputate, orci nec vulputate ullamcorper, ante nibh lobortis ante, at vestibulum ante eros quis felis. Etiam quis malesuada diam. Maecenas sagittis rutrum aliquam. Cras ac odio quis ligula varius luctus.</p>
+
+        <hr style="margin: 25px;">
+        
+        <!-- Next and Prvious navigation started -->
+        <div class="buttons">
+            <a class="button button-left">
+                <div>
+                    <span href="#" class="uk-icon-button" uk-icon="icon: arrow-left; ratio: 2"></span>
+                </div>
+                <div>
+                    <p>Previous</p>
+                    <h3>Title of the page</h3>
+                </div>
+            </a>
+
+            <a class="button button-right">
+                <div>
+                    <p>Next</p>
+                    <h3>Title of the page</h3>
+                </div>
+                <div>
+                    <span href="#" class="uk-icon-button" uk-icon="icon: arrow-right; ratio: 2"></span>
+                </div>
+            </a>
+        </div>
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
