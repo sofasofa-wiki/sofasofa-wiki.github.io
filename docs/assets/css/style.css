@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Roboto+Mono:400");
 
 :root {
-    --color-base: #30405f;
-    --color-base-light: #4c3663dd;
+    --color-base: #41c5ec;
+    --color-base-light: #58ccf0;
     --color-text: white;
 
     --font-size-xxs: 8px;
