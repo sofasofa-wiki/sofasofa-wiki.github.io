@@ -53,10 +53,10 @@ main {
     position: fixed;
     width: calc(100% - 320px);
     left: 320px;
-    top: 70px;
+    /* top: 70px; */
     padding: 50px 80px;
     overflow-y: scroll;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 20px);
     padding-right: 80px
 }
 
@@ -255,6 +255,8 @@ aside .color-box {
 }
 
 .scrollspy {
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
     width: 250px;
     position: fixed;
     right: 40px;
@@ -262,6 +264,10 @@ aside .color-box {
     max-height: calc(100vh - 150px);
     overflow: scroll;
     z-index: 1002;
+}
+
+.scrollspy::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
 }
 
 .scrollspy .uk-nav > .spy-item > a {
