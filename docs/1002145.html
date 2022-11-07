@@ -1,0 +1,61 @@
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$']]
+        }
+    });
+</script>
+<style>
+    #container {
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    }
+    .lvl2_answer {
+        font-size: 12px;
+    }
+</style>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+<script >hljs.initHighlightingOnLoad();</script>
+<div id="container">
+    <div class="card" style="width: 50rem;">
+        <div class="card-header">
+            <h3>Question 1002145: 关于用贝叶斯方法判断性别的教程中Laplace平滑问题</h3>
+            
+            <span class="badge badge-pill badge-success">板凳区</span>
+            
+            <span class="badge badge-pill badge-success">Sofa竞赛3</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>根据名字判断性别有一个朴素贝叶斯教程（<a href="http://sofasofa.io/tutorials/naive_bayes_classifier/" target="_blank">http://sofasofa.io/tutorials/naive_bayes_classifier/</a>），但是关于其中Laplace平滑我有一个疑问。</p><p><br/></p><p>教程作者首先统计了两个性别中，每个字出现的概率。由于最后计算后验概率时需要有公共的部分，因此作者又计算了该公共部分，即如下代码：</p><pre><code class="python">base_f = math.log(1 - train['gender'].mean())
+base_f += sum([math.log(1 - frequency_list_f[char]) for char in frequency_list_m])
+
+base_m = math.log(train['gender'].mean())
+base_m += sum([math.log(1 - frequency_list_m[char]) for char in frequency_list_m])</code></pre><p>为了避免新名字中某些字出现的概率变为0，采用了Laplace平滑。即在测试集中，在计算每个字的概率时使用了Laplace平滑。但是在计算base_f和base_m时，作者却并没有用到Laplace平滑。</p><p><br/></p><p>我认为Laplace平滑应该在计算base_f和base_m时也应该用吧？</p></div></p >
+            </div>
+            <div class="card-body">
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>不需要吧，教程里的平滑是对词频进行平滑，而base_f和base_m就是训练集中男女的性别比重，不涉及到词频</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>你这么说也有道理。确实，在base_f和base_m中，计算的是训练集中的比例，因此不会出现某个字概率为0的情况，不会对取log造成影响。不过在李航的《统计学习方法》中，利用贝叶斯估计的例题中（例4.2），在计算训练集中的条件概率时，也用到了Laplace平滑。这个问题可能还需要探讨吧</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+        </div>
+        <div class="card-footer">
+            <span style="display: block;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>

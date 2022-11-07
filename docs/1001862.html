@@ -1,0 +1,197 @@
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$']]
+        }
+    });
+</script>
+<style>
+    #container {
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    }
+    .lvl2_answer {
+        font-size: 12px;
+    }
+</style>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+<script >hljs.initHighlightingOnLoad();</script>
+<div id="container">
+    <div class="card" style="width: 50rem;">
+        <div class="card-header">
+            <h3>Question 1001862: 提个比较敏感的问题：有没有来讨论讨论这几个比赛的提升思路</h3>
+            
+            <span class="badge badge-pill badge-success">板凳区</span>
+            
+            <span class="badge badge-pill badge-success">Sofa竞赛1</span>
+            
+            <span class="badge badge-pill badge-success">Sofa竞赛6</span>
+            
+            <span class="badge badge-pill badge-success">Sofa竞赛7</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>相对于kaggle来说，这些脱敏降噪的数据已经算很简单了，可提升还是有限，有没有前10的大佬聊聊提升思路，比如特征工程或者模型组装</p></div></p >
+            </div>
+            <div class="card-body">
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>比如最近的这个，我能想到的就是正态变换，缺失值处理，还有lasso来删选一些特征，最后回归预测。目前mae50，别的没想到提升思路</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>我还没有时间做这个，但是前几天下载数据后稍微看了下，我觉得守门员和非守门员也许可以分开训练模型。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>分开训练的话守门员的数据量会不足吧，建议自己增加一个特征以0或1表示是否为守门员</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 3</span>
+                        <span>好奇缺失值怎么处理的？</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>还有最开始的自行车使用量预测，试了几个模型，xgb确实是回归性最好的，（当然我不了解神经网络）同时温度1和温度2很明显有共线性，我试过删失和加权以及比率，但远不如直接进模型比较好，还有把离散和占比少的进行合并，效果也不如直接进入好</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>我没有排到排到前10，目前12。不是特别有发言权吧。就透露一下，我是好几个模型混合的。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>我用xgb和rf，这俩在原始数据k折上是15.多和16.多，请教一下还有什么好的</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 3</span>: <div class="col-md-11 col-xs-10 p-r"><p>还有那个图像分类，据我所知图像数据要注意数据增强和残差网络，我试过几个的增强，但效果也就一般，我很好奇能达到过拟合的1是怎么来的</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>我不是1.0，我是0.995，我是用tensorflow的cnn做的。希望sofasofa能够出个官方的标杆吧。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>还真没接触过神经网络，看来有必要研究一下</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 3</span>
+                        <span>我是用keras来构建cnn的，自己在跑训练集的时候，后面几个的accuracy就达到了1，虽然我很怀疑我是不是过拟合了，但是我有进行交叉验证和加入droupt层来随机断开神经元连接。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 4</span>
+                        <span>形状识别是SofaSofa上第一个关于图像的比赛，所以就设置的比较容易，给新人练习的机会。谢谢各位的讨论。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 5</span>
+                        <span>我不懂深度学习，所以分数上不了1。
+但只要直接来一個 RandomForestClassifier(100)，0.99完全没有问题</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 6</span>
+                        <span>这么说这个随机森林的效果要比linearsvc的效果好...........................</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 7</span>
+                        <span>Linear SVC 的效果说不上好，KNN 比它还要好！</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 8</span>
+                        <span>我用TensorFlow做了个了lenet-5，准确率为0.999,图像分类问题用cnn做效果会比较好，毕竟cnn本来就设计用来处理图像问题的</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 9</span>
+                        <span>确实觉得准确率到了0.99左右就很难再提升了，同求是怎么达到1.0的</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 10</span>
+                        <span>有哪位大佬愿意帮我看看代码？我用CNN正确率只有60%</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 4</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">最近的足球运动员身价估计，我把出生日期转换成年龄，再以新的变量插入原序列，再进行训练，不知道是不是这个思路</span></p><p><span style="font-size: 14px;"><br/></span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>肯定是要转成年龄的，不然生日也没有用，难道看星座？（滑稽了）</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>但这也是答案呀。敏感的问题，又不能说太多。。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 3</span>
+                        <span>感觉出生月份也可以作为特征，之前看过一篇文章，对足球明星出生季节做了统计，居然还有一定规律</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 4</span>
+                        <span>嗯嗯，那就可以把月份提取出来</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 5</span>
+                        <span>身高体重咋处理啊</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 6</span>
+                        <span>官方的标杆模型里对身高体重的处理是用的BMI指数</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 5</span>: <div class="col-md-11 col-xs-10 p-r"><p>鉴于大家的需要，我们考虑增加<b>一个额外的独立于目前问答</b>的交流区，内容包括：SofaSofa的数据竞赛、非SofaSofa的数据竞赛、求职交流、学习资源交流、工作心得分享讨论。</p><p><br/></p><p><b style="background-color: rgb(214, 239, 214);">如果大家支持这个想法，请对该问答点赞。</b></p><p><br/></p><p>谢谢大家！</p><p>SofaSofa社区</p><p><br/></p><p>PS</p><p>谢谢大家。新的讨论区<a href="http://sofasofa.io/others.php" target="_blank">“板凳区”</a>已开通。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 6</span>: <div class="col-md-11 col-xs-10 p-r"><p>欢迎加入：462428251。大家可以在这里讨论比赛思路，共同学习。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+        </div>
+        <div class="card-footer">
+            <span style="display: block;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
