@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000405">朴素贝叶斯中的朴素是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000663">置信网络和贝叶斯网络是一回事吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1002055">贝叶斯网络中的markov blanket是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1006074">用贝叶斯怎么输出模型的预测准确率？</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1000405"><a href="#article-1000405">Question 1000405: 朴素贝叶斯中的朴素是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">贝叶斯</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>朴素贝叶斯中的朴素是什么意思？Naive Bayes为什么是拿衣服的？<br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>朴素贝叶斯中的“朴素”二字突出了这个算法的简易性。</p><p>朴素贝叶斯的简易性表现该算法基于一个很朴素的假设：<span style="font-weight: bold;">所有的变量都是相互独立的</span>。用贝叶斯定理可以写成</p><p>$$P(Y|X_1,X_2)=\frac{P(X_1|Y)P(X_2|Y)P(Y)}{P(X_1)P(X_2)}.$$</p><p>但是在很多情况下，所有变量两两之间独立，这几乎是不可能的。</p><p>举个例子：</p><p>$Y$ = 这个人是否是举重运动员</p><p>$X_1$ = 性别</p><p>$X_2$ = 这个人能否举起100公斤的箱子</p><p>变量$X_1$和$X_2$显然不是独立的。</p><p>换句话说，朴素贝叶斯的独立性假设很傻很天真，too simple，sometimes naive，所以预测精度往往不是很高。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000663"><a href="#article-1000663">Question 1000663: 置信网络和贝叶斯网络是一回事吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">贝叶斯</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我感觉像它们像是一个东西，只是确认一下。</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>是的，它们是一个东西，没毛病。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1002055"><a href="#article-1002055">Question 1002055: 贝叶斯网络中的markov blanket是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">随机过程</span>
+            
+                <span class="badge badge-pill badge-success">贝叶斯</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>贝叶斯网络中的markov blanket是什么意思？书本中的定义没有完全看明白</p><p>有熟悉这个概念的吗？可以用直白的话讲一讲吗？</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>贝叶斯置信网络中一个node的parent nodes, child nodes以及child nodes' parent nodes组成的集合就是markov blanket。可参考下图。灰色圈中的node就组合了A的markov blanket。</p><p><img data-filename="MarkovBlanket.png" src="data:image/png;base64,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" style="width: 264px;"/></p><p>A条件独立于markov blanket之外的所有node，说白了，就是知道了markov blanket内所有的信息，就知道了A的信息。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">对于贝叶斯网络中的一个节点，它的所有的子节点、所有的父节点、所有子节点的父节点就是</span><span style="font-size: 14px;">markov blanket</span></p><p><span style="font-size: 1rem;"><br/></span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1006074"><a href="#article-1006074">Question 1006074: 用贝叶斯怎么输出模型的预测准确率？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">贝叶斯</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>用贝叶斯怎么输出模型的预测准确率？<br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>模型的预测准确率可以根据交叉验证得到，不知道你是不是问的这个</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

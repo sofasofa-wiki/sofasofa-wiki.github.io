@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000536">t-SNE如何实现降维？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000776">利用PCA降维，降到几维比较合适？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1002087">对于组合特征怎么理解？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004187">特征相关性高的影响</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005509">什么情况下需要做特征选择？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005619">wrapper特征选择法是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005657">训练word2vec时移动窗口的大小怎么选择？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1006075">怎么理解lightgbm中的直方图法选择分裂点？</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1000536"><a href="#article-1000536">Question 1000536: t-SNE如何实现降维？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">数据降维</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>t-SNE是如何实现降维的？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>一直没有人回答，我试着简短的强行回答一下。</p><p><br/></p><p>
+</p><p>t-SNE中t是指T distribution，s是指stochastic，n是指neighbor，e是指embedding。</p><p><br/></p><p>
+</p><p><b>简单来说，t-SNE做的是一种从高维空间到低维空间的保“距”变换。</b></p><p><br/></p><p>
+</p><p>如果两个点在100维的空间里“距离”是1，我们希望找到一个映射，把这两个点映射到低维（比如2维）空间里，它们的距离也是1。这样达到的效果就是，在原空间里距离远的点，那么在新的低维空间里距离也远；在原空间里距离近的点，那么在新的低维空间里距离也近。</p><p><br/></p><p>
+</p><p>这个所谓的“距离”，不是真正的距离，而是一种相似度。两个数据点的相似度的计算主要是依据两点的欧式距离，并且对其进行一些标准化的处理。处理时用到了t分布这个假设。</p><p><br/></p><p>
+</p><p>这个从高维到低维的映射，首先需要设置随机初始点，然后进行优化，从而使得两个“距离”相等。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000776"><a href="#article-1000776">Question 1000776: 利用PCA降维，降到几维比较合适？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">数据降维</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>当数据特征多的时候，我们可以用PCA降维，一般降到几维比较合适？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><ul><li><span style="font-size: 14px;">如果是为了数据可视化，可以降到1维（线），2维（平面），或者3维（立体）。</span></li></ul><ul><li><span style="font-size: 14px;">如果是为了建立预测模型而降维，比较常用的方法是看多少个主成分解释了多少百分比的方差，常用的比如说99%,95%,90%。</span></li></ul><ul><li><span style="font-size: 14px;">另一个方法是Kaiser's Rule，保留所有奇异值大于1的</span></li></ul><ul><li><span style="font-size: 14px;">还有个类似elbow method的方法，画出主成分的个数和解释方差百分比的曲线，找出手肘的那个点。</span></li></ul><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1002087"><a href="#article-1002087">Question 1002087: 对于组合特征怎么理解？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>众所周知，传统机器学习的主要工作在于特征工程，其中特征工程中进行特征组合往往会对模型的结果带来提升。</p><p>举个例子，考虑第一个特征“性别”，男为1，女为0；第二个特征“是否喜欢宠物”，喜欢宠物为1，不喜欢宠物为0。那么组合后构造了“性别_是否喜欢宠物”这个新的维度的特征，这个特征的取值可以是00、01、10、11。</p><p>组合特征背后的理论基础是什么呢？怎么更好地去理解组合特征？<span style="font-size: 1rem;">之前有看到过组合特征可以发现特征与特征之间的关系，从而发现非线性关系，不太理解，谢谢！</span></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>你说的这个“特征组合”实际上就是interaction term.</p><p>interaction在统计和计量经济里是个成熟的话题了，可以参考<a href="https://en.wikipedia.org/wiki/Interaction_(statistics)" target="_blank">Wikipedia: Interaction</a></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004187"><a href="#article-1004187">Question 1004187: 特征相关性高的影响</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>如果有十个特征，其中两个维度完全相同。那么这种情况有什么影响呢?</p><p>对LR、SVM、xgb、神经网络、FM等不同的模型都有什么影响呢？</p><p>谢谢</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">简单点说，</span><span style="font-size: 14px;">对线性回归影响比较大，因为矩阵不可逆了；</span><span style="font-size: 14px;">对线性模型，或者说广义线性模型、逻辑回归的影响不大，但是有可能会模型系数不收敛；对树类模型影响很小，可以参考</span><a href="http://sofasofa.io/forum_main_post.php?postid=1000876" target="_blank"><span style="font-size: 14px;">决策树、随机森林中的多重共线性问题</span></a></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>谢谢您的回答，请问如果是FM模型会有什么影响呢？谢谢</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>特征相关性高往往影响的是模型的解释性和稳定性。</p><p>我觉得多重共线性对FM影响应该是不大，因为FM本质上和PCA是类似的，而PCA本身也是可以处理特征相关性的。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005509"><a href="#article-1005509">Question 1005509: 什么情况下需要做特征选择？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>训练模型前，什么情况下需要做特征选择？是一定训练模型前一定要做的吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">(1)当特征之间相关性非常强</span></p><p><span style="font-size: 14px;">(2)当特征数量特别大</span></p><p><span style="font-size: 14px;">(3)当你希望模型更简洁，防止过拟合，节约计算时间</span></p><p><span style="font-size: 14px;">的时候你需要特征选择。如果没有这些问题，也不一定非要做特征选择。</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005619"><a href="#article-1005619">Question 1005619: wrapper特征选择法是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>wrapper特征选择法是什么意思？怎么用这个所谓的wrapper进行特征选择呢？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">wrapper，有时候也叫包裹法，是一种用来进行特征筛选的思路，比如向前选择法(forward step-wise selection)和向后选择法(backward step-wise selection)。wrapper法就是在建模的过程通过对模型性能的衡量筛选特征的方法。</span></p><p><span style="font-size: 14px;">此外还有</span><span style="font-size: 14px;">过滤(Filter)方法，相关分析、卡方检验等以及</span><span style="font-size: 14px;">嵌入类(Embedded)：正则化(L1、L2)等。</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005657"><a href="#article-1005657">Question 1005657: 训练word2vec时移动窗口的大小怎么选择？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>训练word2vec时移动窗口的大小怎么选择？有时候是5，有时候是3，有时候是10，这个数字一般是怎么选的？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>一般就是5吧。</p><p>window越大，训练越慢。还有一种说法是window越小，得到的结果越关注语法，window越大，得到的结果越关注语意。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1006075"><a href="#article-1006075">Question 1006075: 怎么理解lightgbm中的直方图法选择分裂点？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">特征选择</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>怎么理解lightgbm中的直方图法选择分裂点？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>之前普遍采用的方法是对数据集里一个特征所有的值进行排序，然后遍历每个值，从而选取最佳的分裂点。这个做法最大的问题就是速度太慢，因为先要进行排序，然后每次分裂都要遍历所有的点。考虑到现在很多数据集都很大，这样的做法会非常慢。</p><p>直方图的方法就是用k个离散点代替原始的数据，这样数据量就大大压缩了。k越大，越接近传统的方法，越容易过拟合；k越小，还原度就越低，越容易欠拟合。</p><p>直方图方法的示意图</p><p><img data-filename="zft.jpg" src="data:image/jpeg;base64,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" style="width: 442.753px; height: 152.333px;"/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000656">自然语言处理中的Tf-idf是什么意思</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001226">文本处理中的tf是什么意思？如何计算？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001801">文本处理中stop word什么意思</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003370">nlp里的stemming是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004566">“阅读需要X分钟”这个功能是如何实现的？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004580">怎么判断一句中文话语是否通顺</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005297">jieba分词中最大正向匹配法是什么？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005525">教程中的利用Word2Vec判断是否是白话</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1000656"><a href="#article-1000656">Question 1000656: 自然语言处理中的Tf-idf是什么意思</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>自然语言处理中的Tf-idf是什么意思？最好能有例子，谢谢！</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">TF是term frequency，词频。</span></p><p><span style="font-size: 14px;">IDF是inverse document frequency，逆向文件频率。</span></p><p><span style="font-size: 14px;">比如我们有m个文件，TF-IDF是衡量一个词汇对于某个文件的重要性。</span></p><p><span style="font-size: 14px;">词汇$T_i$在文件$D_j$中的词频TF等于</span></p><p><span style="font-size: 14px;">$$TF_{i,j}=\frac{n_{i,j}}{\sum_{k=1,\cdots,m} n_{k,j}},$$</span></p><p><span style="font-size: 14px;">其中$n_{i,j}$是词汇$t_j$在文件$D_j$中出现的次数，分母是文件$D_j$中所有词汇的个数，作用是归一化。</span></p><p><span style="font-size: 14px;">词汇$t_i$的逆向文件频率idf等于</span></p><p><span style="font-size: 14px;">$$IDF_{i}=\log \frac{m}{|\{j:t_i\in D_j\}|}$$</span></p><p><span style="font-size: 14px;">其中 $|\{j:t_i\in D_j\}|$是m个文件中，包含词汇$t_i$的文件的个数。</span></p><p><span style="font-size: 14px;"><br/></span></p><p><span style="font-size: 14px; font-weight: bold;">接下来我们就有了tfidf的定义:</span></p><p><span style="font-size: 14px;">$$TFIDF_{i,j}=TF_{i,j}\times IDF_{i}.$$</span></p><p><span style="font-size: 14px;">$TFIDF_{i,j}$越大，说明词汇$t_i$在文件$D_j$中重要性越大，越有助于文件的区分度。</span></p><p><span style="font-size: 14px;"><br/></span></p><p><span style="font-size: 14px;"><br/></span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>请问下，TF的公式中，分母求和的k的取值范围，最大值不应该用m表示吧，因为您下面使用m表示文件个数了，这里的最大值应该是词汇表T中词的个数吧？</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>我觉得你说的是对的，答主应该笔误了。</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>$tf$-$idf$就是$tf$和$idf$的乘积。</p><p>$$tf(w)=\frac{w \text{出现在该文档的次数}}{\text{该文档中总的词汇量}}$$</p><p>$$idf(w)=\log\frac{\text{文档的总个数}}{\text{包含}w\text{的文档的个数}}$$</p><p>$$tf\text{-}idf(w)=tf(w)\times idf(w)$$</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1001226"><a href="#article-1001226">Question 1001226: 文本处理中的tf是什么意思？如何计算？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>如题</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">TF是词频的意思，英文是term frequency。就是某个词在某个文章里出现的频率。</span></p><p><span style="font-size: 14px;">通常表示为</span></p><p><span style="font-size: 14px;">TF(w, d) = 词汇w出现的次数 / 文章d总的单词数量。</span></p><p><br/></p><p><span style="font-size: 14px;">以中文段落为例，d</span><span style="font-size: 14px;">= “知之为知之 不知为不知”</span></p><p><span style="font-size: 14px;">那么，TF(知, d) = 4 / 10 = 0.4，  TF(为, d) = 2 / 10 = 0.2</span></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1001801"><a href="#article-1001801">Question 1001801: 文本处理中stop word什么意思</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>文本处理中stop word什么意思？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">stop word 中文即停用词。</span></p><p><span style="font-size: 14px;">在信息检索中，为节省存储空间和提高搜索效率，在处理自然语言数据（或文本）之前或之后会自动</span><b><span style="font-size: 14px;">过滤</span></b><span style="font-size: 14px;">掉某些字或词，这些字或词即被称为Stop Words(停用词)。</span></p><p><span style="font-size: 14px;"> 这些停用词都是人工输入、非自动化生成的，生成后的停用词会形成一个停用词表。</span></p><p><span style="font-size: 14px;">对于一个给定的目的，任何一类的词语都可以被选作停用词。通常意义上，停用词大致分为两类。</span></p><ol><li><span style="font-size: 14px;">一类是人类语言中包含的功能词，这些功能词极其普遍，与其他词相比，功能词没有什么实际含义，比如'the'、'is'、'at'、'which'、'on'等。但是对于搜索引擎来说，当所要搜索的短语包含功能词，特别是像The Who、The The或Take That等复合名词时，停用词的使用就会导致问题。</span></li><li><span style="font-size: 14px;">另一类词包括词汇词，比如'want'等，这些词应用十分广泛，但是对这样的词搜索引擎无法保证能够给出真正相关的搜索结果，难以帮助缩小搜索范围，同时还会降低搜索的效率，所以通常会把这些词从问题中移去，从而提高搜索性能。</span></li></ol></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>stop word主要是两类</p><p>一种是虚词、没什么意思，留在里面没有什么预测能力</p><p>一种是太常见的词，你有我有全都有，留在里面也没有什么差异性</p><p>就中文来说，常见的stop word：</p><p><b>"的", "了", "在", "是", "我", "有", "和", "就", <span style="font-size: 1rem;"> "人", "都", "一", "一个", "上", "也", "很", "到", "说", "要", "去", "你",   </span><span style="font-size: 1rem;">"会", "着", "好", "自己", "这"</span></b></p><p><b><span style="font-size: 1rem;"><br/></span></b></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003370"><a href="#article-1003370">Question 1003370: nlp里的stemming是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>nlp里的stemming是什么意思？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>stemming是词干抽取、词根提取的意思。这个一般是针对外语词汇，中文中很少有这个概念。</p><p>比如英文，每个词都有很多变形，动词、过去式、名词、动名词、单数、复数等等，stemming就是把各种形式的词还原到本身的词干上。例如</p><p>eat有eating, eaten, ate, eats, eatings等等变形，经过stemming之后，这些词应该都会变为eat</p><p>再比如这些词：color, colors, colorful, coloring, colored, colorfully等等，stemming之后，提取出来的就都是color</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>thanks</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>找词干的意思</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004566"><a href="#article-1004566">Question 1004566: “阅读需要X分钟”这个功能是如何实现的？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>现在很多新闻和文章的开头都有类似于“<b>阅读需要X分钟</b>”，这个功能是如何实现的？用的什么算法？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>国外一个专栏网站medium透露过他们计算阅读时长的方法，我觉得中文也是类似的。</p><p>基本上一个简单的公式就够了：</p><p><b>阅读时长 = 总字数 ÷ 平均阅读速度（例如：275字每分钟）</b></p><p>在此基础上，再给每一张图像 12 秒的时间。</p><p>随着平台的发展，越来越多的文章图文并茂。而原来的阅读时长是以漫画等「要看得比较久」的图片为基准，如果以原来的算法计算，那一篇包含 140 张图片的文章阅读时长会高达 87 分钟，这显然不合理。</p><p>因此，图片的读取时间修正为第一张 12 秒，第二张 11 秒，依次减少 1 秒到第 10 张之后，每张以 3 秒计算。</p><p>设置阅读时长的原因其实很好理解，这样用户就可以方便地把握阅读的时机 —— 是在等公交的时候看，还是先收藏起来一会儿再看。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>谢谢，看起来好像挺简单，挺容易实现的</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>我觉得不需要算法吧。正常人的阅读速度是一秒钟5个字，一分钟300个字，字数除以300就得到时间了。</p><p>如果文章里有视频，就再加上视频的时间，如果有图的话，每个图可以再加5到10秒的时间。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004580"><a href="#article-1004580">Question 1004580: 怎么判断一句中文话语是否通顺</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10">例如百度的dnn语言模型api接口输入一句话可以给出这句话的通顺度，<a href="http://ai.baidu.com/tech/nlp/dnnlm_cn" target="_blank">http://ai.baidu.com/tech/nlp/dnnlm_cn</a>,网上大多是说用n-gram模型，有具体点的训练思路吗</div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">我觉得n-gram这里是针对的词性，而不是词汇本身。</span></p><p><span style="font-size: 14px;">比如3-gram就是看毗邻的3个词的词性，假设词性分布为，‘动动名’，我们可以得到在训练集中‘动动名’出现的概率$P(动动名)$。长度为$n$的一个句子，我们就可以得到$n-2$个3-gram，也就是$n-2$个概率值。我们可以取这些概率值的最大值、最小值、均值、方差作为特征。</span></p><p><span style="font-size: 14px;">类似地，我们也可以同时做2-gram。2-gram是看毗邻两个词的词性。长度为$n$的一个句子，我们就可以得到$n-1$个2-gram，也就是$n-1$个概率值。我们可以取这些概率值的最大值、最小值、均值、方差作为特征。</span></p><p><span style="font-size: 14px;">这样每个句子我们就提取了8个特征，然后就可以训练一个二元分类器了。标签y是已知的句子是否通顺。</span></p><p><span style="font-size: 14px;">如果是无监督的，那么你只能对上面的特征进行聚类或者异常检验。</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005297"><a href="#article-1005297">Question 1005297: jieba分词中最大正向匹配法是什么？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>非常著名的jieba分词主要是依赖于最大正向匹配法，请问如何深入浅出的来理解这个方法？谢谢！</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>这个算法不是统计方法，也没有机器学习的模型，就是个贪婪的扫描算法。</p><p>最大正向匹配算法需要一个分词词典（也即是已经分词过的词典，包括所有的单个汉字）。</p><p>假定分词词典中的最长词有k个汉子字符串，则用被处理文档的当前字符串中的前k个字作为匹配字段，查找字典。若此时分词词典中存在这样一个字符串，则匹配成功，而此时被匹配的字段切分出来。如果匹配失败，将匹配字段中的最后一个字去掉，对此时剩下的字串重新与分词词典进行匹配，如此下去直到匹配成功。也即是切分出一个词或剩余字串的长度为零为止，这个时候才是匹配了一轮，接着进行下一个k字字串的匹配，方法同上，直到文档被扫描完为止。
+</p><p>这样分词的效果是让每个被分出来的词尽量长，句子被分的次数少。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005525"><a href="#article-1005525">Question 1005525: 教程中的利用Word2Vec判断是否是白话</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">自然语言处理</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>教程中的利用Word2Vec判断文言、白话文中</p><p>Sample_submit.csv 是什么文件？</p><p>这个文件中装的是什么内容？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>就是一个提交的csv<a href="http://sofasofa.io/competition.php?id=5" target="_blank">模板</a>吧。<br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000573">推荐系统中常用的表示相似或者距离的方法有哪些？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000726">余弦相似和内积的意义？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001605">推荐系统里的ALS是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001764">推荐系统算法里的cold start是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004285">怎么构造商品向量embedding来做推荐系统？</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1000573"><a href="#article-1000573">Question 1000573: 推荐系统中常用的表示相似或者距离的方法有哪些？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">推荐系统</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我只知道一个余弦相似，请问还有其他常用的吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>我们通常用距离或者相似度来表示两个对象的相似程度。
+</p><p>
+</p><p><br/></p><p>距离越大，说明相似程度越低。常用的距离有：
+</p><p>欧式距离、曼哈顿距离、汉明距离。
+</p><p>
+</p><p><br/></p><p>常用的相似有：
+</p><p>余弦相似度、内积相似、Jaccard相似、皮尔逊相关系数。</p><p><br/></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000726"><a href="#article-1000726">Question 1000726: 余弦相似和内积的意义？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">推荐系统</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我们知道余弦相似实际上就是归一化的内积。那归一化的意义在这里是什么意思？如果不归一的话，这个内积的意义又是什么呢？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>它们表达的意思不一样，不能简单的一概而论。</p><p><br/></p><p>余弦距离只考虑了角度差，内积综合考虑了角度差和长度差。</p><p><br/></p><p>比如有两个对象A和B，它们的向量表示为$A(1,1,0)$和$B(0,1,1)$，那么它们余弦相似就是$\frac{1}{\sqrt{2}\sqrt{2}}=\frac{1}{2}$。余弦相似不考虑向量的长度，所以$A(1,1,0)$和$C(0,3,3)$的相似程度和$A$与$B$的相同。</p><p><br/></p><p>但是，如果如果向量的长度本身对相似有真实的影响（在理解含义的情况下），推荐使用内积。比如对商品的几个属性打分，1表示不确定，依次到，5表示很确定，那么$A(1,1,1)$，$B(4,4,4)$，$C(5,5,5)$三个商品，根据内积，$B$与$C$更相似。但是余弦相似在这里就无法区分$A,B,C$的相似性。</p><p><br/></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1001605"><a href="#article-1001605">Question 1001605: 推荐系统里的ALS是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">推荐系统</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>推荐系统里的ALS是什么意思？</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>ALS是Alternating Least Squares，交替最小二乘。这是一种数值计算的方法。</p><p>在推荐系统中，我们经常需要计算矩阵分解。比如$M$是原本的评分矩阵，我们想找到两个矩阵$P$和$Q$使得，</p><p>$$M=PQ^T$$</p><p>或者</p><p>$$\text{min}\|M-PQ^T\|_2^2$$</p><p>因为这里$P$和$Q$同时都是变量，计算会比较复杂。一个简单的方法是，固定其中一个，计算另外一个。</p><p>例如我们先随机产生$P_0$，然后固定$P_0$，求解</p><p>$$Q_1=\text{arg}\min_{Q}\|M-P_0Q^T\|_2^2$$</p><p>然后再固定$Q_1$，求解</p><p>$$P_1=\text{arg}\min_{P}\|M-PQ_1^T\|_2^2$$</p><p>之后再固定$P_1$，求解</p><p>$$Q_2=\text{arg}\min_{Q}\|M-P_1Q^T\|_2^2$$</p><p>这样交替进行，每次只更新$P$和$Q$的其中一个，每一步计算的过程就和最小二乘法一样；所以叫做交替最小二乘法。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>这个讲得很清楚，茅塞顿开，谢谢</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>请问这个方法可以保证每次交替求解，∥M−P1QT∥22
+ 都会变小么</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 3</span>
+                        <span>这个是凸优化吧，最小二乘，肯定会变小的，直到最后稳定</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 4</span>
+                        <span>P和Q都是变量，整个问题是对于P,Q的最小二乘，肯定会使cost function变小。主要是每一步只改变P或Q，相当于把所有变量分成两个子集，每次只改变一个子集。相似的算法还有coordinate descent。</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>Alternating Least Squares</p><p>有兴趣的话，可以直接看<a href="http://www.grappa.univ-lille3.fr/~mary/cours/stats/centrale/reco/paper/MatrixFactorizationALS.pdf" target="_blank">论文</a></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 3</span>: <div class="col-md-11 col-xs-10 p-r"><p>这种方法不保证收敛</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>为什么呢？</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>保证收敛的不是这种方法本身，而是要解决的问题是设计为凸优化问题。所谓凸优化问题是一个凸函数在凸集里求最优。假设问题对P和Q都是凸问题，那么单独求P或Q时，loss函数都会单调减小，从而保证收敛。否则不保证收敛。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 3</span>
+                        <span>明白了，谢谢</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1001764"><a href="#article-1001764">Question 1001764: 推荐系统算法里的cold start是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">推荐系统</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>推荐系统算法里的cold start是什么意思？</p><p>冷启动？</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>推荐算法在对新用户、新产品很难做到好的推荐。这类问题就是冷启动。</p><p>为什么呢？</p><p>没数据呗。</p><p>新用户：你没有他们的浏览记录、消费记录，怎么推荐呢？</p><p>新产品：没有购买它的人群、浏览它的人群、和同批浏览的产品的信息，怎么推荐呢？</p><p>很多重要的feature都是missing的，对于新产品、新用户，一开始很难推荐。启动困难，cold start。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>其实只要是数据不充分的时候，都会有冷启动问题。</p><p>比较典型的是，新用户，新产品之类。</p><p>此外，还有长期没流量的老用户，老产品，他们也都会有冷启动问题。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004285"><a href="#article-1004285">Question 1004285: 怎么构造商品向量embedding来做推荐系统？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">推荐系统</span>
+            
+                <span class="badge badge-pill badge-success">应用场景</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>现在很多都流行做embedding嵌入向量的，比如word2vec的词向量。如果是商品，可以构造类似的商品向量吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>步骤1</p><p>    把用户的商品点击行为按时间串起来大序列，序列中的元素即商品。</p><p>步骤2</p><p>    指定一个时间窗口（比如天），把大序列切分为多个子序列，得到多个用户的多个子序列</p><p>步骤3</p><p>    选模型训练可得到商品的embedding向量。</p><p>这应该是生成的方式之一吧，其他的可以补充。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>嗯嗯，感觉这个方法可行。谢谢！</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>我想对商品进行分类，比如针对牛仔裤这个品类进行细分。按照这三个步骤做完后，得到的向量聚类，聚类的效果并不好，降维后从图上看不出明显的类别。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 3</span>
+                        <span>这个就不好确定原因了，执行过程太多因素影响。我知道这个思路，不过效果我没有实验过，没有结论。</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 4</span>
+                        <span>我实际做了一下羽绒服的数据，取的有购买行为的用户的点击数据，这样可以降低噪音；聚类成两类，明显一类男款一类女款；聚成更多类时看不出明显类特征</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>可以借鉴一下airbnb的推荐系统算法，他们用的就是房源embedding。</p><p><a href="https://zhuanlan.zhihu.com/p/57234648" target="_blank">链接在这里</a></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

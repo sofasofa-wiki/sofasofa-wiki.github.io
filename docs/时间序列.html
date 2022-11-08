@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000324">ARIMA模型中的三个参数(p, d, q)都是什么意思?</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000346">怎么判断一个时间序列是平稳的？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000750">如何判断时间序列的周期性？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1007442">请问我的训练值输出和预测值输出为什么一直不变</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1000324"><a href="#article-1000324">Question 1000324: ARIMA模型中的三个参数(p, d, q)都是什么意思?</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">时间序列</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>这三个数分别有什么具体的含义？能举例说明就更好了！谢谢！</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>ARIMA(p,d,q)模型中</p><p>p是自回归(AR)的项数，用来获取自变量</p><p>d是差分(I)的系数，为了使时间序列平稳</p><p>q是移动平均(MA)的项数，为了使其光滑</p><p><br/></p><p>举个例子，假如原来的时间序列是</p><p>T <span class="Apple-tab-span" style="white-space:pre"> </span>Y</p><p>1<span class="Apple-tab-span" style="white-space:pre"> </span>20</p><p>2 <span class="Apple-tab-span" style="white-space:pre"> </span>22</p><p>3 <span class="Apple-tab-span" style="white-space:pre"> </span>25</p><p>4 <span class="Apple-tab-span" style="white-space:pre"> </span>30</p><p>5 <span class="Apple-tab-span" style="white-space:pre"> </span>40</p><p>6<span class="Apple-tab-span" style="white-space:pre"> </span>50</p><p>7 <span class="Apple-tab-span" style="white-space:pre"> </span>65</p><p>8 <span class="Apple-tab-span" style="white-space:pre"> </span>88</p><p>9 <span class="Apple-tab-span" style="white-space:pre"> </span>112</p><p>10<span class="Apple-tab-span" style="white-space:pre"> </span>120</p><p>11 <span class="Apple-tab-span" style="white-space:pre"> </span>115</p><p>12 <span class="Apple-tab-span" style="white-space:pre"> </span>？</p><p><br/></p><p>我们先添加自回归项。自回归的意思就是用之前的p个数值当作自变量。若p=2，</p><p>T <span class="Apple-tab-span" style="white-space:pre"> </span>Y<span class="Apple-tab-span" style="white-space:pre"> </span>X_1<span class="Apple-tab-span" style="white-space:pre"> </span>X_2</p><p>1<span class="Apple-tab-span" style="white-space:pre"> </span>20<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>2 <span class="Apple-tab-span" style="white-space:pre"> </span>22<span class="Apple-tab-span" style="white-space:pre"> </span>20<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span></p><p>3 <span class="Apple-tab-span" style="white-space:pre"> </span>25<span class="Apple-tab-span" style="white-space:pre"> </span>22<span class="Apple-tab-span" style="white-space:pre"> </span>20</p><p>4 <span class="Apple-tab-span" style="white-space:pre"> </span>30<span class="Apple-tab-span" style="white-space:pre"> </span>25<span class="Apple-tab-span" style="white-space:pre"> </span>22</p><p>5 <span class="Apple-tab-span" style="white-space:pre"> </span>40<span class="Apple-tab-span" style="white-space:pre"> </span>30<span class="Apple-tab-span" style="white-space:pre"> </span>25</p><p>6<span class="Apple-tab-span" style="white-space:pre"> </span>50<span class="Apple-tab-span" style="white-space:pre"> </span>40<span class="Apple-tab-span" style="white-space:pre"> </span>30</p><p>7 <span class="Apple-tab-span" style="white-space:pre"> </span>65<span class="Apple-tab-span" style="white-space:pre"> </span>50<span class="Apple-tab-span" style="white-space:pre"> </span>40</p><p>8 <span class="Apple-tab-span" style="white-space:pre"> </span>88<span class="Apple-tab-span" style="white-space:pre"> </span>65<span class="Apple-tab-span" style="white-space:pre"> </span>50</p><p>9 <span class="Apple-tab-span" style="white-space:pre"> </span>112<span class="Apple-tab-span" style="white-space:pre"> </span>88<span class="Apple-tab-span" style="white-space:pre"> </span>65</p><p>10<span class="Apple-tab-span" style="white-space:pre"> </span>120<span class="Apple-tab-span" style="white-space:pre"> </span>112<span class="Apple-tab-span" style="white-space:pre"> </span>88</p><p>11 <span class="Apple-tab-span" style="white-space:pre"> </span>115<span class="Apple-tab-span" style="white-space:pre"> </span>120<span class="Apple-tab-span" style="white-space:pre"> </span>112</p><p>12 <span class="Apple-tab-span" style="white-space:pre"> </span>？<span class="Apple-tab-span" style="white-space:pre"> </span>115<span class="Apple-tab-span" style="white-space:pre"> </span>120</p><p><br/></p><p>下面我们对自变量和应变量做差分。差分的意思就是后一行减前一行。d=1的意思，我们做一次差分。</p><p>T <span class="Apple-tab-span" style="white-space:pre"> </span>Y<span class="Apple-tab-span" style="white-space:pre"> </span>X_1<span class="Apple-tab-span" style="white-space:pre"> </span>X_2</p><p>1<span class="Apple-tab-span" style="white-space:pre"> </span>20*<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>2 <span class="Apple-tab-span" style="white-space:pre"> </span>2<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span></p><p>3 <span class="Apple-tab-span" style="white-space:pre"> </span>3<span class="Apple-tab-span" style="white-space:pre"> </span>2<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>4 <span class="Apple-tab-span" style="white-space:pre"> </span>5<span class="Apple-tab-span" style="white-space:pre"> </span>3<span class="Apple-tab-span" style="white-space:pre"> </span>2</p><p>5 <span class="Apple-tab-span" style="white-space:pre"> </span>10<span class="Apple-tab-span" style="white-space:pre"> </span>5<span class="Apple-tab-span" style="white-space:pre"> </span>3</p><p>6<span class="Apple-tab-span" style="white-space:pre"> </span>10<span class="Apple-tab-span" style="white-space:pre"> </span>10<span class="Apple-tab-span" style="white-space:pre"> </span>5</p><p>7 <span class="Apple-tab-span" style="white-space:pre"> </span>15<span class="Apple-tab-span" style="white-space:pre"> </span>10<span class="Apple-tab-span" style="white-space:pre"> </span>10</p><p>8 <span class="Apple-tab-span" style="white-space:pre"> </span>23<span class="Apple-tab-span" style="white-space:pre"> </span>15<span class="Apple-tab-span" style="white-space:pre"> </span>10</p><p>9 <span class="Apple-tab-span" style="white-space:pre"> </span>24<span class="Apple-tab-span" style="white-space:pre"> </span>23<span class="Apple-tab-span" style="white-space:pre"> </span>15</p><p>10<span class="Apple-tab-span" style="white-space:pre"> </span>8<span class="Apple-tab-span" style="white-space:pre"> </span>24<span class="Apple-tab-span" style="white-space:pre"> </span>23</p><p>11 <span class="Apple-tab-span" style="white-space:pre"> </span>-5<span class="Apple-tab-span" style="white-space:pre"> </span>8<span class="Apple-tab-span" style="white-space:pre"> </span>24</p><p>12 <span class="Apple-tab-span" style="white-space:pre"> </span>？<span class="Apple-tab-span" style="white-space:pre"> </span>-5<span class="Apple-tab-span" style="white-space:pre"> </span>8</p><p>d=2的意思就是再上面的基础上再做一次差分。</p><p>T <span class="Apple-tab-span" style="white-space:pre"> </span>Y<span class="Apple-tab-span" style="white-space:pre"> </span>X_1<span class="Apple-tab-span" style="white-space:pre"> </span>X_2</p><p>1<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>2 <span class="Apple-tab-span" style="white-space:pre"> </span>2*<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span></p><p>3 <span class="Apple-tab-span" style="white-space:pre"> </span>1<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>4 <span class="Apple-tab-span" style="white-space:pre"> </span>2<span class="Apple-tab-span" style="white-space:pre"> </span>1<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>5 <span class="Apple-tab-span" style="white-space:pre"> </span>5<span class="Apple-tab-span" style="white-space:pre"> </span>2<span class="Apple-tab-span" style="white-space:pre"> </span>1</p><p>6<span class="Apple-tab-span" style="white-space:pre"> </span>0<span class="Apple-tab-span" style="white-space:pre"> </span>5<span class="Apple-tab-span" style="white-space:pre"> </span>2</p><p>7 <span class="Apple-tab-span" style="white-space:pre"> </span>5<span class="Apple-tab-span" style="white-space:pre"> </span>0<span class="Apple-tab-span" style="white-space:pre"> </span>5</p><p>8 <span class="Apple-tab-span" style="white-space:pre"> </span>8<span class="Apple-tab-span" style="white-space:pre"> </span>5<span class="Apple-tab-span" style="white-space:pre"> </span>0</p><p>9 <span class="Apple-tab-span" style="white-space:pre"> </span>1<span class="Apple-tab-span" style="white-space:pre"> </span>8<span class="Apple-tab-span" style="white-space:pre"> </span>5</p><p>10<span class="Apple-tab-span" style="white-space:pre"> </span>-16<span class="Apple-tab-span" style="white-space:pre"> </span>1<span class="Apple-tab-span" style="white-space:pre"> </span>8</p><p>11 <span class="Apple-tab-span" style="white-space:pre"> </span>-13<span class="Apple-tab-span" style="white-space:pre"> </span>-16<span class="Apple-tab-span" style="white-space:pre"> </span>1</p><p>12 <span class="Apple-tab-span" style="white-space:pre"> </span>？<span class="Apple-tab-span" style="white-space:pre"> </span>-13<span class="Apple-tab-span" style="white-space:pre"> </span>-16</p><p><br/></p><p>下面再对每一列取移动平均数。q是移动平均的项数，意思每一行被自身和自身之前的q-1行的平均数取代。例如q=2，</p><p>T <span class="Apple-tab-span" style="white-space:pre"> </span>Y<span class="Apple-tab-span" style="white-space:pre"> </span>X_1<span class="Apple-tab-span" style="white-space:pre"> </span>X_2</p><p>1<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>2 <span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span></p><p>3 <span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>4 <span class="Apple-tab-span" style="white-space:pre"> </span>1.5<span class="Apple-tab-span" style="white-space:pre"> </span>\<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>5 <span class="Apple-tab-span" style="white-space:pre"> </span>3.5<span class="Apple-tab-span" style="white-space:pre"> </span>1.5<span class="Apple-tab-span" style="white-space:pre"> </span>\</p><p>6<span class="Apple-tab-span" style="white-space:pre"> </span>2.5<span class="Apple-tab-span" style="white-space:pre"> </span>3.5<span class="Apple-tab-span" style="white-space:pre"> </span>1.5</p><p>7 <span class="Apple-tab-span" style="white-space:pre"> </span>2.5<span class="Apple-tab-span" style="white-space:pre"> </span>2.5<span class="Apple-tab-span" style="white-space:pre"> </span>3.5</p><p>8 <span class="Apple-tab-span" style="white-space:pre"> </span>6.5<span class="Apple-tab-span" style="white-space:pre"> </span>2.5<span class="Apple-tab-span" style="white-space:pre"> </span>2.5</p><p>9 <span class="Apple-tab-span" style="white-space:pre"> </span>4.5<span class="Apple-tab-span" style="white-space:pre"> </span>6.5<span class="Apple-tab-span" style="white-space:pre"> </span>2.5</p><p>10<span class="Apple-tab-span" style="white-space:pre"> </span>-7.5    <span class="Apple-tab-span" style="white-space:pre"> </span>4.5<span class="Apple-tab-span" style="white-space:pre"> </span>6.5</p><p>11 <span class="Apple-tab-span" style="white-space:pre"> </span>-14.5<span class="Apple-tab-span" style="white-space:pre"> </span>-7.5    <span class="Apple-tab-span" style="white-space:pre"> </span>4.5</p><p>12 <span class="Apple-tab-span" style="white-space:pre"> </span>？<span class="Apple-tab-span" style="white-space:pre"> </span>-14.5<span class="Apple-tab-span" style="white-space:pre"> </span>-7.5</p><p><br/></p><p>下面就是提取出有数据的6到11行，把X_1, X_2当成自变量，Y当成应变量，用线性回归来预测第12行。最后记得把预测出来的结果用逆差分还原回去。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>d是怎么选的？怎么判断进行了d次差分之后已经平稳了呢？</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>请问在做差分的过程中，会损失信息吗</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000346"><a href="#article-1000346">Question 1000346: 怎么判断一个时间序列是平稳的？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">时间序列</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我看了<a href="http://sofasofa.io/forum_main_post.php?postid=1000324" target="_blank">ARIMA模型中的三个参数(p, d, q)都是什么意思</a> 这个问题。d的选择和时间序列是否平稳相关。那怎么判断时间序列是否平稳呢？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>Unit Root Test</p><p>FYI<a href="http://sofasofa.io/forum_main_post.php?postid=1000413" target="_blank">http://sofasofa.io/forum_main_post.php?postid=1000413</a></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>ADF检验</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000750"><a href="#article-1000750">Question 1000750: 如何判断时间序列的周期性？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">时间序列</span>
+            
+            <p><div class="col-md-11 col-xs-10">如何判断时间序列的周期性？</div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>判断周期性可以可视化数据来进行观察,当遇到此类问题毫无突破时,EDA或许可以给你办法.</p><p><img data-filename="unk (1).jpg" src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAMAAAACDyzWAAAAn1BMVEX///8fd7Tx8fEAAAApfrhfnso4h72JuNj3+vyVvtzJ3u50q9HU5fK10+fk7/ZDjcBMk8SkyOF+sdW+1+rt9PlUl8aszeRqpc7c6vSdxN7l5eUcHBwRERGvr6/x9/rIyMg5OTnW1tZycnJXV1fPz8+MjIynp6dGRkZgYGC+vr5OTk7d3d0lJSWXl5cuLi59fX2FhYVpaWm3t7ft7e2enp6+J+5rAAAw1UlEQVR42uzBgQAAAACAoP2pF6kCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmz952EgmiKAzXgcEaJyNqosZqtGlppUHAA77/s1lqTCoak77CXbv/74ZKcbOStQKhAQAAAAAAAABgYKLDkEQjS/QYFmELdJ6PwCGJ3hlRnLRAyOnvW1wg5PT3LS4Qcvr7FhcIOf19iwuEnP6+xQVCTn/f4gIhp79vcYGQK7Xv5aryV8aEm62vupgudnM/7Vw6tDNf3TLAwdpT388PV28DdIu7pp7N0sViW9frebqp5s2d3zDAodpf32mAH2ofTePrtMp02EyDMTdrBjhUvzDApXfmZZoOIV11q/ebHQMcqP0PMMzmxjyuTTLdmMVTem188/GWxD+n8UXhAwyrrftpgA8+YYBlOjwIJQww7W9nzPevYD4BS3dmDwsYYNpfTC/8CNHn2P4XPEDXtv62jWFVtTHGkD+G6XgMo8JE9ACX/k13798teRCtz8SeCx5gwYHQd4AnKvoWFwgMEAWY2EsVfYsLhH7G9q+KvsUFAgNEAcb2QEXf4gKBAaIAY3uqom9xgcAAUYCR/aeib3GB0HeAFyr6FhcIDBAFGNk/KvoWFwgMEAXIB3hyXm7f4gKh7wDPPo/XdlRu3+ICoR9rjz+PR9aGYvt+Zc9Od9MGojAMz8cQsy9m3wnBhCVQ2qb3f20dp2oGI1UaR5Q5I77nj6388ZHOKxwGcQMRA6QAAK2LAHvB7lvcQOQGiP7ejhgg3Vv5IsA60Ax23+IGItcAiwyQfLkOcBTsvsUNRLkDrAL1YPctbiBysgDAAMmbHgMkn3qwp89doBrsvsUNRM4BLhgg+dKDPX1uAN1g9y1uIHLSBNBkgORHNsAB0Ah23+IGIucARwyQfGnCnr3EwCDYfYsbiJyMGCD5NII9exkDcbD7FjcQMUCSrw579lIBxsHuW9xA5BxgwwZYCXbf4gai3AGWGCDdjw1wYAMsBbtvcQORc4AxAyRfqgyQfKrCfvXtAJ1g9y1uIHIOsGIDrAW7b3EDUe4AawyQ7scGWGKA5Ec2wCEwDHbf4gYiJ10AHRvgU7D7FjcQ5Q7wiQHS/dgAawyQXDHAUAYiJw0AQxtgX9i+94epnivjPNXbN3N9X+vZLn108qynGwYYvAbsx14faAsL8Od5/hHgZjZPDtOyUttvy+VxbZ4/Xa9e9YkB3kJZ5fBYARofAU436SNf1UovTZV6ok6zslIvRwZ4A5ViXXmSDbANtGQG+KYTc/f8on7NzLVs/rQ7mJu9flepcqFQmDDAr3pCrDywAfbFB7jUE3O3XqvvR2XMTmr7w1xXeqVSZ20wQHf1RTbAsfJmAPvebQFRkAHyEzCfKobqQh8VlcMjBvjvVzD/B/yCRva0o+03wOLnezcSGyC/hNx46e1sgCXlTYwiIhtgUViAhSTRm2SSHsOsro5hdjyGuVGALb8BRpID3OvU7s9B9IoH0bcRo5UNsKNyeKgA+VOc9d8CjPwG2Pqsrggg2H2LG0iwGFE2wJryJkabAT6a8XWAQ+XNGL/ZuXMdx2EgiqJ1AVHUYq22tqT//zNnBmPapieZrIogLzro8AF1gl5kbfABsEn13uYGGe4LYKUL0L0AAvykem9zgwzXUsUAnajV4qB5A3ykem9zgwxnC+ABPwVgVn0BhE3UaumDugZgTPXe5gYZrgVbAMcCMKt8BLCBWdRq6aunugdUnKne29wgw3loIoCTqOVZg7oH1NxSvbe5QYbz4cf+191FLc8a1I0FYCZ5eJgEWNV0qd7b3CDDxQBHfYBdADgVgDm0whgBrEQtjw/qzgIwk2KApzbAmbv86Ub9+9tU721ukOFWOOPXhIta6xfAIdV7mxtkuB5uhgBuDAHgVgDmUAywAxrRasU79ueQ2hWAOdRDFwN8iFIxwMmxp3pvc4MMd5gC2DqWN8Al1XubG2S4GOAdGEWrnvbgeg6ZC8AsOuAeAzxFq57291cAeHClem9zgwznYIhfD3QTlWKAA1tPm+q9zQ0ynDGAK74AzKoY4A50olXPFQDuuBWf6r3NDTKcg11eLaoADy7PWgBmlYMlBngXlWKAC84XgDkUA7yUAS4t/Rvgmuq9zQ0y3AaXvGqBQbRyb4AXRwGYRRu0McBdtHIsF0cA2NKnem9zgww3RwA9sIhWjmXBhQ/IFYBZNIO3A3Df3wAvjlTvbW6Q4f4FeIlKMUDPuhSAORQDXIFWtHLsA9sboEv13uYGGW6C1Q7AYWAOAPcCMIdigD3gRauN4f4C6AvALJqgNwSwYwoPRw9sqd7b3CDD1RHAg4pV/r8CMI1Bhqvh+ASo+ZbyjeFGHZ7MujOnem9zgwwXA3SqAGfuEcAp1XubG2S4GtwnwIlDFAoAT6rwYExXAOZQ9QVww4lCAeD4CbBO9d7mBhkuBrjhtAES/i18KwBzqILNCsCJ7lEAZlYMcKZnE4UCwB9o/gLcT6pU721ukOEqmD8BrsyiUADYFICZRQRwwusCFHg8/yQ4FoA5BEzyqqZlEp0CwPEFkFTvbW6Q4b4BXtSiVU0nFePzF+JHAZhDQP1JYFcFeJOK8wnwB5pE721u0C/27oSpbSQIw3C/eHTfl49gTICEpJZctZv//9sWWzYjYmfBROyMjL4qgkOlcId+PEJjuW1v/McAFQlKTMUlXn/szkesBfj9fHL+Y3vj052I/HMzWX4+GwG+EKDqAqxsAlhbCfDH8uLudvJR5OPy4sNf577Ip2+Xl19uRoB9AAwNA2zwdr8O2grwr88icnPv7fzj+r5v5WpyKfL35N0I8PisHgOEGMRMWoAVqt7ehNRKgD/Or+TD8lbuJh9E5P21/FyKiD+5kHX8s7OzdyPA56YG6AKcgy9m0p6A5HhbgMpSgHI9mUx+iFxO3rVL4Y8vcp/lV1nn++Q+I8CXAfQhNQ2wQtU7gHMrAd6e317dLn/uAxxXwBcC9DsAV1CLobTicrz2piK2EuD5vbR7dPuH4PF3wOOTPgJYgw+pGEp7zK1Qq81N11KAyxbgeBLSG8BVB6Ao0wBFEVsN8PP5xd3F8nqzDXM1bsP8KUAFdYdjexw0E0Wqt2BSyQitBHh2fb8R/d3fbkRfjRvRf5I5CtIOx3bdMZNtJRmVQG0twAEWZG/mKKUBzs0C1JdibW7mVAPtt3UF2ZsYpZh3/tauOwaiATpMffBHgG8hMe4jgK4FAGcUG4ANyUD7bV1B9ibGdYm7AHMqMRENMCKoQUaAbyGPAYZkbduNxIfVdi7MBqDDdKD9tq4gexOuAYbWAPS3swHTFmAx0H5bV5C9CckyDbAib9cdA9EAA6IUNQJ8E9kArB4DLMRENMCC2QbgjMVA+21dQfYmJMs1wIRGZsYArrYApzjzFmAw0H5bV5C9qdYAky7AiEDMpIZdFTGuSDQCPP1U5I0GOMWxAGBFPgJ8K6nIHaZdgCWemIgGGOJuAJZ4A+23dQXZm+QRwMIKgDFuOAJ8I0loOqe9C2biUYqZpLD9rEIyWVcy0H5bV5C9sQug2q2E1QjwjSTB6Wy3BUSbDxPRAH1IyDfVDLTf1hVkb6Y4EYFdAAWKEeAbyWOAHuXmMGwm8x1ARUAzAnwTKXBKvC7AAkeMRAN08dYAF8wG2m/rCrI3vwL0ZGoeYEaEs6ltoP22riB7U+B4GuDaYkIjZvIwFj/HGQG+kRTMOrsdEYENALdvlzMdAZ5+FnsAK3Ixki7AfG0voRlov60ryN4EzAKiLsCQTIxEA4xwmY0A30QCog7AGQsbAJaoNcCKfKD9tq4gexMQdXY7HIqWgZGEu3v2gGgE+CYSEBXWAQxagCHZQPttXUH2xqMscDTAqcxRYiQa3AIoR4BvIh7lVANsSCQ1D7DYAXQH2m/rCrI3hwAiRqIBJoAnEo8ATz8eZWe3I6eSGmQa+fK/RwOsdgDVQPttXUH2xsPbAoybeANwBb4yMaBIn/WGLcD5CPD0U+Jt+15SSkYoPlSYGFCkAcYtwHQEePrZAMzkPg7RBqBAiYn5MBpgCgQiNQy039YVZG9KvLAFmOOIuwaocA0DrB8A+sPst3UF/S71SgwnItjudrjk7XheBZgYUKSf+/WBxebTapj9tq6g38RXrhhORBC3AMHVAE3Mh9EApQUoUA+z39YVtJ9Z7ovBLbd9gDWo9i0aXICF/P/RAFX7CIB0mP22rqC9tK2OwRdj0QDV9szTV6QbgMrIfBgN0G0BqhHgqwVikRBqMZsZi3a7rQJqSEUymBkC6EibDKYbgPEw+21dQfuBcNP0VAxFA2y32woghlokpzEzH0Y/J5i3AN0R4KsFKpEE5mI2DkUKIhIA4RZg4BkG2ECyARgOs9/WFbQXHxKRKcRiNg5Fu99bAlPwRTw1NzMfRgN0WoDZCPC14kMhUkAoZuNQrMBf34Bge1JkaDxH8QBwBlV7bcQw+21dQXupYSESQCUmo98WS3IUHsgrAay8YwBGULVXhw2z39YVdAhgIOJBIuaiAdYiLg0z0GPa+k1GfARAD8J1cSPA10oKnkgJUzEUDVA2AKGkQWkK/calegbA2a8Ap8Pst3UFHQJYikRQiNk0JAKp1FCQ7QBOeweoSI4AGOwAFsPst3UFHQIYicxgIaaiASpSiVEJagew//Ecz1nr9YG/gLjdpBxmv60raC9zcEQcCMRcNMC5VOQh4O4A5tJrfCiOADhtAUYEw+y3dQXtJd4B9MRscipRxJt3J9IAq74BrniGJX3uXbUASzwr+/3uZjn5diki388nn+5E5J+byfLz2cAANiK5HQBd4nXzaw2w9/Ec9XEAQ5jbC/Cf88+Xd3/fw/u4vPjw17kv8unb5eWXm4EBzEQyKMVkNMB1r4Hs8YyCXs/6jwAYQ9q+ZM9GgNfvpc35x/V938rV5FLk78m7AQEMwRVxIRKzyQjFJRSHQtQDwLhvgDGURwCcWw3wy/XN8ttXkbvJBxF5fy0/lyLiTy6GBVCJKJiJ2WSEm4+cRFzIdwBU7wCjIwCmkLZfsBHgZHL94evkp1xu1rybG/nxRe6z/Crr+GdnZ++GA9ARs2nxVeJuPtNsAfQNMHzOQ00veCuo29NiKwG+b4/DhwF+n9zHeoAVID7mAbpbgJCK0wFI7/9f5wiAopTfPiFjI8DzzyLy9Xz/EDygFbACVjWQi6logA1JDb5ED0rqvgEm0BwDMAzXf07tBHjTroCDPgmpgDQFMjEbl3gNMEaJeA8AffD7BpgfA1DEYoCXkx93t/fu1tswVwPdhkmAebvzayoaoMO0IhMJ9HESaukzBWTPAOjtvUrJRoBy8W3y5atsN6KvBrkRnQBxbA/AzVpT6DMFSKXPLMA9HmBFbiXA4RW0lykQhoASs1EbgIVHJJJogKpngAGo54wJ2ZvXNsx+W1fQQYBVhWsBwLnMKBwWIiFEnS/3GW8EaFcKIEnIjI9GaAEGivjRbrFL3DdA/KMBxrjD7Ld1BR0EWBQ4xkcjKFKJiFC+SA1lZ3emz5TAagRoTxbAYsHM+GiEFqBLIyK+Bpj1DDAC0qcBBntvnznMfltX0EGAQUC07r/RQCol4LUavc5FMn1mBsyfVPorwHQE+FoJAM+jVMzFaKCWElpvbgdgIn3GAeKjAdYwzH5bV9BBgGWJ5xKL0UAtHlC37HYAm1cAGB4NcAX+IPttXUEHAUYRQUYoJuNvAWZbJkHn1Zp9pgGqowH6sBpkvw8XVEWJ2BIPcGYUOZUYim6xB9FWQNF507g/TurVsk0OJE8DXOyvzycE0DN++XG3FoXjMG1IxGR88CWAaSsmWHXet/WP4+kVLUM9vabu36kiPSGAUxqxJR4uTUPiGAa42gKcHzga/nEiStnGxaV4CcD5CQGMjT/zr1OSk+VUDoWYTA2+LFDyGgBnRBpgTvD0vy/2L5U4IYAr4087dAE6uC7hjIWYTA0HL7vrZUSqo7+vwnn6OzonDlAUsViSiNkaYPyClaZ/gH6Qyi/x+gDY0Mg2MHsJwIzwlAA2xoehdQBGKEVa4onJpPDUxckvT06uz3VKyjcPMDI+iaVTigdQe8YBKtlLXxMqM9zOZA6ipwFO9whXpwQwsGcfZkYA4B+/0gwIoIvSR/oC53iADckpAUyMvwatA7AAMP6YmKN+O6rvj6NQ2vn0JQCd0wIYG7/+uPvrjgLVQ6NfC6DTB0D8h5/8M15g5JDskzwlgL7xq++6AF1w20YbzP5jsscRqUD9sAX7jBcYNQcAFqcEUFzj74rQeWhn4EpiHKAre+lpRKqvL0INyUKy4wHOWJwUQMf4TPDO0SaHvIdGvw7A/1yvfPnvJPXuzIP44dvFuMcDjAhOCmBkfB5k52fdQNPbKNL+AWbyu0xJ/tsfs90eI+HDgvoveee52KoNBWB9jST2FmB3uHvv8f7P1sYCRA2W7ZQ2uVQ/2iS+FrL1cXQ2B+TjANYEuwLw+Ord0GbftQJlCw9fZXg7UXrXlVDf8HGWA9yQjcyqHO5olrlzAJs344cpaXpQr54gcQVA77rUDdeRRk8AdpNRfYLwYQAD6l0BeHgzfpiSJoHk1VcUUzwMYIu6Ed2Tw9xQTUdPCOZFAOYy2A2AoTXLMvXq3piCuIZa5G8UQN+NUfgNp45B1jVA5AIrkD8AoHtfRrEbAAc/TPnqzyd6BjCAQBgQrzL8xob3xtB+IpLR/ZcBgZNkksPtL2VFaa/Q+wHQOjbl6xvDBXEEkU2Jf43h14q9N4b0E6HBotYBtcvu0qQPA1ihRAT7AfCcE5S/fm96oUkrONqym62hOmwCYHjdvyz9KqAmtvRA76zZgvhhADuUCMDsBsBzWUjD6xeHaNIOqi37oDkCin8MoE8y53ildkc5VLVHgHIO5ZLmYQAzlEjgsBsAz6HP6PXbQj4DmEFmy262HfGZD1P69Vx/yM0nmVMg92Y6Krqp8MqF1G6nVmnileUpiHcD4NCL59Wboj1z10Bjqx62HdmZj4ryHwKYXwec1EdRkxBZAEsKp3srugcAdAK6hWY/AJZkouT1s2Ikhxhie+xsO7rzvAHFiwH0V+Rm+ERSDmFNMBVeuSB8T3X7WFjxEhXQ7QfAmkBIePXqJEmeQmp9X9uO43nDevR9tCohHivgqoDGq1RGJFPdi4vyJkQvAFALDdF+AKxQObJ89eokSZ7D4d8olIogeAZbzlpknB4E0KcaRPhEUoUakxwVATgXc03wMIApWkgI9gNgiswo+1d/UDkYA7kQanMAa0iE0BD6supuAxh72tocPfgn47muqCCc7NvgRQDKEEj2A2AICUnw6k9JBWNbP23fGiEBJULAOHFbewSW1yWyPj+Bt81uQzGcu2AmtCKShwHMkTmg9gOgKJFER5R41XGGrzo66bThUKDFAec9S6F/EECfbqqQ1N4Wayl6mGJ0MskzgL0w5oZltgQwBcodAZgAzauXx4UQ/lu1yi1I0cxM1QjUTQBvJ4fmRTC8UtJ7K9ty5CBENelkU1eoUOvwIQANxODsqTB85wGsgPzVsvCWbWq2b41QAvncVFVQXDeZ+3sBrCCwXCUoX0bLeHtp0oJmcmt3qBjyhwA8QYZEzjqGvOsAxiBtpPM1h4HZV7rt0EAcwEhQKEHeBPB2+UwERLaRNKVfj5PklieLsdU4MtoAYr9rYHlSHCkhdPX87zqAIZQbRGA3A3B7e0giyZRLBm2Q4DFa7+3TUqN5plLSUfgh0qT2R4uxveEbihKahwAUENBD7m6Ldx1AUZBYG+81Rw7/WrsQUEQlmmhEPAHzKIA9xyWSgbWvY+SqNM2scjt+vWDsLPbjxkiPBzENzBqAkoTaWccFzTsPYEL1+vWZOfLfqpMKIaCe9eMr6STpowAujaOWLEYPnpFV5UaOH6xlYDEhmD5uCkDkaU7JGoCKwIkLSfrOA3jK3kCfLAdghdp6aipaCAa0DJiC+HEAg6Vr2kCYotdztWowIkWP57eBQcO1f83B40EsidYycDQFR2cQgXnnAXykX3m4vN+2bsmSbQ1gimwAPYrWjGIyaYM29JWd+QsiJbnNoSjWVWgNqWgox/s7R1q+BwANYAvqunjt3cE6gJJu0kcNvPNumIfkTrKUHBvXg2/fGiGmOADlGGTrqUeFLoPMA6D3BavdlTQZ7WqgOAYy0aHGN6e299JU+nQCWaHOZIZLxWEdwAJoJmmconcCYHNfspLr7L49gJuXKrsJQ6AfJs4hHcRZLiF6CYBOaCuOFWphwx0DGyKurMiz/43RlsfxQ4LKaM+oZiuKQ30NwNiuxc6zEwDvK8c1C5VlcwC3b43QoYSGYJg4oB2ACEsgWXAW3FYO3UID6ojk0ksdQiQ0mmCYr0LZN2SUTsxLqvMkHSQr8jNZey5SCRwmQ61D7QTA+54B1fBvJS3E6O2fHeHM6hKqFGm90NkARICMaD2qntdDbSGqUAHBpZMwBY7IiN5qf5a7htJSO4JTyPxgSyKWZ3AH/Zpt0wJm4i4ieSsA/vL0mRDhrx8+ff6+EOL9r58+/Cz0LOhlDfMjTxR/q3pws112ttukHmLrK6nQ49FV0KXoewGsUCtExuiEyGI2ZxOgz2gHNGMKS2yKdpOZ3FoRNaxUoKPWAFRA2FBMq30jAH78wU9/AfjrB99+/MknQoifvv7itw8/e2RBBY24OdQiir85gNtXyQfng5B8dAkfRzEL+QnClwIYDBWtimp8Vy0PAz2qgCxFD0k0B6SdIUeO8Do/So9cSLLkOoDSnRI9x7cB4Hs/fPvJZ39d9ishPn36WPz29L4QP34Y+hf0eKdA7UkE2qwePNoY8oRIHCEUkIsYebJuRwuFJL0TwA615pmWaLLBixVKkvGlVMowhyGP1YClzsAolV2+QUuCXoLWrrUv6kG7uFFL9jYA/OYz8ReA3z79LoT44Evx809CiO+fvrDq3Xvvvfe+f0F3puEZlvWb2wN4gJPYcCgq0aAtbAHJ6EJpKN0OzrG6s1pJ0Y1W6SDRMpBm5CLPzzJWko+9kCOSUdcOqGd5rppYEi+s3dLAyj5R2lmGd78JAL/6KXwG8KsnIcTzD998fV7Eb+cXf356Hp4F3Z0F1SCRYoPh396CbFsAOxGqyibV90SjEzmid7zdBrChXMtQVUA6iMceOM4Vak0Mp0HQWeokubO1B1Yl+eKxSRKKNQATaO0sw4XeAoDvf/iFWAXQKwEfbzwXoZaHwvYABtuewSWN+6ElG9FIiP5mRp5CL4AxxVq+fADkls5QklDM23i0RDBez97jFpmawMnnE4TZOHssqyHvD70GYA3KXnsQrG8BwI+e7Fgcwd4FPd4rVRGxedrWMgCXIrekXBM7UTj+UpKdWXSp4KGUUehUkdsA2s2vgNB6kTJ0KGnE3Ebo0SP8lm1N7DC3Px2Qzg+b2DsxvQZgAMl0U+XwJlLy3/v0r/HJN5++9/TRi42QDnXPVm7Ut8B/eb3lGeyOqZ4qBOMeS5K6pzIMW545AG91qDQw5fNafnoCUaNmz2EO0JSzQvRoRKencidPTOFKEgrkpO3k6wAGdjq7pjcB4Hl88kI3zP0RMAOnFa13ewDrTVMCIZ+ETe4ETQ3h/BBr0Brt0PAC6H7PQVsaw2eiD5C7zI4KUJONp6hGq0dROS9lRjtl3xvscitKWOtJGEE0SdCG8m0B+OyI/u795+P3fkf0/QGIxqWRbD4q1DIssnG5U0AwzRxQoAepPq/Qd2j4g5Vu8yWF5Tg7T9hydHnyDdCPNp4VW4oknBc/d6iIfrJnMzi/FNDDYR3Ayk5n3/x2APxnobh7WuNG9G5/NgewX+719rnW044dAfU3/2dAYiBUVPd9QeNUBe2YbR+cJ26d2ZMC9XjS2pu3BqkKyBzHAcHkD6qBYHx4aIpc6zOSDbbT+X+7AfB2z/ZYctwycTWMFzbQvWtR6iXP3qpQ045lQO3yTIcfwCi6G1UrDufZU9A1NRws70ZymD4I0Xhty2V4LAAK406enuNk/BTY+Vq69Uz/CmI7nZWruwFQQH6Lvza03ppEm01CZNV6rsnNEqkc8hekOWSo6f6JgWokP42tWuaqhm7eoW7zrcJXTKiVRO5fSqhmXa1i+3PUmLlgbcnG6QzYk1wTS5oVADtIJ69Vz3E/AGrSG/ypcABFbmKJKJJrAGr/BTKIH4mxuJ8mvA5APPzxCMaap5rUAejNF3Kbn/fpWWKNl4mYtYyezloDoSZd5fr8aaMhllJYs0iSSzLklWaH8dTrYz8A3rBvE1Q4aD6GhywR0xcqyTzPr18CWPovENyxgLha2NcxevqQBjAjiRDbG7Agvm5lgbleqK6QB4e2cn8mnu7v9d6vAIdxmTW10MQDrx16DcDTZDIWxPsB8IZ9q6hGeZLySAndQQNIz+PDF4GYW6ZOC9HdAr1COdvGne3jkkJA0lm+Wuuevlmku9z8iMq94D6La+es6CBfXSiEVqbZO68fmskUVCsANuAsIslhPwDe2PSSZtSoMh7oHxRLdLb63QNmHcBbpo6E+vIq3eLAzC5lqwGnnU3dmpU8l1jkcKbEB+DB8+v8o1A5LhleqKnBrJ48yNHyP405CxmlKInQ67WewkxOzP0AmBDdIVEOSOsLvXdoWrOqYBogXsmEvx2Ydofc9fBxCtHlzCHMtbORy1BEJPZQ6zmWZN5v4HYKeQrNzGRwvfIhXBfnxWjjNBTW3WqzuIMVAHPaSR/IkTvojrXYdK+RbEAkEDzgBjbrvc1SoJoD6Ev+PESzveuW/ckW+XQNJIsbS0I7i2vPMyFsUDghKGn8Osptv2khzVqlAbCeB0c7nPBWWudwUgRCUaNX+DaT/E3ROwLQHVXe57SAUZA8UnC+fr43QH3p1HBEePSDGnW5+4ssnSO0i0RHDf10iTKfR4HGKpH6KoAuvnErWmPczKGK3J24jmw9LMoli0kKZCoUCdqbYdFQ7gjACnWPO1dy0NA/4IVb8OXkmJoD6NvdYv5yO3W6NbIe/0R6ua16kepdQHDt7gqozzdhQeM/Il5avlyAXp+WYBSw9uIKZDyk0nhV8gq1IwAzyntqNgpiQD2S57cuXiMK9FIDXcbiXE/dtBrvgcEC6NAX/rZGGVe7c9nZtITqmn1xXkCFKoj9d+hLeyipKwAeIRol9ZitKmPr+KLwVlBEJDsCMEbfk63ScgTKB5IMlpvnzMJwBqAn6mAs8iX9IIwHORU4uWzFSKiJRiJJL90lCppr8uS8o5kPwJjC0yrm5ghYxyljjAIHw32XB+mQGegD0KYk7AjAA9KfiDDFL4Di/q+9Xskbchl5bj+PHp9bDK3FLLHZdopqIGpy6fQWdBLXE/Aya72Hw7XtPCPdUDoAvdkIj7cTy1g/tBuIB5H690OopqTw+ix6jjsC0IAPJBezL9DoB0rS1pK9XE6yC2x54oIdQ84T1KYmGO99Cadh7RRWANKOIpPoMsZdQ3jtNjlzGqM1sdeg90cL/c4jta5dD+qES5VwGWOFdz9ash0BGIK5w0sYAAp58+uuQndUrNKtSROCmQzytKQPsK326ABJNmg/hoGuAyAtqMgB+Fn9m5tGXlUUwJxP96XHcp25x2sT5DqAOZyGbMu/29kRmtLrsyiIdwSgc+17y4YjIIDwdvmII2l1v7B1aQsA135NgPAsRrMSyAfbpgGLS4yW5GdjGYy1fTray7KJiNJf7peDB8CWzO8G9I9rrfRVMvoZ/m6BR0hKr24tSfcEoCa+I1WhAjIwNyeTZn6WLvbVDB0mHOALgesgb13pmcirbLSYIiAebO1n0jPkyV4ooo/Rl7ZVRn89tqKt8SNJvafAy1soJSS3iq7J54x5ALR3IJg9AVjS3FHZk4HN6/COExA4ybeS35La5rYLAJ3tksrI4QzpaEo7udYD2SAPeiLREoiWztqoBsIL+zvszFX1Y4xwQept4vnyPq6N9Jstrnf/LODjK48wsIcH1SxOWb+CGAPmLGaM8fmtQeZO91uGQpq/9+ZXZJdFogHKXV3TOLfXCHaBpBo0oogkBSNqguGzSA53Fty7GIkEDl5X1Ja9/P19TzKg9ZXwpMhdAdgT3VFYkYK0B7L2VO92tC2Js36XHFSoeUekluzyhGkpXRhG0Q1zOH0hBEU0zJ5RJvTP6KpBYyhp3MQ3RosFSvsAjNGLL2vDUUJyGatsfU6zmGJXANYEd9TMGSjPu2ogHqRBkK+cVrFV24pl4MD9QXFcBzCmCCXaBWl6okGKun+fIoc19xxTpCS2Z5MVrT1HpzvcGAlEAwTkvrswbJVTKbYdir9DHfsANCAy2l0B6Bjx5bWHoM4nXMpATwOodNnqqKVzp1aFWuDumF8ooAdkzPzJDTXBAKkzCCrUcBIquhAoRvM0B9c+LRS3RwSds3Y8GUENHJxOvOmoobkbQAHmSL8rAB0j3tckwZmvBvrRuwblsttgQO2gbihXYkkByTqABiLAwRqRzMx0S1dNfaQfL6ehGoMoMVpY+GeG9j1VJsoLoCbuoXLZgJuOy7YnKaB8TrOAelcAZrT3SEc99GPsGPa2pUvhtEhf72idiEvRnnSOpU8VSsBMsHaomcli39nSdajRyaOQpwHGM3uWwjufQxsPgi0BjC9pXEIyxKO3HhXSk3e77sffFYAxxT36oSIehJulLpQchKZZhE1TpIuwLZ6GqF114RqAGoB8erGhPM2naChySZpRjjZxRD2s72glq4Hw3pwBM9xBtRfAhALQLnVo0xFfCIDcC2BBo6h2BWCKvqd9ZT4U5gdAPBQpXO5zM4Ru85bsSujKVReuesFLZj5hSZ6iD8i/iwcIY5fOHmbheDhPzUvju42FKLJv9gIYATUY6ybafGS5mA/jBdDWT+0KwBxul8y5A7AHorGjbjW/e50vpCmIZxIvCqomnKc+WKbWIiUKl5iSg8iRf5fQrZSyFinaTeO8dRa7hMQfX1xH7OTTFDmUroz83x2hD0CbwBPvCsAQwjvDdLb9e0Fvj7wzAuHixO6J3P6XZB2AmotbA+E6gAnUI/UxWoQwQr4462cOOvtLBAerqD3aarDCZzXHUIqa2ppQ//rwApicv9xdASgk+c1EBWfTFgRo65AYCTXhJDA711B1dscqhf6bVQxmHcAAMkXlIhCSmn61X8aFRmZgdBAVqAdDtpkXQANHe7GCRvzrQ/oADKjB7AtAB4FfOFqRI4nBjLJPEYkMZKGS6GRn+ntL6ZoCeZrcF5UzX9cIF0fIEyIX9tK01FeK9SrUatXwER7U1RovgELL3HoWPffqpgD2/nbJYl8AlmQ3k4FdE10wmmbU/o6ok8YOdbKY5YCea1eBO8sDEmf8rkjfDG0P8vGQL5FEq0kSly70FuUk1oMRsxTwqckHK+zPEP7rQ/sArNDonQHYE91ZL5JDDuc3JAQDkjWFOcRdJOnRizrcDqRxGQ8tlf1ftg6gaauRKwutArpV5fTSJEiPExwKskfTlrn9NfWeVOX/CsAOKHcGYEByp486hGcmI1SoaUbYhp8qRu5aUBePmRtYOUH+N/cO5Nf6phsw1kXcrOaQeR+t8OBRaYB7DBUdi39/FD4AG0DtDMAOdW+UDipKEQNwunyKV89Acg31LLqbu5kyir87uMGsrceJ3wBIV3PIfIlkrXrY9SHvOKaVEf/BKCHxWeT0OwPwemFmPYHkAsIoEUogmRLI89E01VQDt0QO4mYWbkmoXYjvGoANpXMqHgFzxUNebmeTytsAiqgS/8lofQAegHpnAJprqnUoL3dYo87RrnRiIm+dFMojO8+yj9uYnaJpnGi9FtyP0S4TPgOupclr0i0BfCtD+QA0QLQzAK+GDTL04nTQBPccaM3aNZzfOqO97gQ/IN1zPGPQV+qOt3SKFO8KgCFQ7Q3AhXv1GNtvYgFbC1T3aDH5mq/H5ajEFNfbkhsQNqRspWm5nqZj6d1olG8IwN4HoJDQ7A1AxfEyLtCb1Z7girscHCZdPTPdhQ5Ix9p6V+YU6bpzrJpH+YbQKLR4KyOB2uukifcG4GWGYw3ITkS0K98N8YufXx5KDk7tvAqgkPMwx6o4GJ9CvksAay+ABeR7A/C812URuvMoKKHVdMvvxvPxbzbhatwuQ369zluTOk+NJLhSnthQbid13hCAgRfAFsK9ARhTiNSJNgNGRJKVjJKAl+pdKVK01DPGrgNYELsAYcHxShJjh9pu098ZABVS7A3AZwwCiOZppSJXK6InAvniLLcKmV/YPQfkehaiM80VzZXyxHrDGt3oDQEYQeCV1bsDUEBegroIzeVrh/WLN0rjDtPZc0fletKlQ/NQXXGHbVoieaQQb2UcvQDWlPsDsCDDybaSztvs7mVDgT5d5vqn6HUv881WuGCN9I1G94YArLwABqj9AahoKcZSjJNnYxvoX67ZVItqp3UAa4KbPTAk3ZanZvaGAOy8AGYE+wOwBgI1FZxrX0C+3mSLI5LrYeiA5Gbyu6ZHic1GTi/eysi8AIo03B+ARyCOUOfWaIE/FB69+GTJl3k2McXqcvqbnUgL5KZtWox4M6PhRrhzfwA2IM91lrnWVUnnC4VXG93l5XUAO5S55e5pgVjscsQQ/c8APEB/jlO0AOT+NIMtRox2Hp+VfCxv7373PIZdjvSdAfCXT54+/O7TZy5+/fDp8/eFEO9//fThZ+HDCwqhE6KlREaekoMNm/MckANq63TebK2RQCn2Od4dAL/+49Mvvv7gPSF+/eDbjz/5RAjx09df/PbhZ48vSGljwxyVCLPU+w+3ETsGQgfgks6E4I6A6T5H/s4A+Dzef/r2r8t+JcSnTx+L357eF+LHD8OXLagBdVtYim0G5FcbIxkoye5orLbPYd4pAL9/+lR8+/S7EOKDL8XPP53/8oVF5b333nv/kQWFUubivxqaND1cATAEONw03HOxz3GC47sD4HefCPHV0/NPn3wmvvn6vIjfzq/8/PQ8HlmQMeI/GwVA2qE8fbt9o3tDwduNR/guAfjrB++vAOgk4Fszy6fRA2RXANS3LYyD3KsK+Cd757LTMAwF0dukUApUUWgLxTz20FUl/v/bCI2EfB1ZSjfVeDxnjxjpTNXmOrbNCirg6e1oNv0Kxp0L/bPbPA7rwZnTWbsZNxOTzmDGL4C+kAKO/bOm/fAPIQUUcFzydQV0U+a11UsxBTy9f4UQpmMY4Ml48pZ+75dg3f2q9XJbSgHbMz/jIPo7mNnxPIgupIDDD8DMiaMPvI+4c+hKKWCBgZJ9HZkrIp6ANklem/GFTBbfcIGSbSKZAq4We6uYvQp4FYaJf+bVr23VzyB/F+ix+IYL5BiGLZkF3U+rme3LjsU3XKD0qCPaNwpmwu4bLlDyY7tbrEwQ+4YLlO6xVgG5fcMFSsd9KiC3b7hAybSl7iW3AXbfcIEcvQrI7hsukGOjArL7hgs0uR7m1QSxb7hAk5txexPEvuECOe5UQHbfcIE8SxWQ3DdcIE/Hu7dyJuy+4QJ5blRAct9wgSZb4zYmiH3DBfKsVEBy33CBPOu6Nx8NsPuGC+R5VgHJfcMF8tyrgOS+4QJ5DrSnnM6F3TdcIM9OBST3DRcoYakCcvuGC5TQVX0CwgC7b7hACQc9g3D7hgskYvh9wwUSMfy+4QKJGH7fcIFEDL9vuEAiht83XCARw+8bLpCI4fcNF0jE8PuGCyRi+H3DBRIx/L7hAokYft9wgUQMv2+4QCKG3zdcIBHD77tpQyPqAe521NCKugiGRch8UEIzn8v/Uv/0lz1zWW4UBqLoLXrDN6ilQhIP8zAYx/z/t80EZYbs4u5FQhKd/amLxS0Jtb8q9Gz9++BTQWXm0B8W+jG5gDk0F/C3vZbfE/oFlLdSb+bQHxaayWQymUwmk8lkMj+cmclXkLF6smMAUN4t1QZSnaJGNbWlpQJwY7pMAnE3eIVUHUYm99561GT74nmzjAtxbw5TEgrcqVWEAmG05M3bEp/975COttBbAxGXLTQXLoA7D5X3kFHxEhXqg/tqepmA1rpm5FLSeOumjlqp+nJz5PDOuixVda2fN4tLF9KPTKYkFHALt5CHYrKxmZz5v8Tnxt8B8AoxhgYU1AGBKkgoroOPCjV6JLhF0p9m7AHUtUIldwSmx30h86yZqMgcpkA1HLiFIrTu8cqxxGem3B+5HyFmooCBHun9SOgjfFSo11jbZX4NbgD4KNkBOaCxnUIlh8PabFoxWQEHKg5ToPoW3EIRSuvFeodjic+MoSptLmJGD3QEaRfQLSV8VKhEsZlpQ0Um7WcCIhGtUKjk3lnrFQDsLCpg6WvIzKSul1QecaghapuVhmOJz4y6gHc2qgIa20BZQJ+eVFHAjrvQ2e0rCliOS6EpYMVGXcAawFh/jwJqj+A7T1Bt8o4ScpV7ADNrjmCeAazXzz6CU/8egOIIbmmH5aElrQCi/x5HsPISkvqHgpz0M7cIf/F9kKt12gE1lxCbCvjJl5DUPwNAcQl5hL9wDIpQ36cdsCB3/kvIPoa5WyPsnx2MMYX6ou+jQq1onTrq9qlIkI1henaTs1GqFk1DbWN2SzCGOcxy5MYYc5iCUKTmy0PhaJ5mqr7JGEY1iKadLY06R6MooEZ1C13nf3PhAAFFZOJbKVUHeqV/s0Qz4WROtDMcpiA0FVAeCmxXWhzelvjsg+hMJpPJZDKZTCbzhz04EAAAAAAA8n9tBFVVVVVVVVVVVVVVVVVVpT04EAAAAAAQ5G+9wQQVAACsAD2yqWEAVDflAAAAAElFTkSuQmCC" style="width: 449.5px; height: 337.125px;"/><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>感觉大多数时间时序图完全够了。</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>可以用频域的方法</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1007442"><a href="#article-1007442">Question 1007442: 请问我的训练值输出和预测值输出为什么一直不变</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">时间序列</span>
+            
+                <span class="badge badge-pill badge-success">TensorFlow</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>import numpy as np
+</p><p>import pandas as pd
+</p><p>import  tensorflow as tf
+</p><p>from sklearn import metrics
+</p><p>from sklearn.metrics import accuracy_score, roc_auc_score, precision_score
+</p><p>from keras.utils import to_categorical
+</p><p>fileName1='data1.csv'
+</p><p>fileName2='data2.csv'
+</p><p>batchSize=1
+</p><p>ratio = 0.8
+</p><p>def readFile(fileName):
+</p><p>    data = pd.read_csv(fileName)
+</p><p>    allData = np.array(data.loc[:2000, :])
+</p><p>
+</p><p>    xData=np.array(allData)
+</p><p>    return  xData
+</p><p>
+</p><p># 打乱数据并生成batch数据集
+</p><p>def batch_data(data):
+</p><p>    # 打乱顺序
+</p><p>    data_size = data.shape[0]   # 数据集个数
+</p><p>    arr = np.arange(data_size)  # 生成0到data_size个数
+</p><p>    np.random.shuffle(arr)      # 随机打乱arr数组
+</p><p>    data = data[arr]            # 将data以arr索引重新组合
+</p><p>    # label = label[arr]
+</p><p>    # 将label以arr索引重新组合
+</p><p>    num = np.int(data.shape[0] * ratio)
+</p><p>    return data
+</p><p>def Transpose(stringArray):
+</p><p>    list=[]
+</p><p>    for i in range(stringArray.shape[0]):
+</p><p>        list.append(np.empty(shape=(2*len(stringArray[0][0]))))
+</p><p>    for t in range(stringArray.shape[0]):
+</p><p>     index = 0
+</p><p>     for i in range(len(stringArray[t][0])):
+</p><p>         list[t][index]=ord(stringArray[t][0][i])
+</p><p>         index=index+1
+</p><p>     for j in range(len(stringArray[t][1])):
+</p><p>        list[t][index] = ord(stringArray[t][1][j])
+</p><p>        index=index+1
+</p><p>    strarray=np.array(list)
+</p><p>    return strarray
+</p><p>
+</p><p>def one_hotEncoder(totaldata,len):
+</p><p> list1 = []
+</p><p> for i in range(totaldata.shape[0]):
+</p><p>        list1.append(np.zeros(shape=(60,91)))
+</p><p> for t in range(totaldata.shape[0]):
+</p><p>    data = totaldata[t][0]+totaldata[t][1]
+</p><p>    alphabet = 'abcdefghijklmnopqrstuvwxyz0123456789.,/?:;|]}[{=+-_)(*&amp;^%$#@!`~ZXCVBNM&lt;&gt;ASDFGHJKLPOIUYTREWQ'
+</p><p>    char_to_int = dict((c, i) for i, c in enumerate(alphabet))
+</p><p>    integer_encoded = [char_to_int[char] for char in data]
+</p><p>    onehot_encoded = list()
+</p><p>    for value in integer_encoded:
+</p><p>        letter = [0 for _ in range(len(alphabet))]
+</p><p>        letter[value] = 1
+</p><p>        onehot_encoded.append(letter)
+</p><p>    # print('np.array(onehot_encoded).shape')#行数就是字符数
+</p><p>    list1.append(np.array(onehot_encoded))
+</p><p> onehot_array=np.array(list1)
+</p><p>
+</p><p> return onehot_array
+</p><p>def dataSplit(transarray,stringarray):
+</p><p>    num = np.int(stringarray.shape[0] * ratio)
+</p><p>    x_train = transarray[:num,:,]
+</p><p>    y_train = stringarray[:num,2:]
+</p><p>    x_test = transarray[num:,:,]
+</p><p>    y_test = stringarray[num:,2:]
+</p><p>    return  x_train,x_test,y_train,y_test
+</p><p>
+</p><p>def active(n):
+</p><p>    if n&gt;0.5:
+</p><p>        return 1
+</p><p>    else:
+</p><p>        return 0
+</p><p>
+</p><p>roundT =1
+</p><p>learnRateT = 0.001
+</p><p>unitCount = 128
+</p><p>rowCount = 660
+</p><p>element_size = 28
+</p><p>time_steps = 28
+</p><p>num_classes =2
+</p><p>batch_size = 200
+</p><p>hidden_layer_size = 128
+</p><p>def builNetWork():
+</p><p>    # time_steps =cellCounts
+</p><p>    x = tf.placeholder(shape=[1,60,91], dtype=tf.float32)
+</p><p>    yTrain = tf.placeholder(shape=[1],dtype=tf.float32)
+</p><p>    rnn_cell = tf.contrib.rnn.GRUCell(hidden_layer_size)#hiden_layer_size就是最终输出的output的列数
+</p><p>    outputs, finalState = tf.nn.dynamic_rnn(cell=rnn_cell,inputs=x,dtype=tf.float32,time_major=False)#output的size为(batchsize,hiddenlayersize)
+</p><p>    outputs=tf.nn.dropout(outputs,0.01)
+</p><p>    w2 = tf.Variable(tf.constant(0.1,shape=[hidden_layer_size,1]), dtype=tf.float32)
+</p><p>    b2 = tf.Variable(tf.constant(0.1,shape=[1]), dtype=tf.float32)
+</p><p>    y = tf.sigmoid(tf.reduce_sum(tf.matmul(outputs[-1], w2) )+ b2)
+</p><p>    loss = tf.square(y - yTrain)
+</p><p>    train = tf.train.AdagradOptimizer(learnRateT).minimize(loss)
+</p><p>    return x, y,  train, time_steps, yTrain,loss,outputs, finalState
+</p><p>
+</p><p>
+</p><p>
+</p><p>#读取数据
+</p><p>data1=readFile(fileName1)
+</p><p>data2=readFile(fileName2)
+</p><p>#拼接数据
+</p><p>totaldata=np.vstack((data1,data2))
+</p><p># #打乱数据
+</p><p>randomdata=batch_data(totaldata)
+</p><p>transarray=one_hotEncoder(randomdata,len)
+</p><p># #数字化
+</p><p># transarray=Transpose(randomdata)
+</p><p>#切分数据
+</p><p>x_train,x_test,y_train,y_test=dataSplit(transarray,randomdata)
+</p><p>#定义网络
+</p><p>x, y,  train, time_steps,  yTrain,loss,outputs, finalState=builNetWork()
+</p><p>#运行会话
+</p><p>sess = tf.Session()
+</p><p>sess.run(tf.global_variables_initializer())
+</p><p>for i in range(roundT):
+</p><p>    total_loss = 0.0
+</p><p>    for j in range(y_train.shape[0]):
+</p><p>        x_trains = np.reshape(x_train[j], (1, 60, 91))
+</p><p>        result = sess.run([loss,y],
+</p><p>                          feed_dict={x: x_trains, yTrain: y_train[j]})
+</p><p>
+</p><p>        if j % 20 == 1:
+</p><p>            print("i: %d, loss: %s,y:%s,ytrain:%d\n"
+</p><p>                  % (i, result[0],result[1],y_train[j]))
+</p><p>
+</p><p>#测试数据
+</p><p>result = np.empty(shape=(y_test.shape[0],1), dtype=np.int)
+</p><p>for i in range(y_test.shape[0]):
+</p><p>
+</p><p>    x_trains = np.reshape(x_test[i], (1, 60,91))
+</p><p>    # print(x_trains)
+</p><p>    results = sess.run([y], feed_dict={x:x_trains})
+</p><p>    print(results)
+</p><p>    result[i][0] = results[0]
+</p><p>
+</p><p>y1=[]
+</p><p>for i in range(result.shape[0]):
+</p><p>    y1.append(result[i][0])
+</p><p>y2=[]
+</p><p>for i in range(y_test.shape[0]):
+</p><p>    y2.append(y_test[i][0])
+</p><p>y_pred=np.array(y1)
+</p><p>y_true=np.array(y2)
+</p><p>print("accurcy")
+</p><p>print(accuracy_score(y_true, y_pred))
+</p><p>print("F1")
+</p><p>print(metrics.f1_score(y_true, y_pred, average='weighted'))
+</p><p>print("ROC")
+</p><p>print(roc_auc_score(y_true, y_pred))
+</p><p>print("召回率rec")
+</p><p>print(metrics.recall_score(y_true, y_pred, average='macro'))
+</p><p>print("pre准确率")
+</p><p>print(precision_score(y_true, y_pred, average='weighted'))</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>试着调一下学习率吧</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>调了也不行</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

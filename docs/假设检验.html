@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000218">假设检验中的p值是什么意思？为什么越小越好？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000461">多重检验中的FDR(false discovery rate, 错误发现率)是什么？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000470">z test和t test什么区别？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000697">配对T检验和两样本T检验是一回事么？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000774">假设检验的效力是什么？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000929">如何从假设检验的角度去理解AB testing</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001119">单侧T检验p值与双侧T检验p值的关系</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001189">F检验的使用场景</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001492">t检验，需要测试集验证集吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1002320">多重比较校正</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1002451">T检验的effect size是什么？有什么含义吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003634">spss的检验分了t，卡方，非参数，分类的依据和目的是啥</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003678">问卷在信度效度通过如何评价结果呢</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003847">95%置信区间是不是每一次观测都不同呢</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003929">怎么提高一个假设检验的效力(power)？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004216">协方差分析在什么情况下使用</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005915">显著水平和p值是什么关系？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1006208">T检验需要提前假设吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1007374">单因素方差分析(one-way anova)在使用时需要有什么前提假设条件吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1022275">双盲实验是什么意思？</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1000218"><a href="#article-1000218">Question 1000218: 假设检验中的p值是什么意思？为什么越小越好？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我们做假设检验的时候，往往是希望p value越小越好。这个p value到底是什么意思呢？为什么越小越好？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>并没有好坏之分，p值越小说明我们越有信心拒绝零假设。</p><p>p值本身是一个概率：在零假设下，<span style="font-weight: bold;">观测值或者有甚于观测值</span>发生的概率。这个概率越小，我们越趋近拒绝零假设。</p><p>这里比较特殊的是所谓的“有甚于”。比如说我们有一个正态分布，我们的零假设是这个分布的期望是0，对立假设是期望不等于0。我们从这个分布里随机取了100个数作为样本，这一百个数的均值是1。那p值就是在这个正态分布期望为0的前提下，这个样本的均值等于正负1，或者大于1，或者小于-1的概率。<span style="font-weight: bold;">有甚于</span>在这里就是大于1或者小于-1的意思。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>p值是原假设为真的前提下出现观察样本以及更极端情况的概率。</p><p>所以p值的范围是0到1。</p><p>p值越小，我们越倾向于拒绝原假设。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000461"><a href="#article-1000461">Question 1000461: 多重检验中的FDR(false discovery rate, 错误发现率)是什么？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>多重检验中的一概念叫做FDR，False Discovery Rate，中文叫做错误发现率，这个具体是什么，怎么计算的？和多重检验什么关系？看了百度百科和维基百科都没看懂...</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>假如我们进行了一个有$m$个零假设的多重假设检验，我们拒绝了其中的$R$个假设，在这$R$个假设中又有$T_1$个假设是被我们错误地拒绝了，也就是说有$T_1$个Type I error。FDR的定义如下
+</p><p>$$FDR=\mathbb{E}\left(\frac{T_1}{\max\{R,1\}}\right).$$
+</p><p>如果$FDR&lt;\alpha$，我们就说这个多重检验的FDR被控制在了$\alpha$水平。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>错误发现率，字面上，就是错误拒绝的比例。</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>FDR就是错误发现率，在二元分类中，比如你的算法“发现”了10个阳性，实际上其中3个你搞错了，FDR=0.3</p><p>$$FDR=\frac{FP}{TP+FP}=1-Precision=1-PPV$$</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000470"><a href="#article-1000470">Question 1000470: z test和t test什么区别？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>它们都是用来判断总体均值是否等于某个数，它们有什么区别？哪个时候用z test哪个时候用t test？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">两者都是利用样本来检验总体均值是否等于$\mu_0$的检验方法.</span></p><p><span style="font-size: 14px;">教科书上一般是这么说的：</span></p><p><span style="font-size: 14px;">1. 如果样本数小于30，用T test；</span></p><p><span style="font-size: 14px;">2. 如果总体方差未知，用T test；</span></p><p><span style="font-size: 14px;">3. 否则用Z test。</span></p><p><span style="font-size: 1rem;"><br/></span></p><p><span style="font-size: 14px;">但是（对，转折了），我觉得不用管那么多，尽管用T test。因为：</span></p><p><span style="font-size: 14px;">1. 当样本数增大，T test的结果会很快收敛到Z test的结果</span></p><p><span style="font-size: 14px;">2. 在实际情况中，真正的总体方差几乎都是未知的</span></p><p><span style="font-size: 14px;">所以我只用T test。</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>不能同意更多！</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p><img data-filename="Untitled picture.png" src="data:image/png;base64,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+vXre/bsuW3btvbt2/MqEPXq1Ys2dYmJibwMkkHbs5MnT/7000+8LFv9xMP30BwlfaxRCs1RcuScQer48ePvvvtudHQ0bb95FRSr1q1bu7m57dy5k5dB7EIqV67cvHnzRowYwatAMuLj41u2bJmUlES/JLxKVtLS0i5dunTt2rXffvvts88+mzt3boUKFTw8PLy9vStXrsxnclJXr16V+GlubNqzZ09KSgo7rZRclCpV6sUXX6xTp85LL73Eq1yScwapkJCQNWvWXL58mZehuLFGqd9///3ll1/mVS5v3759AQEBP//882uvvcarQEoo5n7xxRcjR47kZcmj2Pfdd9/98MMPx44d+/PPP1lliRIlaGv34MEDViReXl4NGzZs1qxZmzZtnOyzt2jRotWrVx85coSm6VkTVg+FhKIqS6sNGjT48MMPP/74Y1bvapwzSDVu3LhWrVpfffUVL0Nxu3379rPPPkvptnfv3rzK5S1btmzMmDF3797lZZCY+vXrN2nSRPqHqly7du2bb77R6XRnzpypUqVK8+bNKSfVrl27evXqHh4e7Aqe5MaNG1evXv3ll19OnjyZmJhIOf7evXv0U6nRaAYPHiz3zPHtt98GBwefP3++T58+Xbp08fX1pefOb4PClJaWdvjw4U2bNq1ater111+PjIzs2LEjv811UJByPhUrVpw3bx4vgDS88cYbISEhvAAZGfSL4+7uzgsgPQEBAf379+cFSUpNTR01ahT9jD/zzDPDhg3bu3cvv8EODx8+jIuL69WrF929cuXK4eHh9+/f57fJzZw5c+hZqFQqJzhphXxRRg8MDKQ3gn7ZeJXLcMKLFj9+/PjmzZu0Z8bLIA30Y339+nVeAJA8y8v9StDnn3/u7e0dExMza9asP/74Y8mSJZT8+G12KFmyZJcuXfR6fUpKyuDBg6dPn169enV24j15+fLLL8eOHTt58uSNGze+/vrrvBaKXI0aNTZs2DB16tTg4OBFixbxWtfghEGK4iH9lfiPoAvCOwJQIJKSkho3bjxp0qQJEyb8/vvvtN16+umn+W355+npSZns0qVL7dq1GzhwYLdu3a5du8Zvkzx6KYYPH06vQHh4OK+CYjVlyhT6WI4cOfLo0aO8ygU4YZACAHBWK1eurF+/Pu2WHDt2bPr06QV1tauqVasuW7Zs69atFE1o+Xv27OE3SNvkyZMbNWo0a9YsXgYJ+OKLL/z9/emt4WUXgCAFACAPWq22f//+I0aMOHjwYL169XhtwenQoQPlMwpSrVq1Wr16Na+VqoSEhO3bt0+aNImXQTJCQkLYAaS87OwQpAAAZCA0NJT28mfMmLFgwQJeVQiee+65uLg4ymp9+/b9+uuvea0ksUFRnTp14mWQjHbt2tWqVYveIF52dghSAABS99lnn0VERMyfP3/8+PG8qjAtXLgwKCho8ODB69at41XSc+DAgVatWvECSAy9NewSWK4AQQoAQNLWrl0bEhLy+eefF+UJD2fPnk1BqlevXkajkVdJzPnz599++21eAImht+bcuXO84OwQpAAApOv06dMDBw4cNmzYxIkTeVVRWbZsWatWrQYNGnT//n1eJRm0Snfv3nX6y93IF701Dx48uHPnDi87NQQpAADpGjVq1DvvvLNkyRJeLlqUpa5evcpO+wkANiFIAQBI1Ny5c/ft21eMl6mpVq3anDlzKE5t376dVwGANQQpAAApunnz5tSpU8eNG+fv78+rikO/fv06dOgwbdo0XgYAawhSAJCXVL3KTaVP5SUbEiPcuuvTxcn0aJV5Gp7ErFmzMjIyQkNDebn40DocOXJkzZo1vAwAFhCkCkaeGw9hhun84BfjdDfzdEGy2Jg9iSdZvcJ6aiAf7r1iMzao3XkJHPTvv/8uWLBg7NixFStW5FXFp1GjRt27d1+4cCEvA4AFBKli4Dc5I2OyHy8AFAxjhJtKn6hXuYmsIjXdxKmieTVFXlW0Ud+dV5tam4Q5IxLZdA67B0LrlJl4R0rwfqGKGI2HWwSFaKt70U1cZoOW+NB68w3mh7OSeUciLJbQks13ZPcSHovLtcFMhlasWPHPP/8MGzaMl4sbrcmRI0f279/PywBg4kpBStgARBjNP9CWDSc2fu5z2CxZ93HYboDJtg2gn3sPtUER5s+WY3kviy0B31rwh442L8Rcbylz08gXRQ9qsTGjBZu2kQLT5jPnJWduHSPieZVAWFUz0zpTZUQ0m198KXK4LxQ5g8YvOThDkFBb48E/tPSm+yfp01i1j9rDnKUMav/kILHa6KPxsi+I0HvtpfExivfKSNMFGjRB+nTfkAyjVhGoS8sIsdo/ED6TSboUcV7rhzCoY73F+jS9MtQv2yfc8o4ZCVpFqL/ps2e+Y4iv+LWKU7EnJi7f5jdFrqKjo3v16uXuLpWmvRYtWtSpU4fWipcBwMTVWqRC/aO8xV/eNN0pf4sIYvPn3uZmKS+2tgHuvWJpg6EIT8jS5SEGLJ8EcdY0fZJ/ZrIxaOJM6xmYuRUxoZBk3jQKT0TYNFptzGgGD01ttmBhW2VQj8h8UtmXbLl1NCpCw8QZxcDkf4oWyOq1FATNjQehavbKxKoVtu8LxUJr5FHGr79OGRMbn0qfscjQQN2iXuxz5xdi1BrUy/nnKTyB4ojAdyBFotgf7PiAe6pjxRAjcg/oqmRTtqTro0KV+kVqT7HkG5IQbtCsMH2Sw4NZvXtTlVKRlJwlw9GHmT5a7I4KvwDL6/oHqgJ4vXG5WqGLMn2hhOWHRpoyotxdunTp4MGDKpWKl6WhW7dumzZt4gUAMHG1IKU0/fK6q4MoGcQbc/25z75Zylsu24CsaEtgMD+Ee69FlGzMWwJtEF9PYVt1Kjnn7YO7ekNGLN9MmgmV5t5DcVuVKfuS03+INQTqBvJtKr0C4gSt/eSMzOTnG6BlE0x4AFt6TveF4qD05h88SjzePgoDBZTkiwZFbe/Mz4ent/nDoKzhzacU7t61FYaLybyUN94gKrSz5ig5OUbhY/HI3jVySV22mFo6/W2m89TkJNor8BLnENmeTZ527dpFz6h9+/a8LA3t2rX7448/EhISeBkARK4WpHwstzTirnAuP/c2Nkv2yn0bwAhbAouHEDdm9hFSoEHtITxAru1kvGPOS5PL5o5k2dZm2eCZOh/9bR47lPt9wemwCMUbRIV21sLAvj6mls6c07nS1PTLZdujkKuDBw82a9asbNmyvCwN9erVq1KlCq0bLwOACIPNC5q924AnI7R7ZWSk6JTCoCgb47RYhOIdczQbr84fFqFMnY8JVi1SIEUWWd8U04Voa9mimZpsTtUWTVDpyacsG6hylhgfKnQf2xNZvL0DaU8l85GFzG0foZkzXPjQmfoQbcnvvo2s/Pjjjw0aNOAFKaG1onXjBQAQuVqQshiNIWxRfLw9c/m5t7FZypNd2wAm65ZA2JjljzhgRRy9FG+dpIzxYeLOun1HoWfZ1ppegfT4OINWiIPWI4it5XBfKB6hUbyF0rhCYxDHIbn3CtbGaEaYjzbwC1XqB/I3NCySj5xLXK6J0QYL2Uj4OoTuZp8moetZnLAWk8zzV2JErl17rN3UNDgvMcKfPpP9c/koWTN9qCjN59Cs6zfQaqC60FRm+wBAuXn8+PHZs2ffeustXrbCO1WtZR9lLxxr4sirkZjHKVRorVznSrQAdnK1IGUe/8SGRtEWJbef++ybJZZ++LDcVH2kzZ/4vLcBjNWWID16hGljlifhVzLzOPbdoeYRSxbMEc0YkVfXHtvWLmc/u8IrIE6ITBFTGN5us2svl/tC0dPWThZ7fMXGSD5Izi9EPFiPVSfp0zIbk8J9ktkYI+HwCBaX3dVROmWYv1gbH0AZPQtxTDe72S3KO41mYGMHfQPoY+BhcUCrQDgAwocPYxIewjx2MA/CeEGF2NTq5uZxMVjoQMy6qyBw7xWbuTJu/gqjHXsvcvD777/T3+rVq7OiNXo3LQntxJnJuPB5e3tfunSJFwCA4d9HJ/Lw4UN6Xnq9npfNhB4upTbc1M0lthtxmRsM86gL4RdKG26qF7szOPPMgboEdiweGyzC50nTBfLb6SZxEIlWmIP3rwnTQn+f6dEtRpmIswnEh2bHwVkt2YJlb13mraz3TXwKVs+I/drSXDkv2bzAQJ3OvHoWj6I1is9LrLdcf4HN+2bTuHHj4cOH8wJkZERGRrq7u/NCAbB6c/OU9U2EbFq2bNm/f39eKEKJicJ+yYULF3g5R+JXMvuPg8VPkPitt6qxnN9i4IH445P5o2H+LcoqNjaWbr59+zYvF5979+7RmmzYsIGXQWIMBmH/XQoflSLgckEqy+jUnOVvswR5QpDKAkFK4oorSO3evZt+wdLSsgUka2IMyinxCMnJ9GEQpk2JKvN9t9yPypymLGUjmWXatWsXPWp6ejovFx8EKYlzqSCFweYAABLy6NEj+luyZElWtE3sRjefPCU3ics1CvOJxBR+kxO05rFxJvZf1YetFVtDAGAQpACcgzB6xv5BQrhOkWSVKVOG/t6/f58VbUjVq4SDBtLsebvTk5PECx6Y8cGObHSjWG/fSe1FbK3YGgIA40pBSjjGzd7hrvndLAEAFAh2leLr16+zYjbp+iCNITzB+gwUFkfzZT/sLmtvHfsZZOPW04Tr/AgHBNh1gZ0bN27QXylcRxlAOtAiBQAgIR4eHvT3ypUrrJiFcbqHJkabkLU10eJoPutOOndvn8wzVtggXgVBGGAXGm/H6RJSU1Pd3d3z6HYEcDEIUgCuTjh9q3hOV/NE/ggnoWXdQ7mfzCnHkxsJp34V21HME/bJ79mSrFaPn/dfkI++rSLw4osvVqhQ4ZdffuFlS+z8LPxcFfYRLqRocb3OROE1oILVS50YH6rQBtjRAE9rVaNGDV6QN2c48Vie3xdhBtNb7+C3G+yAIGUln7/jXH4+zQXw7XVsJQuE8NAmcv8NgkLgYIe4/YOdCwptVCwuyG15qXJJqFOnzvHjx3nBgnDSOOsrDIqyr7xwJc1QP7bhdFdvSNDyc4O5ufkpEsRT7FqerCvzRGI2zwdm4cSJE7Vr23spK5AUDIssPAhSBSA/mwEZD72iFGW6XIxwLokkP2SpAkc5W6WPprDNWA5bESI4k3ku1uluEdHsqo605RPvm8gv8ihGbfNdMreLFs0wOe+eZrYwiUxtGFmYF6VaYe44ytxPsMjcbFHp+u4emhgFbd2F9aeH6K7XsyVMN1rvGyQv7y7WW4R14bHMa8tXz3qBgsyXyPKpZa7J9HheJZz633z1btZmYzrLrjQ0bNiQnU0qC2FbaIONoZ/CjxLJPCmrmbk1i3XqMZnXWRfntD2W9M6dO0ePHqV142WnIXyizEyffOuPKFVkfuCj9ebPufjB5vW292+FhUcYhS+RyPJLZ67M/Lpl/xaL+GeeFay/Dibm1ROIt4q/2AYFZWhxOZb3svh6mr/a4kPb/vGBPCBIkcztzfKLvEqU7XfZ+tPMP3mp4ofS9InP69MsLNPGN9D8rRC/dXrzp9zmN9OC+HDCOtAE+3ozFhEn+6NYroPVt4v9dqTbXgfhijGZ51D2VAeHm68lAgXIoInzFltK0ix6ZOgt49cJzhBPU27OUqHq5GChkm35DJooxSJxHrFdIdJbPGtaQjg/oT+91xbNMFr6TFp8Tix4BqgsgoVxt8VVZUwsFpWmOhWa9dT5wtVjTJlbaO+hH2XabPOTG/FR0jGa2BriArLsJceEJnUV6/MI61kWKLxECvOZk075s5dI/PbxNUlQhJrOzm9jf8byyuXFrnnz5ufOnbt40er3qNjt2bOH/jZr1owVnQT93JkujcqH3geZfnUtPqL0QfIP42ftCr6oMX2QhDQfyz6u9AGrrfEw/5ZaCfWPMn2pT/nz31tKUUJDoHhPqzZRg8aPfanFBea1CWBsfrUpTAtnCAtPyLKfb/mlSNMn+WdmJps/PpA3BCmLTVSKKinMvEWw9btsvYERL+CqCrDYdcvPp1ncn67NP8yZ3y5BqOYi/x7R5tB0lTQbTA/Hdx8N6li24aSHM115xuaj+AWEm6/9IuyaZ17T5odYRdcAcSWzr4Ow/5rlUrV2XeYW8snUUiL0zrC3Jj06MjTQfCogvxCj1qBezj8u1lcHMt1XeIsV7KJGVGilZcsR2jPMH0LfAPN5rLMRHtoQFy9+KoTrNqqaWr3v7GNjXk/hqjJirW3CBbZtjunJvliR+ZnmJ6wLL1F4gikbCaukEF4iq/QvnEJJnLAmfkcUuoFSaidu27bt//3f/23ZsoWXpYHWp379+t7ezvWtF69Yav7kCF+6TOaPKLvwKP8Y+/U3feDtOEeXSKmLMn1ZgtilUdk1yhbxlj/hykvmy5dlnh5MeCB2Caa82P3VJsI1NM0PIfTwBoZGmrYy2X98wB4uH6TEUZb8Cnee6kWUeEQ5/C5bbmDEPXUeO7h8fJrFy8SaDr1hFzgzfwPNF/sTNocWl+i3ksz2kCzDmWnD6d5UpWSXZ87hUWjLyp9FanJSoFarYN9V+rFQmH448lgHIcOF2XllQHhSwqWga1s0mHh65xZcTHKKuUIDqsD2xRMZ4SPEDvUSPiFWewuCLNfwFi5AaY0NcBYfJucmpRxYPNMsl8TOhfASmYcBEX59yeTkGMumJuGSzNZ4ikqz2skpfiVLluzWrdv69et5WQL++++/DRs2qFQqXnY2Qjs9yeE63PRBsvGBz+kcXdn4WN5X/HHO8skUP+pclgeyvLB9Huz5ame7AL+7N8a8PTFXD1LCNyEwcw9LOFRYlMPvMtvAsNhhc09dYM+nOcvj2tgU5S5G409feBvXKraS46PQl1ncTIpNUAMDaovf1dT4WEW2TaYtLEWxIasgI+yTaWrVt9k8YyI0vgrHw1s0UuYLH3+TEC6MYbIYAlKYsl7xxo7PJ9vTkFiKYj788MMjR44cOHCAl4vb8uXLb9++3bt3b152HixC8X4JofcgX2yfo6uo5eOrDYUAXXs5s/m7bO7dy9avR4rw00w5RjgSJ9+7+4xpM0l5kfaK/FpphQ6U1GS7Npmp+sj8HoANTyZrw0xqss295ryw7gnTJzkPQuNr6G69RSOlhSw7ysI+rm3i4Ghh3Ek+hnJbPNOsTXE5y6HtSmiCMvViE6EZwFLWPQ0padWqVcOGDRcuXMjLxW3RokV9+/b19CyOmFCohF9yIQxlGbdgjT5INj7weZ2jy0zsH2CEL6+Pt2eWT6b4UeeyPJBl61FO8vPVztrKlZ58ik+Bw1w9SGX5Jgg/rKKc+xR4754+W79evj7NWb+BOW+KbBN+/f0GZo6Fsi3nRxGeRVKyPj5MPHmMp7fyVLJ+d5LtMStZ8B8CXoIiwK7mYRotZ4wQLg+SdfS3nUy/3en67rm2/9ODNlUpwzQa242U4mcvih+FIJxoW6zNZHmgX2p8bEwOw6FsitEsZ7sH7JxJYhez8H0URpYIjCuyPVzWl0jcpRFG6QpDUszjyYzTsz7loj/tQr6MGTNm48aNUmiUWrZs2enTp0ePHs3LTsb8IykcJGFzJ0XcrzD92GZ+AnM4R1c25vFPbGgUfXnZJ3MEb6m1+KgT0zdLfCA2YENMP3xvRNiVFW+2ZvdX22rDkR49QhODQRpPyuVbpMRvAh9ql6ofYfoW5fC7LBB79zSaMKsebjN7P81W30B2zQc+wsl+bJxgbsdW5PwolLEMak0o2x2nbyk9o1N29evlPHYYCo9fiHiwntAFIfZB5Lr3nBM21I8txCM5SDjkLbeh3EKzpSLb3gJHEUQ4pIgtqmu2webC4Fk+RspNOCSK9XewrZHFUaI2heu8o8Q7+oVq+R1NH3WxOr6Vua3XcoF+ISnmZ+fmEafiw558Q8TjkgSRNXRZGoktv9cS1KtXr+bNm0+dOpWXi8nt27enTZs2ZMiQd999l1c5E8vPapR3mlGrsDW+W/jAm2YTP0isocjd5jm6slFqFZHiHMKhP/zLSz+kwsF6YrVw+F5mn6C2djL/qp/SpZlPYCEcYiJWBymCs/Y/5vjVFneHaPWs4p14/BP/Uoj9J/g9f2IZTufhw4f0vPR6PS/nzfy7rNXRB9Tc551isXmw6ggXPqZi5xondKuzGSzuojWKs7H+QV4v9scJNwl1puWIzN2IwpxKfkysOMQkWw+jxcMRccm0QKs5rRZi61EEwpoo+RH1udw92zrQD43Fc7df48aNhw8fzguQkREZGenu7s4LUkSfnMyPgQtq2bJl//79eaGYfP/99/TFjYqK4uXiQF/bSpUqXbt2jZel4d69e/TKbNiQeS6sIkQ/nnZ/Nax/TvNiuYGQN4NBaJWgFM7LTg1BCooIglQWUg9StAGw2n9wOVIIUuTTTz+lH7TExEReLlpr166lR//mm294WTKKNkgJu6Pm3U6rXdk8IUi5AAw2B4CsjNPd3LxiVfzkN1CcPvvss4CAgAEDBty4cYNXFZUff/xx4MCBgwcPpkDJq1yUZd+ZRccxgAhBCgCyEo+2K54DuSG7FStW0J59jx49eLlIXLp0qWfPnn5+fsuWLeNVrkw8byeXrxQl3NH+r5KMryHmyhCkAAAk7eWXX16/fn1iYmLHjh0fP37MawtTcnJyp06dnn76aUmdFBRAmhCkAACkztfXd9u2bQcPHgwICLh69SqvLRyHDx9+//33S5QosWXLlhdeeIHXAkAOEKQAAGTgvffe27t3b1pamr+//65du3htQVu5cmXjxo29vb137979yiuv8FoAyBmCFACAPPj4+CQkJLz77rutW7cOCQnhtQXkr7/+GjBgQP/+/YcNG7Znz57nn3+e3wAAuUKQAgCQjcqVK8fFxUVGRn7++ec1a9bU6XT8hiczZ86c119/fefOnbRA6VyXBkAWEKQAAGRm3LhxFy5cqF+/fu/evevVq/f111+z8+fl159//jlz5sxq1aoFBQX169fv/PnzarWa3wYA9kGQAgCQn9dee23t2rUJCQlvvPHG4MGDK1Wq1L9//5iYmL///pvPkbPLly+vWLFCpVK98MILkydP7tix488//xwVFVW+fHk+BwDYDUEKoHi4ubkVzaHs4Bh6d+g94gWp8vPz0+v1v//+e2ho6Llz57p3716lSpVatWrRxMSJE+fNm0eBac2aNcuXL589e/a4ceM6d+5cvXr1V155ZcCAAf/888+SJUv++uuvBQsWUCzjSwSAfEKQgiKSkZHBp0BUuXLlP//8Ey+LZNG7Q6GEF6Tt5ZdfnjBhQmJi4tWrV9evX9+hQ4e7d+9u3bp1+vTpQ4cO7du374gRI2bOnLl3795SpUp9+OGHdNP//ve/Xbt2DRs27Nlnn+VLAQCHOGGQKlmyZPny5a9fv87LIA03btyoWLEiL4BCUatWLUpRP/74Iy+DlFAQOX36NL1HvCwTHh4e3bt3p8y0bdu2M2fO/PXXXw8ePHj8+PG9e/euXbt2/Pjx2NjYadOmUdJCLx5AQXHOFqmaNWueOnWKF0AC6Hf83Llzb7zxBi+DQtGgQYMXXnjh22+/5WWQkq1bt9Lf5s2bsyIAQE6cM0g1a9Zsz549vAASsGPHDvrbpEkTVgRGrVYvX76cF0BKvvrqq7Zt2+KMlACQJ+cMUt26dfv11183bdrEy1DcVqxYQTv3r776Ki+DaNSoUSkpKVOmTOFlkIY1a9bs3bt39OjRvAwAkDPnDFINGzbs2LFjREQEL0Ox2rJly9atW0eOHMnLYOLt7f3FF1+Eh4cbDAZeBcUtKSlp+PDhgwcPbt26Na8CAMiZcwYpQhunY8eOjRs3jpehmKSkpHz88ceBgYEqlYpXgYUJEyb07duXXhxcZl8KDh482KlTp/r16y9btoxXAQDkymmDVN26dZcuXRoVFTV58mReBUXut99+69KlS7ly5b788kteBdmsXLly0KBBPXv2HD169B9//MFroWg9evQoIiKiadOmtWvXZiPNQcrYKb5w9hDJYm+N9M/EViDcnPuDOH/+fNo4KZXKzz77DIeMFbE1a9YEBQW99NJLGzdurFGjBq+FHFDWDA0NvXHjxocfftiqVau33nrrueee47dBofnnn38uXLiwb9++6Ojov//+e8qUKVOnTuW3gbQ9++yzM2fOHD58OC+DlCxbtow2vv/++y8vOzUnD1Jk+/btwcHB586d69OnT9euXX19fd3d3fltUNAePnxIL3V8fLxOpzt69OiAAQMWLFjw9NNP85shV3fv3qU4RbnTaDTyKigStWvX7tKly+DBg728vHgVSF6jRo18fHyWLFnCyyAlH3/8cUJCgoucJ8/5gxSzaNGiVatW0aadpp966qlSpUqxeumjN0hGraMUBehv2bJlVSrV0KFDmzZtyuohX+7cuXPx4sX//e9/vCwHt2/fbt++fffu3UeMGMGr5OCZZ56pVq1a5cqVeRnkY8KECTExMb/99hsvg5S8/vrrHTt2nD17Ni87NVcJUsyVK1dOnDiRnp7u2JXSi55Op/v++++XLl3Ky5JXrlw5b29vX19fF+kaB7ObN29WqlRp7NixUVFRvAqgMB07dqxBgwaUpbp168arQBri4uKUSqXRaKRtAa9yaq4VpGRn+PDhX375Jd4jkD4EKSh6KpXq119/PX78OC+DNNSvX/+ll17avHkzLzs7pz1qDwAAnNv06dNPnz4tr95kpzd69Ogff/xRq9XysgtAkAIAAFmqVavWN998s3jxYpwyUCLGjx8/f/58elNq167Nq1wAghQAAMhVnz59li1bFhUV1aZNGxc5Rkyafvrpp3bt2s2aNWvJkiX9+/fnta4BY6QkDWOkQC4wRgqK0ffffx8cHHz06NEuokaNGnl5ecno6GyZevjwYWpq6uHDhzdt2hQXF1evXj0KUi1atOA3uwwEKUlDkAK5QJCCYrdmzZrVq1fv2bOHl6GotGzZ8sMPP+zbty8vuxgEKUlDkAK5QJACibh9+/apU6dkdJobZsKECdeuXVu5ciUvy0GpUqVefPHFOnXqlCtXjle5JAQpSUOQArlAkAJ4EvXq1fv111/pe8TLIB8YbA4AAADgIAQpAAAAAAchSAEAAAA4CEEKAAAAwEEIUgAAAAAOQpACAAAAcBCCFAAAAICDEKQAAAAAHIQgBQAAAOAgBCkAAAAAByFIAQAAADgIQQoAAADAQQhSAAAAAA5yy8jI4JOu6pdffrly5QovSMycOXO2bNnSrFkzXi5W+/fv51MA2dy8ebNSpUpjx46NioriVQBgt3r16v3666/0PeJlkA8EKcXIkSMXLVrEC5I0ZcoUPlVMTp8+HRsbi48K5AJBCuBJIEjJF4KUEKTi4+MXL17My9LTvHlzPlVM1q1b16tXr4cPH5YsWZJXAVhDkAJ4EghS8oUgpfj444+PHDly+PBhXoZsEKQgTwhSAE8CQUq+MNgc7IXMDQAAkAWClMLNDc1yeaCXiE8BAACABQQpAAAAAAchSKFFCgAAAByEIAX2QtwEAADIAkEKLVJ5wxgpAAAAm+SRIYzT3fwVCRmT/cRSur67R2zXtNhe7mxaEyNWB+rSNqipigjzh4lTCm1CRgi7W07GjBlz8ODBY8eO8TJks2HDhh49ejx48KB06dK8ym7p0SqPiyrdKQ17m5R69sYJhJvUBnEy77fJZa1evfq3337jBQm7d+/ejBkz/Pz8PvjgA17lwoYPH/7iiy/yAsjK/v37Dxw4wAtFaOnSpTdu3JgwYQIvOymlUlmnTh1ecBoUpGTAqBW3taIUnZJPp+kChQ2zWJuREK5QhAvVaXqlEKrESsvpnFCQ8vHx4QWwZf369fRRoSDFy/khvAX05hnFgvA+KnUp5nr+nlpOQxYtW7YUv6kgJydPnuTvH8hNsV9JwrmtWbOGv9BORCZde74BWkVofKIwmf5DrCE8QGi9SFyuUegWmZo3/CYnaMMi9amsxLn3is0wNVPBE6KPC5/Kr0DdQF9xQngfDcnCe2RcrjZojbwVyr3XIl1gaGR0ulgCK/Sy9+vXT/y2ggycOHGCvWvs7QOZYu8mFCz2wrJX2JnIZYyUX0C4IilZ2NAmXzRoWwnb3/TkJEWMxsPNzD9UnNW9V7CW16uy5CqbaD6nfGufxM2bN8eMGXPp0iVWpJeITTD79++fOnUqLzgmld48pbcnL9Gb5l2bTwEAAMiIbAab+7XSGuLi0xXG+DBtAGveIFm77WLVwrbZL0SYTtMFGjRelAEijGxmsFtFkbe3d//+/c1xilCEatq0aYsWLYr98n8AAABSIJ+j9nwDtDGx8dHxoaxfT2jE8FHEJCeL07a4qzdQnEow9wnmBC1SNo0ZM+aZZ55ZuXIlxSl2RWfKT+TgwYPNmjV70iDlSW8e6+Nj0pNP8SkAAAAZkdHpD/wCwg0adSjr1xP4DtQFhvpPN7U3JUawxqf0aJVbdz0fbpMYH6qwaMECu1WsWDE4OLhUqVI0/cMPP9DfI0eOiLconrRfT+A3UK8M9eONhenRIzQx2mDTcDcAAAC5kFGQEnr3FFapyF29IUEb5u/G+CnYIfTCyGWFaeyUX5IuJY/j6mkutEjZNGbMmDJlytDEo0eP6O/Dhw8pVxVAc5TIvVdsmj6JvXkeah+c/gAAAORITkFKYOrXM2HDoRjzlph16jFs1BQ4wrJRiqEsld/mKOsDJ4X3K8QUhYWbOKQocA2pepVbhD5aJe5BuGW2nROhTZ2x6ygZAGcidCVN1+u7m74DFgdxCzdxEh3xLKcgZdxt0a9XcOjNoS05L4A1c6MUKVGiROPGjTHM3B7G6W5u5k5n4bSx5t8FYZqz2IgK83M4NsLphWouBov7DwnaGM0I9sGgFCU0n4vVRh+NF7IUuJ4wTXIQ+wpoDeoR7CsgnrfZx3TGwSR/Sf5CyiRICbtxwsnNzY0ZUDQsG6UeP36s1WpZPeRO6IYOi+df+NT4WD4CjJ+UX/xNyEiorfEQwxb9UvifMp9CNsnfspUCnJBS15/tEApndTFcTBY+GFGhSv0i3nzuG5IQbtCsQKIGFyPbMw7KJEh5qoVOIH6JmCd18+ZNPiVyy9YilWUGF2dulEJzVD7gFLKQD8nJMQof78y33buGcD0AlybsPFs0y5mOJTJNcxHmI7LFnW3GslcI5E0mZxyU2xipgkA5iQLB/v37ednCpUuX+vfvv2nTJl4GU6MUTaA5Kj8K8RSyAM7PM0AVaIj9gUci4+5QpX6guDcSIR5XJErRJfmxr4wxwkvjw65DlZHgo/bIDFgAhc8Vg1Q1UYsWLZo2bUpxijZf9OVjEcrb23vfvn39+vXjs4KoUaNGVapUeeedd3gZ7IBTyILdvL0DeexmKHzzKdflHtBVKX6DCH2JlKqmYud4VKi5o0fhqV6kV2TrA7U6ogXkTSZnHJR3kPr333+PHDmi1+sjIyMnTZo0bty4Tz75ZNq0aYsXL962bdvFixf5fNmwQ88OHjxIcYrunpaWRhFq5cqV5pvAbO/evd26dXvmmWfatm177do1Xgt5KrRTyILTcVcHZY6uVSRG+IeZx1G5LvemKiX7vqQmJwWqAoRdDqEPNNRPaLxlPNQscbLz0olVmQd5gBOQxxkHZRmk9u/fP378+AYNGjz99NONGjXSaDSzZ8/etGnTvn37du/evWbNmokTJ3bs2PG1116rUqVKly5dFi1alJKSwu8sqlatWt++fdkYakpRN27cYPUvvfQSmqMsbd++vU2bNq1bt96xY8f169cpS2V5JSFnOIUs2M03RDxYT4wCwuF7OG8L690TdirSf4hVdA0wbzy1vAvPRBw7y8+lYtQqxDMLYpiU05DHGQfFT6I8UOKZNm3aq6++Sqtdo0aNYcOGrV69+uTJk/fv3+dzWPjjjz8oV82cObN9+/YsMNHExo0b+c0ZGcm2mgZWrFjBb4aMjLi4OHpNevbsyYoXL158S0QTrAbyQD/rCi0fz8ElWAw0M9+UpgvkVcIhXewYeJOAgAAK97wAknfixAl6F+kvL8MTSNMrFeE6XaD5SyF8U5R66+7xbIR7Ze1Dz4cpU6bQO8gLUKDohaWtNi84EXl8XP7888+goCB6D8qXLz969OjExER+g33+/fffNWvWfPDBB7SEunXr6nQ6Vt+3b98SJTLb5F566SVWD2T9+vX0mvTp04eXRZcvX3733XcpxZ49e5ZXQS4oSIVb56j8Q5CSFwSpgpSiEw5ftExFws5J9lwl7J+YWqrsCluWbty4QZsV2rVmxSxBivausYPtMHoxV65cyQvWQWrfvn2dO3emF58VZU0GQWrBggWUnypXrjxjxgyKRLzWIZTAevToQe9l69atk5KSsjRK4dtiRrmTXpBBgwbxsoVr1641atTo5ZdfPn78OK+CHCSEZ+uGyD8EKXlBkCpQNlKR0OBkknmTELBM8r/3wsITfdFoo2AOUrRF8PT0pK2Pc2zsiwXbyNLLyOIUTVOQogjFzqRDLzWbTe4kHaRSUlI6dOhAL/fYsWNv3brFa5/Y7t27GzZsSIudPXu2eaQUmqPMli9fTi/IRx99xMvZ0M9K06ZN3d3dDx8+zKsgC7Yn/cTNUQRBSl4QpAoUBamsnd2FgX7TnnnmGXrjSN26dekvbftZ0Wk29sWFNrLslWQv6ZtvvsmK9II7TUKVbpDatWuXh4fH66+/TrmHVxWo0FDhJD5KJd+5QXMUs2TJEno1xowZw8s5uHPnTsuWLZ977rkffviBV0HhQJCSFwSpgkQ7JE8w2ilfKDCxneqSJUsKmwSRM23si0uWnh/28tJL7UwJVaJBinUtUcopwIao7GJjY+l78uqrr6I5ipk7dy697OPHj+flXP3333/t2rUrV67c3r17eRUUAgQpeUGQKigJ4cJGoAiaoxjLRinGyTb2xcjc82PmZAlViqc/WLVq1Ycffjh8+HAKOs8++yyvLQQU1Pbv30+BoHz58v/73/94rauaNWvWmDFjJk+ePGPGDF6VK/pifPvtt++//37btm137tzJawEACoLfZNpCFd1pICyvK8qUKVOGfhJ5AZ7A1KlTHz58yAvitoNeanrBeVn+JBekNm/eTPvfH3/88eLFi3lVYapfv/727dtv376tUql4lUuKiIgYP3789OnTw8OF3UD7xcXFdenShbLUli1beBUAgAyZrytKnG9jX4wsT9xInC+hSitInTp1SqPR9O7de/78+byq8L311lsbN248dOjQgAEDeJWLmTJlSmho6IwZM9i4sfxav349vWWdO3eml5FXAQDIjWWjFJqjCpa5UcopE6q0gtSQIUNq167NBkgVpYYNG65evXrFihVFGeAk4tNPPw0PD58zZ8748eN5Vf7RW0YxNDAwUK/X8ypw1P79+1etWsUL1m7evDlt2rTjx4/zMkhDv379bF4EnVA93coLIHnmRik0RxUs1ihFE86ZUNlQKSmYOHEirU8xnp1owoQJtAJnzpzhZRfATnO6aNEiXn4yw4YNo6Xh+Mcn98orr5jPvMIGm9+4cYN26Z599tlmzZqxeUA66DNPn/wmTZrs27fPPNjcfLIcfCPkZcqUKfRFw8F6BY4dvueU4/fd6B89t2J39OjRhg0bzp49m23ai8u777778ssvb968mZed2siRIylCff311wMHDuRVT2z06NHz589funTpkCFDeBXkH0Wo/v370wTFKfpNp324ixcv3r59m2rMm2eQFHqnrly5QhP169c/duwY+0vFl156KTU18+L1QHbu3Dl27FhekJ7Hjx//888/FSpU4GVHjRkzZujQobzwxPbv3z9t2jRekC36jri7u1ueYEKm6HeYT4mkEqQ6dep07dq1w4cP83Ix+fbbbzt06GAwGLp27cqrnBQFna+++mr16tUffvghryogn3zySWRkJMWpjz/+mFdB/pk3zIR+dx49ekR/fX19Dx48yCpBUszZt1SpUg8fPmR/qbhixQp07VmaOXPmhAkTVCqV+cSMTunu3btRUVEfffQR7azyqidDQapFixZTp07lZSgmrBM/S5CSRNfenj17aE02bdrEy8WKIp2/vz8vOCnWV71u3TpeLmiTJk2i5VOc4mXIP9ZblAV9e/nNID0vvfQSf59McII6S/fv3+/duze9LJQGeJVTo2xNOz9Nmza9cOECr3oCbMvNC1B8mot4wUQSb4xSqWzcuDEvFLf4+Hj6vO7YsYOXnU6vXr3oCRoMBl4uHGzP6bPPPuNlyD/LDXOpUqWk8x0Bm7JnX4yOMjt69Og777xTqVKl2NhYXuUCfvzxx7p161asWHHjxo28ylEIUhIh0SD166+/0udj1apVvCwBtMXq0aMHLzgXlUpFO0nbtm3j5cL0+eef0zvrInufhSHLhhnNUdJnmX3RHGX2zTfflChR4r333vvll194lct48OBBnz596PPwhIOsEaQkQqJBija35cuXf/z4MS9LADsXqJMdtUGvcMeOHf/v//5v165dvKrwzZ49m17JSZMm8TLkE9swozlKLiyzL5qjGDaufOTIkbzskmbNmkUvglKpvH79Oq/KJwQpiZBokPLz8+vbty8vSMO1a9foI7tmzRpelr979+598MEHFSpU2L9/P68qKgsWLKAXMzg4mJchP8wbZjRHyQXLvmiOIpcuXWrZsiW9GkuXLuVVLmznzp2enp41atQ4cOAAr8oPBCmJsBmkivmEnH/++afRaGzTpg0vS8MLL7zQpEmT3bt387LM3bp1i17h48eP0ze5WbNmvLao0J4o/YxGRkaOHj2aV4Hd+vXrR5vkxo0b01eXV4G0abVa819XtnXr1oYNG6alpSUkJOBkKKR169ZHjhx5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xo0bN3z48P379/OqIjRgwABvb29ZnDc8i7fffpuy1O3bt9u0aXPp0iVeW5hu3LhBj3X27FlKUY0bN+a1AADyhCAFziMyMrJjx469evU6c+YMryoSPXv2/Omnn1asWFG6dGleJSuvv/46ZRo3NzfKNxcuXOC1hePatWv0KCkpKfSIDRo04LUAALKFIAVOZd26dd7e3p06dSqyLNW3b9/1onfffZdXyVC1atUo2Tz77LNt27Y9deoUry1olJ8oRd24cYMe65133uG1AAByhiAFTuXpp5/esmXLiy+++P777xd2H9+///7btWvX1atXx8XFtWvXjtfKVtWqVSnfeHh4UJb68ccfeW3BuXjxIqWo//77b+fOnW+++SavBQCQOQQpcDZVqlTZs2dPgwYNWrRosWTJEl5b0I4cOeLn55eQkECPJa8B5rmgl45SzmuvvUZZymg08tqCcPbsWVpmmTJlaPnVq1fntQAA8ocgBU6ItUuNGzfuo48+0mg0V65c4TcUkJkzZzZq1KhSpUqHDh1q2bIlr3UKzz77LGUdHx+fNm3aHDhwgNc+mePHj1OKqly5Mi3Z09OT1wIAOAUEKXBakZGRGzduTEhIeP311yn68NonQ/msYcOGEyZMmDx58r59+2rUqMFvcCJlypTZsWNHs2bNKEvt2rWL1zrqyJEjlKKqVatGKeqFF17gtQAAzgJBCpyZSqU6f/78yJEjKfp4enp+/vnn165d47fl07p165o3b965c2d3d/djx46Fh4fzG5yRm5sbRcb27dtTBtq2bRuvzb+DBw/SEt5++21KZhUrVuS1AABOBEEKnFyZMmVmzJiRnJwcGBg4ffp0ikFdu3b95ptvLl++zOfI2d27d7dv3045jO7Vq1ev8uXLf/fdd5Qw6tWrx+dwahs3buzRo0fHjh0NBgOvyo/4+HhKUb6+vpSinn76aV4LAOBc3CRy+XeAIkDBaO3atbGxsazHytvb+5133nnttdeqVq1aqVIlilyPHj26devWtWvXfvvttzNnziQlJdFstWvX7tKlS8+ePWvVqiUuxrX069dv1apV0dHR9ArwKjvs3LmzU6dO7du3j4uL41UFjZ0Sfd++fawI8uXm5jZ16tQpU6bwMoCsIEiBK/rnn38OHDhw5MiRU6dO/frrr1evXr158yalKLqpXLlyL774YrVq1Sg21atXr0mT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" style="width: 661px;"/>这张图也可以帮助判断<br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000697"><a href="#article-1000697">Question 1000697: 配对T检验和两样本T检验是一回事么？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>配对T检验，我的理解就是两个样本，对应起来，然后做T检验。这和两样本T检验是一回事么？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>虽然它们都是根据两个样本来检验两个总体的均值是否相等，但是它们不是一回事。</p><p><br/></p><p>两样本T检验中，我们认为这两个样本是独立的。比如说城市A中抽取300个成年市民，城市B中抽取200个成年市民，根据这两组样本，来检验城市A和B的市民平均身高是否相等。<span style="font-weight: bold;">两样本T检验不要求两组的样本数相等。</span></p><p><span style="font-weight: bold;">相反，配对T检验中两组样本数量必须相等。</span>不仅相等，而且两组数据并非独立，对应一一对应的关系。比如说，我们要检验低血糖病人饭前、饭后，人的血压是否变化。我们选取了50个人，分布采集他们的饭前、饭后的血压，得到</p><p>病人1：饭前血压        饭后血压</p><p>病人2：饭前血压        饭后血压</p><p>病人3：饭前血压        饭后血压</p><p>病人4：饭前血压        饭后血压</p><p>        .......</p><p>这个时候不同于两样本T检验。我们会用第二列数据（饭后）减去第一列数据（饭前），得到每个人的血压变化</p><p>病人1：饭前后血压差</p><p>病人2：饭前后血压差</p><p>病人3：饭前后血压差</p><p>病人4：饭前后血压差</p><p>        ......</p><p>此时我们只需要对这列差值进行单样本T检验即可。这就是配对T检验。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000774"><a href="#article-1000774">Question 1000774: 假设检验的效力是什么？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>假设检验的效力是什么？有什么含义？怎么计算？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>我们一般称为假设检验的统计效力(statistical power)。</p><p><span style="font-weight: bold;">定义：统计效力等于我们成功拒绝了错误的零假设的概率。</span></p><p>换个角度翻译一下上面的定义，power = 1 - Type II error。效力就是1减第二类错误。</p><p>统计效力越高，说明当某个现象（对立假设）存在的时候，我们更有可能检测到这个现象。统计效力越高，说明这个假设检验越有效。统计效力和假设检验本身的显著性水平相关也和样本的大小相关。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000929"><a href="#article-1000929">Question 1000929: 如何从假设检验的角度去理解AB testing</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">AB Test</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我大致知道AB testing经常运用于网页优化的测试过程中，但是对它的原理和使用中的注意事项理解得不是非常透彻，能不能用通俗的语言进行讲解。</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>说白了A就是对照组(control)，B就是实验组(test)。</p><p>我们想要比较A组和B组某个指标是否相同，对于网站来说，可以是转化率、点击率、流量等等。</p><p>一般是经过一段时间，积累了一定数量的样本，我们就可以有足够的样本进行假设检验了。</p><p>从假设检验的角度来说，零假设$H_0: S_A = S_B$，对立假设$H_1:S_A\neq S_B$，或者单侧的对立假设。</p><p>这个想法和生统里的case-control study是一个道理，比如A组的病人吃得是安慰糖，B组的病人吃得是降压药，然后对比A，B两组人的血压的均值，也就是可以用T Test来做假设检验。</p><p><br/></p><p>AB Test包含的内容比单纯的假设检验更广。因为AB Test涉及到很多实验设计的部分。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">Ho: 我觉得用（某特定修改，比如颜色，文意）对于网页的（某种特质，比如点击率）没什么用</span></p><p><span style="font-size: 14px;">H1: 我觉得有用</span></p><p><span style="font-size: 14px;"><br/></span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1001119"><a href="#article-1001119">Question 1001119: 单侧T检验p值与双侧T检验p值的关系</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>在编程的时候，不少语言或者编程包只有现成的双侧T检验的函数，我想知道怎么根据双侧T检验的p值来得到单侧T检验的p值。</p><p><br/></p><p>或者更广一点来说，单侧T检验p值与双侧T检验的p值是什么关系？</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><b>双侧T检验</b></p><p>零假设$H_0: \mu = 0$，对立假设$H_a: \mu\neq 0$。</p><p>如果$t_{score}=1.96$，此时p value就是两个白色面积的和，等于0.05</p><p>如果$t_{score}=-1.96$，此时p value也是两个白色面积的和，等于0.05</p><p><img data-filename="ttest (1).png" src="data:image/png;base64,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" style="width: 250px;"/></p><p><b>单侧T检验
+</b></p><p>零假设$H_0: \mu = 0$，对立假设$H_a: \mu &gt; 0$。
+</p><p>如果$t_{score}=1.96$，此时p value就是右边白色小三角的面积，等于0.025<span style="font-size: 1rem;"></span></p><p>如果$t_{score}=-1.96$，此时p value是左边白色面积加上中间蓝色面积的和，等于0.975
+</p><p>类似地，
+</p><p>零假设$H_0: \mu = 0$，对立假设$H_a: \mu &lt; 0$。
+</p><p>如果$t_{score}=1.96$，此时p value就是右边白色面积加上中间蓝色面积的和，等于0.975
+</p><p>如果$t_{score}=-1.96$，此时p value是左边白色面积，等于0.025
+</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>醍醐灌顶啊</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1001189"><a href="#article-1001189">Question 1001189: F检验的使用场景</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>在工业中T检验非常常见，F检验却很少用到</p><p>请问F检验有哪些常见的使用场景？</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>T test用来比较两个样本的均值。</p><p>F test用来比较两个样本的方差。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>F test主要有三个使用场景</p><p>1. 比较两个样本的方差</p><p>2. 比较多个样本的均值（也就是anova）</p><p>3. 在线性回归时检验模型A是否比较模型B更显著。本质上还是比较两个方差。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>那卡方检验分析的是什么？ 均值 方差？</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 3</span>: <div class="col-md-11 col-xs-10 p-r"><p>其实准确地说，F test是比较两个正态样本的方差，而不是任意两个样本。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1001492"><a href="#article-1001492">Question 1001492: t检验，需要测试集验证集吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>表述有误，修改下，不好意思！</p><p>数据是这样的，自变量8种（比如体积/直径/周长等连续变量），因变量是二元变量（有/无），没有用复杂的模型，就是根据结果（有/无）把每个自变量分两组，两组之间做最简单的t检验，筛出有显著统计学差异的自变量，拿有意义的自变量与结果（有/无）做ROC曲线。</p><p>审稿人现在说我没有验证集啊，我之前只见过机器学习算法建模后验证的。</p><p>ROC曲线是否也是一种模型啊？ROC曲线如何拿到验证集中去评估呢？</p><p>不知道这样写，大家能否看懂，谢谢！</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>我试着揣摩下楼主的用意，以及审稿人的想法。</p><p>楼主用了几个“比较显著”的自变量，在一个数据集上训练得到了一个模型（假如说逻辑回归好了）。然后楼主用这个模型在<b>原来的数据集上</b>进行预测，得到每个样本为“有”的概率，根据预测概率和真实信息，楼主得到了ROC曲线。</p><p>审稿人的想法是，你怎么可以同一个数据集上又训练又预测呢，你必须要划分出训练集和测试集。不然你无法<b>公正地</b>说明你的模型是“显著”得好。</p><p>我同意审稿人的想法。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>是的，确实有问题。我用显著的自变量（1个）与因变量做了ROC曲线，这也是模型吗？医学类文章几乎都是这种做法，之前没遇到过相关质疑。现在问题是我的ROC曲线结果，如果去验证集中验证？其他模型我倒是会做，ROC曲线怎么去玩验证，我没见过，谢谢啦！</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>不大明白他的意思。</p><p>也许可能大概是这个意思：</p><p>你有两组数据A和B，你对A和B做T test，发现是是显著的。</p><p>他希望你把A分成两部分（A1和A2），然后B也分成两部分（B1和B2），A1和B1的T test是显著的，然后你再对A2和B2再做次T test，看看结果如何。A2和B2就是所谓的测试集（？）。</p><p>是这样理解？</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>原文我写的有问题，我修改了，麻烦您再看下，谢谢！</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 3</span>: <div class="col-md-11 col-xs-10 p-r"><p>不知道上下文，t test和roc有什么关系呢？</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>原文我写的不对，ttest是拿来筛变量的，有意义的变量再做ROC曲线，不好意思</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1002320"><a href="#article-1002320">Question 1002320: 多重比较校正</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>最近文章修回，审稿人问了这么多重比较校正的问题，之前同类型文章存在假阳性，建议做下多重比较校正。</p><p>然而，我的文章一共才做了9次t检验，需要校正吗？一做校正很多结果就不行了。</p><p>想问下大牛们，我这种才做了9次的需要校正吗？太严苛？有没有标准或者文章提到多少次校验才需要多重比较校正？</p><p>哪种校正比较宽松？我做了fdr，只剩下一个结果了。</p><p>十分感谢！</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>不太了解你的整个问题背景。</p><p>如果是多重检验的话，有很多校正的方法，比如Bonferroni，BH，Hochberg等等。</p><p>你参考一下<a href="http://stat.ethz.ch/R-manual/R-devel/library/stats/html/p.adjust.html" target="_blank">R里的这个函数</a>，大不了你就一个个试，试到一个你满意的为止。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>谢谢，我还是按审稿人要求做了校正，只是比较疑惑有些文章比较了20多次也不校正，多重比较校正的标准是什么？纯粹看审稿人心情吗？</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1002451"><a href="#article-1002451">Question 1002451: T检验的effect size是什么？有什么含义吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>T检验的effect size是什么？有什么含义吗？和power有关系吗？</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>我们常常用T test来根据样本均值比较两个总体的均值。</p><p>p value可以反映出它们是否相同（的概率）；而effect size是反映它们有多么不相同。可以用Cohen's $d$来计算effect size。</p><p>$$d=\frac{\bar X_1 - \bar X_2}{SD_{pool}}$$</p><p>也就是均值的差除以标准差。</p><p>一般来说</p><p>$d=0.2$：effect size较小</p><p>$d=0.5$：effect size适中</p><p>$d=0.8$：effect size较大</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>赞</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003634"><a href="#article-1003634">Question 1003634: spss的检验分了t，卡方，非参数，分类的依据和目的是啥</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我觉得分类的依据是分析对象类型的不同 连续/离散 导致的</p><p>目的应该是判断对象1 2之间是否存在统计学意义上的显著差异</p><p>不知道理解对不对</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>t是比较对象1和2的均值，卡方是比较对象1和2的方差</p><p>没有用过spss，知道非参数在这里是干嘛的</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003678"><a href="#article-1003678">Question 1003678: 问卷在信度效度通过如何评价结果呢</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>通过信度效度 </p><p>如果我调查两个班对语文的感兴趣程度 分了3个维度，  并在调查后对一个班进行改进 后又进行二次调查</p><p>如何分析 调查前连个班兴趣度一样  改进后兴趣度提升</p><p>只要是兴趣度综合体现在各个问题里  没办法做t检验啊 </p><p>怎么通过各个问题 综合出兴趣度</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">"只要是兴趣度综合体现在各个问题里  没办法做t检验啊"</span></p><p><span style="font-size: 14px;">------------------------</span></p><p><span style="font-size: 14px;">如果问题是选择题的话，可以用卡方检验，看它们是不是同分布的。</span></p><p><br/></p><p><span style="font-size: 14px;">"怎么通过各个问题 综合出兴趣度"</span></p><p><span style="font-size: 14px;">------------------------</span></p><p><span style="font-size: 14px;">如果你有每个问题的答案和你自己建立的感兴趣程度，你可以将每个问题的答案看作是特征，感兴趣的程度是目标变量，然后建立多元逻辑回归。</span></p><p><span style="font-size: 14px;">你需要对改进前的问卷进行人工标记他们感兴趣的程度，然后用训练好的模型去预测改进后的问卷结果。</span></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003847"><a href="#article-1003847">Question 1003847: 95%置信区间是不是每一次观测都不同呢</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>每次用样本均值为中心 估计一个置信区间？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>样本不同，得到的置信区间当然不同。</p><p>即使这些样本都是来自同一个分布的，得到原分布的均值置信区间也不一样</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003929"><a href="#article-1003929">Question 1003929: 怎么提高一个假设检验的效力(power)？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">AB Test</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>怎么提高一个假设检验的效力(power)？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>power = 1 - Type II error</p><p>Type II error是指第二类错误，也就是没有拒绝错误的原假设</p><p>power也就是成功拒绝错误的原假设。提高power的方法主要有</p><p>1. 提高样本量，显然样本量越大，我们知道的信息越多，power自然可以增加。</p><p>2. 双侧检验变成单侧检验。</p><p>3. 增大显著水平。比如从0.05调整到0.1，Type II error会降低，不过这也会导致Type I error变大。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004216"><a href="#article-1004216">Question 1004216: 协方差分析在什么情况下使用</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>如果我有两个group</p><p>前测数据使用t检验看时候有差别；</p><p>如果前测没有差别的情况下，后测数据时候有差别是使用t检验 还是使用协方差分析呢？</p><p><br/></p><p>我觉得前测没差别 后测可以使用t检验</p><p>前测有差别  后测使用协方差分析修正前测数据的影响</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">我觉得你说的是对的。</span></p><p><span style="font-size: 14px;">t检验只能判断是否有差别，如果你需要判断某个变量在差别的方向就要用协方差分析。</span></p><p><span style="font-size: 14px;">既然你想用t检验，又想用协方差，为什么不同时都做一遍呢</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005915"><a href="#article-1005915">Question 1005915: 显著水平和p值是什么关系？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>显著水平和p值是什么关系？通常说95%显著水平，这个话背后的统计意义是什么？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>首先要搞清p值的定义，p值就是在原假设下，你观测到当前数据的概率。显然是p值越小，你越想拒绝原假设。</p><p>如果p值小于0.05，我们就说在95%的显著水平下拒绝原假设。</p><p>如果p值小于0.10，我们就说在90%的显著水平下拒绝原假设。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1006208"><a href="#article-1006208">Question 1006208: T检验需要提前假设吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>T检验需要提前假设吗？还是说只要是数值的样本都可以用？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>T检验应该只能用于两组独立的数值样本的比较，如果大于两组可以用方差分析或者秩和检验，而且T检验还要求两组样本均符合正态分布或近似正态分布，且方差齐，方差不齐貌似是要修正的，具体可以参照scipy.stats里的解释<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html#scipy.stats.ttest_ind" target="_blank">https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html#scipy.stats.ttest_ind</a></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1007374"><a href="#article-1007374">Question 1007374: 单因素方差分析(one-way anova)在使用时需要有什么前提假设条件吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>单因素方差分析(one-way anova)在使用时需要有什么前提假设条件吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>正态性、样本独立性、每组等方差</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1022275"><a href="#article-1022275">Question 1022275: 双盲实验是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">AB Test</span>
+            
+                <span class="badge badge-pill badge-success">假设检验</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>双盲实验是什么意思？好像是医学里的，互联网用的多吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>主要是医学上用的。比如要对比两种降压药的效果，医生给50个病人降压药A，给另外50个病人降压药B。</p><p>如果病人不知道自己吃的A还是B，并且医生自己也不知道给病人的药是A还是B，那就双盲——病人、医生都不知情。双盲的好处是最大程度地消除其他主观或者人为因素。</p><p>在互联网中用得不多，因为在AB test，很多时候A或者B版本都是肉眼可见有区别的，不存在绝对的“盲”。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

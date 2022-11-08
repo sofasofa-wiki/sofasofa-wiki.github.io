@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1002874">图像处理中rgba是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003229">有什么好的方法识别图片中的特殊点呢</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004377">cifar-10数据集是有哪十类？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004683">coco数据集是什么？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005907">有没有拍商品各个角度（7-10张），就可以无限生成这个商品各个角度的数据集</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1022375">模型加载</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1002874"><a href="#article-1002874">Question 1002874: 图像处理中rgba是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">计算机视觉</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>图像处理中rgba是什么意思？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>rgba分布代表红色(Red)，绿色(Green)，蓝色(Blue)和透明度(Alpha)。</p><p>rgba的图片每个像素点是由上面四个数值表示的。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>一般rgb的图像被称为三通道，rgba是四通道，因为多了一个通道alpha，用来表征每个像素点的透明度。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003229"><a href="#article-1003229">Question 1003229: 有什么好的方法识别图片中的特殊点呢</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">计算机视觉</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p><img data-filename="Unknown-2.png" src="data:image/png;base64,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" style="width: 604.5909090909091px; height: 283px;"/><br/></p><p>大概如图所示的图片。</p><p>我希望的是把上图中表格所有线条的交叉点的坐标提取出来。</p><p>实际是手机拍照出来的，表格的线条并不理想。用opencv去提取线条不合适。</p><p>用卷积能够识别出大概的交叉点。但是获取到的坐标并不精确。</p><p>想了很久，没找到思路。请问下大家有没有好的思路分享一下呢。欢迎大家一起讨论</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>按你的描述，只要识别出“十字”的特征就可以找出交点坐标。训练图像来自于手机拍摄，主要问题是形变，比如缩放，旋转，位移和错切等（scale，rotation，translation，shear）。这就要求训练输入数据包含大部分的形变。你可以人造一些形变后的图案片作为训练数据。还需要注意kernel size要和“十字”的patch差不多大；因为不需要太多非线性，激活函数用relu；filter个数要多，越多能学到的形变就越多；问题简单，cnn深度不需要太大。</p><p>我感觉，不需要cnn，直接人造一些形变的filter bank，再做模式匹配，最后取输出最大值，也能做出来。</p><p>你最好把如何获得训练的输入数据，如何产生训练的输出坐标，“十字”线宽度有多少像素，噪音程度，拍摄角度范围，用彩色还是灰度这些细节都描述下，并给出你以前cnn结构，才能更深入讨论。</p><p>------------------------</p><p>还可以用2D cross-correlation。<a href="https://www.mathworks.com/help/images/ref/normxcorr2.html" target="_blank">这里</a>是Matlab里的例子。这个问题里template是“十字”。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004377"><a href="#article-1004377">Question 1004377: cifar-10数据集是有哪十类？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">计算机视觉</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>cifar-10是做图像识别的数据集，据说是有十类，请问有哪十类？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>基本是动物和交通工具</p><p>airplanes(飞机), cars(轿车), birds(鸟), cats(猫), deer(鹿), dogs(狗), frogs(蛙), horses(马), ships(船), and trucks(卡车)</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>谢谢大佬</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004683"><a href="#article-1004683">Question 1004683: coco数据集是什么？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">计算机视觉</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>coco数据集是什么？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>就是做物体检测的数据集Common Objects in Context</p><p>数据集官网<a href="http://cocodataset.org/#home" target="_blank">http://cocodataset.org/#home</a></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>有80个分类，8万张训练图片，4万张验证图片的数据集</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005907"><a href="#article-1005907">Question 1005907: 有没有拍商品各个角度（7-10张），就可以无限生成这个商品各个角度的数据集</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">计算机视觉</span>
+            
+                <span class="badge badge-pill badge-success">应用场景</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>大家好，最近公司在做一个项目，大致场景如下：</p><p>在摄像头范围内（摄像头离用户手还有点距离，可以认为是小物体），用户手上会拿着一个商品（例如可乐，零食，纸巾），算法可以实时检测到，现在算法已经弄好了，但是数据标注是大问题（现在是比较原始的录制一段视频标注一段视频），想问下有没更好的标注方式</p><p>我了解到有些办法拍商品的各个角度图片（大概7-10张，上下左右都有），然后就可以生成这个商品的各个角度图片，然后就可以直接用来训练了（效率快了N倍），但是不知道具体怎么弄，有朋友知道吗？</p><p>（付费告知也行）</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>你说的就是根据照片进行三维重建吧，这个研究应该挺多的，如果你没接触过的话，得好好摸索摸索。</p><p>维基百科英文<a href="https://en.wikipedia.org/wiki/3D_reconstruction_from_multiple_images#Mathematical_description_of_reconstruction" target="_blank">3D reconstruction from multiple images</a></p><p>百度百科<a href="https://baike.baidu.com/item/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA" target="_blank">三维重建</a></p><p>简书上得综述<a href="https://www.jianshu.com/p/f33b3d440f7d" target="_blank">三维重建初探(整理的一些资料及论文分享)</a></p><p>数据集的话，你可以自己搜索datasets for 3d reconstruction，估计能搜出一些，符不符合你的需求就不知道了<br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>感觉也不是三维重建，我的想法是：有一个三维模型可以无限生成二维的数据集，然后不断训练。和简书说的二维转三维不是一件事，我的思路是训练和预测时还是二维的，而三维是用来降低数据标注成本的一个途径。</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1022375"><a href="#article-1022375">Question 1022375: 模型加载</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">计算机视觉</span>
+            
+            <p><div class="col-md-11 col-xs-10">请问怎么在测试时一次性加载好模型参数并初始化，防止后面在测试时每次都加载模型</div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>保存的代码：
+</p><p>torch.save(model.state_dict(), PATH)
+</p><p>加载的代码：
+</p><p>model = TheModelClass(*args, **kwargs)
+</p><p>model.load_state_dict(torch.load(PATH))
+</p><p><br/></p><p>
+</p><p>
+</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

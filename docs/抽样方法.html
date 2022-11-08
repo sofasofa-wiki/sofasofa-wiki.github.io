@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000529">蓄水池抽样算法的问题</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000691">自助法(bootstrap)的0.632是怎么来的？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000834">滚雪球抽样算法的实现</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000839">Jackknife vs Bootstrap</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1000888">bootstrap 一般用在哪些方面</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1002612">parametric bootstrap和nonparametric bootstrap的区别是什么？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003303">在R中如何对data.frame的行随机抽样？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003500">两阶段抽样和分层抽样是一回事吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005738">AB检测里selection bias是什么？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1006091">MAB里的tompson抽样算法是怎么操作的？</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1000529"><a href="#article-1000529">Question 1000529: 蓄水池抽样算法的问题</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>不是很明白蓄水池抽样算法是如何做到在流动的数据中保证独立、均匀抽样的。</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>蓄水池抽样、或者水库抽样(reservoir sampling)是一种<a href="http://sofasofa.io/forum_main_post.php?postid=1000447">online算法</a>，实现等概率随机抽样。</p><p><br/></p><p><span style="font-weight: bold;">问题描述</span></p><p>情形 1，你需要从海量样本（总数量未知）中等概率抽取k个数据。</p><p><br/></p><p>情形 2，当前时刻数据库里没有数据，此后每秒中都会一个新数据进入数据库，k+1秒之后，你需要从数据库中等概率抽取k个数据，并且保证每时每刻这k个数据都是从数据库中等概率抽取的。</p><p><br/></p><p><span style="font-weight: bold;">一般解决方法</span></p><p>情形 1，先把数据数一遍，得到个数之后，再开始等概率抽取。</p><p><br/></p><p>情形 2，从第k+1秒开始，每一秒都从整个数据中重新抽取k个。</p><p><br/></p><p><span style="font-weight: bold;">蓄水池抽样算法</span></p><p>情形 1， 先取出数据库中的前k个数据，然后开始读取下一个数据，我们以k/(k+1)的概率保留这个数据，并且从之前的k个数据中随机挑选一个丢弃，以1/(k+1)的概率不做任务操作。我们继续读取下一个数据，我们以k/(k+2)的概率保留这个数据，并且从之前保留的k个数据中随机挑选一个丢弃，以2/(k+2)的概率不做任何操作。归纳起来，对于第j个数据，我们以k/j的概率保留这个数据，并且从之前保留的k个数据中随机挑选一个丢弃，以(j-k)/j的概率不做任何操作。反复进行，直到遍历完整个数据库。</p><p><br/></p><p>情形 2， 类似地，一开始我们先保留前k秒产生的数据，此后，第j秒的时候（j &gt; k），我们以k/j的概率保留这个数据，并且从之前保留的k个数据中随机挑选一个丢弃，以(j-k)/j的概率不做任何操作。</p><p><br/></p><p><br/></p><p>相比于一般解决方法，蓄水池的优势显而易见！时间上少了，不用不停地遍历整个数据库来随机抽取，更重要的时候，不用保存历史数据，只需要保存k个已经被选择的数据。省时间、省空间！</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000691"><a href="#article-1000691">Question 1000691: 自助法(bootstrap)的0.632是怎么来的？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>自助法(bootstrap)就是从样本中有放回的抽样。如果样本集中有n个样本，要自助法选出n个样本，那么一个样本被选<span style="font-size: 1rem;">出的概率是0.632。请问这个是怎么来的？有证明吗？谢谢！</span></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">有$n$个样本，我们有放回的随机从中抽取$n$次。</span><br/></p><p><span style="font-size: 14px;">在第一次抽取时，样本A被选中的概率是$\frac{1}{n}$，不被选中的概率自然就是$1-\frac{1}{n}$。每次抽取都是独立的，所以当抽完$n$次之后，A一次都没有被抽中的概率就是</span></p><p><span style="font-size: 14px;">$$(1-\frac{1}{n})^n.$$</span></p><p><span style="font-size: 14px;">这个式子眼熟吗？这个就是高等数学中那个著名的极限</span></p><p><span style="font-size: 14px;">$$\lim_{n\rightarrow\infty}(1-\frac{1}n)^n=\frac{1}{e}.$$</span></p><p><span style="font-size: 14px;">所以当bootstrap样本总数很大的时候，任意一个样本被抽中的概率就是$1-\frac{1}{e}\approx1-\frac{1}{2.71828}\approx0.632$。</span></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>两年前面试还被问到过，可惜当时一脸懵X了</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>有点6，大一高数两个重要极限</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000834"><a href="#article-1000834">Question 1000834: 滚雪球抽样算法的实现</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>有了解滚雪球算法的吗？</p><p>我知道这个算法的大概的意思，但是想实现这个算法，却没有什么思路，有哪位大神可以给个思路或者伪代码的？谢谢！</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>这个问题一直没人回答，我讲一下我的理解。</p><p>有时候大规模抽样的成本很高，所以我们就需要一些技巧。滚雪球抽样就是这种技巧，它本质上就是“一传十，十传百”。基本步骤是：</p><p>1. 从一个小的范围内抽取符合条件的样本</p><p>2. 从符合条件的样本顺藤摸瓜，从每个合格样本在小范围外有联系的样本中再挑出合格样本</p><p>3. 反复</p><p>这个方法常用在社交网络，比如说要调查喜欢极限运动的人，这种人的总体很小，所以对整体人口调查基本上大海捞针。突破口就是：</p><p>1. 先找到一两个喜欢极限运动的人</p><p>2. 看他们的朋友(在网络结构里就是一度连接)里有哪些人也是喜欢极限运动的</p><p>3. 再看朋友的朋友</p><p>这样就会很快收集到足够多的样本</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000839"><a href="#article-1000839">Question 1000839: Jackknife vs Bootstrap</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>Jackknife被称为简单版的Bootstrap，Jackknife到底是什么意思？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>我觉得“Jackknife被称为简单版的Bootstrap”这句话并不准确。由于早年还没有计算机，JackKnife是当时时代的产物，但是现在基于计算机生成随机的抽样越来越方便，bootstrap才越来越普遍。</p><p><br/></p><p>bootstrap是通过对样本反复有放回地抽样来估计某个估计量的均值、方差等等。</p><p>jackknife的思想则是leave one out。比如样本量是10，jackknife则产生10个子样本，每个子样本中有9个数据点，然后通过者10个子样本，来估计估计量的均值、方差等等。（留取样本的方式类似于k-fold cross validatation）</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1000888"><a href="#article-1000888">Question 1000888: bootstrap 一般用在哪些方面</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我了解的boostrap应该是一种抽样方法，那它主要应用在哪些方面，和Cross-validation又有什么区别呢？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">bootstrap和cross-validation本质上是完全两回事。</span></p><p><br/></p><p><span style="font-size: 14px;">bootstrap说白了就是有放回的抽样。它的目的是降低estimate的variance。</span></p><p><span style="font-size: 14px;">1. 比如我们可以用bootstrap的方法数值上计算假设检验的p值。</span></p><p><span style="font-size: 14px;">2. 比如我们可以用bootstrap的方法来估计一个总体的某个统计量（比如均值、中位数）</span></p><p><span style="font-size: 14px;">3. 比如建模的时候用bootstrap的方法来选训练样本，得到多个训练模型。对多个模型组合，这个就是Bagging，Bootstrap aggregating。</span></p><p><span style="font-size: 1rem;"><br/></span></p><p><span style="font-size: 14px;">cross-validation是进行模型验证的。cross-validation中的fold是随机选的，但是绝对不是bootstrap，因为fold抽样不是有放回的。</span></p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1002612"><a href="#article-1002612">Question 1002612: parametric bootstrap和nonparametric bootstrap的区别是什么？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>parametric bootstrap和nonparametric bootstrap的区别是什么？感觉都是在做resampling，有什么统计上的区别吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">parametric bootstrap是先假定一个先验分布，然后反复抽样来估计这个分布中的参数，从而确定这个分布，最终可以得到所感兴趣的统计量。</span></p><p><span style="font-size: 1rem;"><span style="font-size: 14px;">nonparametric bootstrap是非参的，没有模型假设，直接从经验分布中反复抽样，最终来估计感兴趣的统计量。</span></span><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003303"><a href="#article-1003303">Question 1003303: 在R中如何对data.frame的行随机抽样？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+                <span class="badge badge-pill badge-success">R</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>在R里有一个data.frame，我现在想对它的行随机抽样，并且是无放回的。</p><p>请问该如何实现这个功能？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>比如你对df随机选10行</p><pre><code class="R">&gt; df[sample(nrow(df), 10), ]</code></pre><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003500"><a href="#article-1003500">Question 1003500: 两阶段抽样和分层抽样是一回事吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>关于抽样的方法，我有个疑问，两阶段抽样和分层抽样是一回事吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">它们比较像，但是不完全一样。</span></p><p><span style="font-size: 14px;">当我们想要获得某个观测量$y$，但是$y$可能不易获得。于是我们借助于某个辅助变量$x$（这个变量比较容易获得）。两阶段抽样</span><span style="font-size: 14px;">是先从总体里随机选取一批样本$S_1$，然后观测每个样本的辅助变量$x$，根据$x$再从$S_1$中挑选一批样本，作为最后的样本来估计$y$。</span></p><p><img data-filename="Picture1-2-2-3.png" src="data:image/png;base64,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" style="width: 375.333px; height: 264.09px;"/></p><p><span style="font-size: 14px;">分层抽样是直接根据某个指标分布来进行抽样，比如想调查某地区小朋友的营养状况，该地区男孩550，女孩450人，所以抽样的时候也是按照这个比例，比如可以抽样22个男生，18个女生。</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005738"><a href="#article-1005738">Question 1005738: AB检测里selection bias是什么？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">AB Test</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>AB检测里selection bias是什么？一般是怎么造成的？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>AB test中分成对照组和实验组，在实验开始前，对照组和实验组的样本和样本相关属性应该是同分布的。</p><p>但是实际过程中，由于对照组的样本和实验组的样本都是人为选定的，所以很难做到同分布，往往有偏差，这种偏差就是选择偏差(selection bias)。</p><p>比如想通过AB test检验一本辅导教材的效果，对照组是一个普通中学的全体学生，实验组是一个重点中学的全体学生。这两所学校的学生就不是同分布的。</p><p>比如想通过AB test检验一个在线汽车广告的效果，对照组是青年女性用户，实验组是中年男性用户。这两批人群也不是同分布的。这样选择样本都会有选择偏差。要做到无偏差，一般会通过完全随机取样。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>通俗的讲.如果你想要测试两个产品的好坏，例如网站1.0和2.0。那么单独将拿给两波人用，再进行反馈统计，用户对网站的好评率就是比较的指标。</p><p>selection bias就是个来源于测试群体的“样本选择偏差”。再举个例子，例如两种型号键盘通过abtest比较好坏。得到统计结果实验者用a键盘错字率2%，b键盘错字率5%。看上去a键盘更好吧？但如果a键盘实验者是个程序员b键盘实验者是个小白呢？因为测试群体随机性，正如楼上的重点中学和普通中学学生能力不同。会导致*不客观结果*</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1006091"><a href="#article-1006091">Question 1006091: MAB里的tompson抽样算法是怎么操作的？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">AB Test</span>
+            
+                <span class="badge badge-pill badge-success">抽样方法</span>
+            
+                <span class="badge badge-pill badge-success">强化学习</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>MAB里的tompson抽样算法是怎么操作的？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">MAB就是老虎机游戏，老虎机有很多台，每台赚钱的概率不同，Thompson Sampling需要一边探索各个老虎机赚钱的概率，一边又想保证自身的收益。</span></p><p><span style="font-size: 14px;">算法其实很简单，假定你能从一个老虎机赚钱的概率为p，</span><span style="font-size: 14px;">每个老虎机都保持一个beta分布的参数，在没有足够数据的情况下可以假设先验分布为beta(1,1)。每次试验后，选中一个老虎机，摇一下，有收益则该机的wins增加1，否则该机的lose增加1。 </span></p><p><span style="font-size: 14px;">每次选择机器的方式是：用每个机器现有的beta分布产生一个随机数b，产生的随机数中最大的那个机器去摇。</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

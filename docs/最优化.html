@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001539">凸优化中的仿射是什么意思</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1002628">对函数进行log变换后，它的凹凸性会变吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003135">coordinate descent是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003497">最小值点和极小值点的区别？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003512">如果极小值就是最小值，那么这个函数就是凸函数吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1004249">凸函数有鞍点吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005396">凸优化问题一定存在最优解吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005740">混合整数规划的混合是什么意思？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1656090">二维平面上有一些点，找一个点使之到所有点的距离平方和最小?</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1001539"><a href="#article-1001539">Question 1001539: 凸优化中的仿射是什么意思</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">高等数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>最近看凸优化，不是太明白仿射集是个什么，还有仿射组合，能具体举例来说说它们的概念吗？
+</p><p>谢谢！</p><p><br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>仿射集是一种特殊的凸集。</p><p>对于一个集合$S$，$S$内任意两点$A$和$B$，如果<b>直线</b>$AB$也在集合$S$内，那么这个集合就是<b>仿射集</b>。</p><p>对于一个集合$S$，$S$内任意两点$A$和$B$，如果<b>线段</b>$AB$也在集合$S$内，那么这个集合就是<b>凸集</b>。</p><p><br/></p><p>仿射集包括直线、超平面等等。</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>谢谢！</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1002628"><a href="#article-1002628">Question 1002628: 对函数进行log变换后，它的凹凸性会变吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">高等数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>我们经常对似然函数做对数变换（取log），这样的变换之后，似然函数的凹凸性会变吗？</p><p>如果原似然函数是非凸的，取log后，可能变成凸的吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>要判断一个（光滑）函数的凹凸性，只要对它求二阶导就可以了，二阶导小于等于0，说明是凹；大于等于0，说明是凸的。。</p><p>比如某个函数$f(x)$，我们想知道$\log f(x)$的凹凸性，就只需要对$\log f(x)$求导。</p><p>$$\left(\log f(x)\right)''=\left(\frac{f'(x)}{f(x)}\right)'=\frac{f(x)f''(x)-(f'(x))^2}{f^2(x)}$$</p><p>因为$f(x)$能够被取log，所以肯定是正数。</p><p>如果$f(x)$是<b>凹</b>函数，那么$\log f(x)$还<b>是凹函数</b>。</p><p>如果$f(x)$是<b>凸</b>函数，那么$\log f(x)$<b>不一定是凸函数</b>。</p><p><br/></p><p>如果likelihood function是凹的，那么log likelihood function肯定也是凹的，导数为0的点就是最大值点。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>sasa已经讲得挺清楚的了，我就补充一个小例子</p><p><img data-filename="loglog (1).png" src="data:image/png;base64,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" style="width: 458.780081775701px; height: 226.21875px;"/></p><p>左边是凸函数，右边是取对数后，变成了凹函数</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003135"><a href="#article-1003135">Question 1003135: coordinate descent是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>machine learning优化里的coordinate descent是什么意思？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>坐标轴下降法顾名思义，是沿着坐标轴的方向去下降，这和梯度下降不同。梯度下降是沿着梯度的负方向下降。不过梯度下降和坐标轴下降的共性就都是迭代法，通过启发式的方式一步步迭代求解函数的最小值。</p><p>　　　　坐标轴下降法的数学依据主要是这个结论（此处不做证明）：一个可微的凸目标函数$J(\theta)$, 其中$\theta$是$nx\times 1$的向量，即有$n$个维度。如果在某一点$\bar \theta$，使得$J(\theta)$在每一个坐标轴$\bar \theta_i$，($i = 1,2,\cdots,n$)上都是最小值，那么$J(\bar \theta_i)$就是一个全局的最小值。</p><p>　　　　于是我们的优化目标就是在$\theta$的$n$个坐标轴上(或者说向量的方向上)对损失函数做迭代的下降，当所有的坐标轴上的$\theta_i$($i = 1,2,\cdots,n$)都达到收敛时，我们的损失函数最小，此时的$\theta$即为我们要求的结果。</p><p>　　　　下面我们看看具体的算法过程：</p><p>　　　　1. 首先，我们把$\theta$向量随机取一个初值。记为$\theta^{(0)}$ ，上面的括号里面的数字代表我们迭代的轮数，当前初始轮数为0.</p><p>　　　　2. 对于第$k$轮的迭代。我们从$\theta^{(k)}_1$开始，到$\theta^{(k)}_n$为止，依次求$\theta^{(k)}_i$。$\theta^{(k)}_i$的表达式如下：</p><p>　　　　$$\theta^{(k)}_i = \text{argmin}_{\theta_i} J(\theta^{(k)}_1,\theta^{(k)}_2,\cdots,\theta^{(k)}_{i−1},\theta_i,\theta^{(k−1)}_{i+1},\cdots,\theta^{(k−1)}_n)$$</p><p>也就是说$\theta^{(k)}_i$是使$J(\theta^{(k)}_1,\theta^{(k)}_2,\cdots,\theta^{(k)}_{i−1},\theta_i,\theta^{(k−1)}_{i+1},\cdots,\theta^{(k−1)}_n)$最小化时候的$\theta_i$的值。此时$J(\theta)$只有$\theta^{(k)}_i$是变量，其余均为常量，因此最小值容易通过求导求得。</p><p>如果上面这个式子不好理解，我们具体一点，在第$k$轮，$\theta$向量的$n$个维度的迭代式如下：</p><p>　　　　$$\theta^{(k)}_1=\text{argmin}_{\theta_1} J(\theta_1,\theta^{(k−1)}_2,...,\theta^{(k−1)}n)$$</p><p>　　　　$$\theta^{(k)}_2=\text{argmin}_{\theta_2} J(\theta^{(k)}_1,\theta_2,\theta^{(k−1)}_3...,\theta^{(k−1)}_n)$$</p><p>　　　　$$\cdots$$</p><p>　　　　$$\theta^{(k)}_n=\text{argmin}_{\theta_n} J(\theta^{(k)}_1,\theta^{(k)}_2,...,\theta^{(k)}_{n−1},\theta_n)$$</p><p>　　　　3. 检查$\theta^{(k)}$向量和$\theta^{(k−1)}$向量在各个维度上的变化情况，如果在所有维度上变化都足够小，那么$\theta^{(k)}$即为最终结果，否则转入2，继续第$k+1$轮的迭代。</p><p><br/></p><p><br/></p><p>以上就是坐标轴下降法的求极值过程，可以和梯度下降做一个比较：</p><p><br/></p><p>a) 坐标轴下降法在每次迭代中在当前点处沿一个坐标方向进行一维搜索 ，固定其他的坐标方向，找到一个函数的局部极小值。而梯度下降总是沿着梯度的负方向求函数的局部最小值。</p><p><br/></p><p>b) 坐标轴下降优化方法是一种非梯度优化算法。在整个过程中依次循环使用不同的坐标方向进行迭代，一个周期的一维搜索迭代过程相当于一个梯度下降的迭代。</p><p><br/></p><p>c) 梯度下降是利用目标函数的导数来确定搜索方向的，该梯度方向可能不与任何坐标轴平行。而坐标轴下降法法是利用当前坐标方向进行搜索，不需要求目标函数的导数，只按照某一坐标方向进行搜索最小值。</p><p><br/></p><p>d) 两者都是迭代方法，且每一轮迭代，都需要$O(mn)$的计算量($m$为样本数，$n$为系数向量的维度)</p><p><br/></p><p>转自<a href="https://www.cnblogs.com/pinard/p/6018889.html" target="_blank">这里</a></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>另外两位说得很清楚了，我就插个图。简单地说就是按照坐标轴方向下降的。</p><p><img data-filename="500px-Coordinate_descent.svg.png" src="data:image/png;base64,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" style="width: 500px;"/><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 3</span>: <div class="col-md-11 col-xs-10 p-r"><p>Gradient descent是Coordinate descent的特殊情况。每一个待求变量都是个坐标。n个变量就形成在n维空间找最优解的问题。CD每一步只计算一个或一部分待求变量上的gradient，其余变量保持不变。如果每步都改变全部变量，就是GD。</p><p>CD最大的优点是第k步计算都用了之前最新的值，而GD相当于每n步才更新一次数据。</p><p>至于CD和GD有同一最优解，是靠把问题“设计”成凸优化来实现的。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003497"><a href="#article-1003497">Question 1003497: 最小值点和极小值点的区别？</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">高等数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>求科普一下最小值点和极小值点的区别，没上过优化课，概念不是太清楚，谢谢</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>极小值是local minimum，也就是局部的最小值；最小值是global minimum，也就是全局的最小值。</p><p>最小值肯定也是极小值，极小值不一定唯一，最小的极小值就是最小值。</p><p><img data-filename="local.png" src="data:image/png;base64,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" style="width: 330.333px; height: 227.676px;"/><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>谢谢！</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>在整个定义域上的最小值就是最小值</p><p>一个点在它的一个小邻域内是最小值就是极小值</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003512"><a href="#article-1003512">Question 1003512: 如果极小值就是最小值，那么这个函数就是凸函数吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>如果一个函数的极小值就是这个函数的最小值，那么这个函数就是凸函数吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">如果是凸函数，那么极小值一定是最小值。</span><span style="font-size: 14px;">反过来，</span><span style="font-size: 1rem;"><span style="font-size: 14px;">如果极小值就是最小值，那么这个函数</span><b><span style="font-size: 14px;">不一定</span></b><span style="font-size: 14px;">是凸函数</span></span><span style="font-size: 14px;">。</span></p><p><span style="font-size: 14px;">比如这个例子，在$x=3$处是这个函数唯一的极小值，显然也是最小值，但是这个函数显然不是凸的。</span></p><p><img data-filename="cvx-2.png" src="data:image/png;base64,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" style="width: 375px;"/><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>如果是光滑函数呢？</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>上面zealing说的$f(x)=\sin(x)$就是光滑的</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>这个说法不太严谨，很容易找出反例。比如$f(x)=sin(x)$，有无数个极小值，同时是最小值，但$sin(x)$明显在$x$超过$2\pi$范围时不是凸函数。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1004249"><a href="#article-1004249">Question 1004249: 凸函数有鞍点吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">高等数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>凸函数有鞍点吗？是可能有还是一定没有？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>当然一定没有鞍点。凸函数没有鞍点，凹函数也没有鞍点。</p><p>你看下<a href="http://sofasofa.io/forum_main_post.php?postid=1003321" target="_blank">鞍点的定义</a>就知道了。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005396"><a href="#article-1005396">Question 1005396: 凸优化问题一定存在最优解吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>凸优化问题一定存在最优解吗？可能出现最优解不存在的情况吗？可能出现最优解不唯一的情况吗？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>不一定。<a href="https://zh.wikipedia.org/wiki/%E6%9E%81%E5%80%BC%E5%AE%9A%E7%90%86" target="_blank">极值定理</a>说一个连续函数在有界闭集上才会有最大值和最小值。所以凸优化不一定有最优解。</p><p>此外，即使有最优解，也不一定唯一。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>严格凸的话，应该是有唯一的解的。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005740"><a href="#article-1005740">Question 1005740: 混合整数规划的混合是什么意思？</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>混合整数规划的“混合”是什么意思？和普通的整数规划有什么区别？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>混合整数规划不要求所有的决策变量都是整数。</p><p>普通的整数规划例如：</p><p>$$\text{maximize }f(x_1, x_2, x_3, x_3) \\ \text{subject to } g(x_1, x_2, x_3, x_4)\geq 0 \text{ and } x_1,x_2,x_3,x_4 \in \mathbb{Z}$$</p><p>混合整数规划例如：</p><p>$$\text{maximize }f(x_1, x_2, x_3, x_3) \\ \text{subject to } g(x_1, x_2, x_3, x_4)\geq 0 \text{ and } x_1,x_2 \in \mathbb{Z} \text{ and }x_3,x_4\in \mathbb{R}$$</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>普通整数规划决策变量都是整数，混合整数规划决策变量有一些是整数有一些是实数。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1656090"><a href="#article-1656090">Question 1656090: 二维平面上有一些点，找一个点使之到所有点的距离平方和最小?</a></h2>
+            
+                <span class="badge badge-pill badge-success">数学</span>
+            
+                <span class="badge badge-pill badge-success">最优化</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>这个点该怎么找，有什么思路吗？<br/></p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>找离重心（x,y取平均值）最近的点，因为均值离所有点的距离平方和MSE最小。题外话，median离所有点距离的绝对值和MAE最小。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>

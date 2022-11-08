@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
+    <title>Questions | SofaSofa-wiki</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$']]
+            }
+        });
+    </script>
+    <style>
+        #container {
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        .lvl2_answer {
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" rel="stylesheet">
+    <script >hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <!-- Left sidebar started -->
+    <aside class="pattern-3">
+        <a href="index.html" class="logo">
+            <img src="./assets/img/sofasofa.png" />
+        </a>
+
+        <!-- Sidebar top section navigation started -->
+        <div class="nav-top">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <!-- Multi-items left sidebar menu item -->
+                <li class="uk-active">
+                    <a href="index.html"><img src="./assets/img/menu-items/icons.svg" />SofaSofa-wiki</a>
+                </li>
+
+                <li>
+                    <a href="summary.html"><img src="./assets/img/menu-items/advance.svg" />总结</a>
+                </li>
+
+                <li class="uk-parent uk-open">
+                    <a href="#"><img src="./assets/img/menu-items/home.svg" />问题</a>
+                    <ul class="uk-nav-sub">
+                        
+                            
+                            <li><a href="统计-机器学习.html">统计-机器学习</a></li>
+                            
+                        
+                            
+                            <li><a href="R.html">R</a></li>
+                            
+                        
+                            
+                            <li><a href="TensorFlow.html">TensorFlow</a></li>
+                            
+                        
+                            
+                            <li><a href="回归分析.html">回归分析</a></li>
+                            
+                        
+                            
+                            <li><a href="数学.html">数学</a></li>
+                            
+                        
+                            
+                            <li><a href="贝叶斯.html">贝叶斯</a></li>
+                            
+                        
+                            
+                            <li><a href="监督式学习.html">监督式学习</a></li>
+                            
+                        
+                            
+                            <li><a href="无监督学习.html">无监督学习</a></li>
+                            
+                        
+                            
+                            <li><a href="描述性统计.html">描述性统计</a></li>
+                            
+                        
+                            
+                            <li><a href="概率论.html">概率论</a></li>
+                            
+                        
+                            
+                            <li><a href="数值计算.html">数值计算</a></li>
+                            
+                        
+                            
+                            <li><a href="推荐系统.html">推荐系统</a></li>
+                            
+                        
+                            
+                            <li><a href="抽样方法.html">抽样方法</a></li>
+                            
+                        
+                            
+                            <li><a href="假设检验.html">假设检验</a></li>
+                            
+                        
+                            
+                            <li><a href="概率分布.html">概率分布</a></li>
+                            
+                        
+                            
+                            <li><a href="计算机视觉.html">计算机视觉</a></li>
+                            
+                        
+                            
+                            <li><a href="时间序列.html">时间序列</a></li>
+                            
+                        
+                            
+                            <li><a href="数据预处理.html">数据预处理</a></li>
+                            
+                        
+                            
+                            <li><a href="数据可视化.html">数据可视化</a></li>
+                            
+                        
+                            
+                            <li><a href="模型验证.html">模型验证</a></li>
+                            
+                        
+                            
+                            <li><a href="特征选择.html">特征选择</a></li>
+                            
+                        
+                            
+                            <li><a href="深度学习.html">深度学习</a></li>
+                            
+                        
+                            
+                            <li><a href="最优化.html">最优化</a></li>
+                            
+                        
+                            
+                            <li><a href="算法-数据结构-数据库.html">算法-数据结构-数据库</a></li>
+                            
+                        
+                            
+                            <li><a href="自然语言处理.html">自然语言处理</a></li>
+                            
+                        
+                            
+                            <li><a href="开放问题.html">开放问题</a></li>
+                            
+                        
+                            
+                            <li><a href="人工神经网络.html">人工神经网络</a></li>
+                            
+                        
+                            
+                            <li><a href="损失函数.html">损失函数</a></li>
+                            
+                        
+                            
+                            <li><a href="线性代数.html">线性代数</a></li>
+                            
+                        
+                            
+                            <li><a href="mysql.html">mysql</a></li>
+                            
+                        
+                            
+                            <li><a href="Python.html">Python</a></li>
+                            
+                        
+                            
+                            <li class="uk-active"><a href="数据降维.html">数据降维</a></li>
+                            
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar top section navigation ended -->
+    </aside>
+    <!-- Left sidebar ended -->
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <!-- <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li> -->
+            <!-- <li class="spy-item"><a href="#article-1">不用洛必达法则证明sin x比上x的极限是1</a></li> -->
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1001278">如何简单理解正则化</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1003473">Truncated SVD和PCA有什么区别吗？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1005719">为什么LDA降维最多降到类别数k-1？</a></li>
+            
+            <li style="margin-top: 10px;" class="spy-item"><a href="#article-1007410">用pca对数据集降维时为什么一定要训练集和测试集？</a></li>
+            
+        </ul>
+    </section>
+
+    <main>
+        
+            <h2 id="article-1001278"><a href="#article-1001278">Question 1001278: 如何简单理解正则化</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">数据降维</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>可以从几何意义来理解这一类的问题？可以从哪几方面理解的</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>从模型复杂度来理解的话，正则化就是<a href="http://sofasofa.io/forum_main_post.php?postid=1000306">奥卡姆剃刀</a></p><p>正则化是奥卡姆剃刀的具体实现，在保持预测能力相当时，降低模型复杂度</p><p><br/></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">正则化是指，在待优化的目标函数中，加入对函数参数解空间（w，b）的惩罚，从而一定程度上约束模型的复杂度，从而使得学得的模型在具有predictive power的同时，并不会过度拟合。</span></p><p><span style="font-size: 14px;">从数学方面简单理解，你可以画L1-norm和L2-norm的二维图像，可以观察到分别是菱形和圆形的取值空间，而argminloss求出来的最优解（w，b）在二维图像上表现为等高线，等高线上的点就是argminloss的解，从而我们希望最优解也落在施加约束后解空间上，所以等高线会和约束后的解空间寻求交点，从而找到最优解。</span></p><p><span style="font-size: 14px;">只能以文字语言讲述啦！希望共同进步！</span></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 3</span>: <div class="col-md-11 col-xs-10 p-r"><p>从数学来讲，相当于给你的损失函数之后再加了一项代表模型复杂度的项，不同的正则化方式有不同的模型复杂度的表征方式（比如L1,L2），这样你的模型在训练的时候，除了考虑本身的损失函数，还要去尝试优化模型复杂度这一项，最终得到的结果是损失函数和模型复杂的一个trade-off，降低了过拟合的风险/</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 4</span>: <div class="col-md-11 col-xs-10 p-r"><p>正则化就是金融中的对冲。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                    <div>
+                        <span class="badge badge-info">comment 1</span>
+                        <span>此话怎讲？</span>
+                    </div>
+                
+                    <div>
+                        <span class="badge badge-info">comment 2</span>
+                        <span>假设持有一家公司的大量股票，也就是看多这家公司，但是最近大环境不好，跌跌不休。这个时候你不想卖出股票，但是想降低跌更多的风险，那就可以在买入这家公司股票（买多）的同时买空这家公司。这样一来，当股价下跌时你买的股票是跌的，但是你买空的部分却是有收益的，所以当股票下跌时你的损失就不会那么大，当然了股票上涨你的收益也没那么多。这就是在对冲你买股票（看多）所产生的风险。同理，正则化就是对冲模型的高复杂度所产生的风险——过拟合，也就是做空复杂度。</span>
+                    </div>
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1003473"><a href="#article-1003473">Question 1003473: Truncated SVD和PCA有什么区别吗？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">数据降维</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>Truncated SVD和PCA有什么区别吗？感觉它们都是选了最大的k个成分</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>PCA是对矩阵先做中心化处理（每列减去列均值），然后再做Truncated SVD</p><p>换言之，如果矩阵本身就是已经中心化的，那么PCA和Truncated SVD就是等价的</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1005719"><a href="#article-1005719">Question 1005719: 为什么LDA降维最多降到类别数k-1？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">数据降维</span>
+            
+            <p><div class="col-md-11 col-xs-10">为什么LDA降维最多降到类别数k-1？</div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><span style="font-size: 14px;">LDA算法中需要计算</span><span style="font-size: 14px;">类间散度矩阵$S_b$和类内散度矩阵$S_w$。</span></p><p><span style="font-size: 14px;">现在原数据降维到矩阵$W$，有$n$行和$d$列，而矩阵$W$的列是$S_w^{-1}S_b$的特征向量。</span></p><p><span style="font-size: 14px;">而$S_b$的秩最大为$k-1$，所以最多有$k-1$个特征向量。所以$W$最多只有$k-1$列。</span></p><p><span style="font-size: 14px;">相关博客：</span><a href="https://www.cnblogs.com/pinard/p/6244265.html" target="_blank"><span style="font-size: 14px;">线性判别分析LDA原理总结</span></a></p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+            <h2 id="article-1007410"><a href="#article-1007410">Question 1007410: 用pca对数据集降维时为什么一定要训练集和测试集？</a></h2>
+            
+                <span class="badge badge-pill badge-success">统计/机器学习</span>
+            
+                <span class="badge badge-pill badge-success">数据降维</span>
+            
+            <p><div class="col-md-11 col-xs-10"><p>用pca对数据集降维时为什么一定要训练集和测试集？</p><p>为什么数据不能合在一起做pca降维呢？</p></div></p >
+            <hr>
+            <h3>Answer</h3>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>如果合一起做PCA，测试集里的信息会泄露到PCA中。打个比方，训练集是黄色，测试集是蓝色，合一起PCA会是绿色。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <div>
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>因为会造成<a href="http://sofasofa.io/forum_main_post.php?postid=1001477" target="_blank">数据泄露</a>啊，训练集中不应该含有测试集的信息。</p></div></div>
+                <ul class="lvl2_answer">
+                
+                </ul>
+            </div>
+            
+            <hr>
+        
+
+        <span style="display: block; margin-top: 50px;">来自<a href="http://sofasofa.io/">sofasofa</a >(一个专业的机器学习社区)，建议去sofa社区阅读，这里只是记录。防止网站在网络中走失。</span>
+
+        <!-- Next and Prvious navigation ended -->
+    </main>
+
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+</body>
+</html>
