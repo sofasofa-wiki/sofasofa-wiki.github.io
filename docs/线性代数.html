@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -520,19 +521,32 @@ gradient是Jacobian的特例。</span>
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>numpy.dot或者numpy.matmul都可以</p><pre><code class="python">&gt;&gt;&gt; a
-array([[1, 2],
-       [3, 4]])
-&gt;&gt;&gt; b
-array([[1, 2, 3],
-       [1, 2, 1]])
-# numpy.dot
-&gt;&gt;&gt; np.dot(a, b)
-array([[ 3,  6,  5],
-       [ 7, 14, 13]])
-# numpy.matmul
-&gt;&gt;&gt; np.matmul(a, b)
-array([[ 3,  6,  5],
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>numpy.dot或者numpy.matmul都可以</p><pre><code class="python">&gt;&gt;&gt; a
+
+array([[1, 2],
+
+       [3, 4]])
+
+&gt;&gt;&gt; b
+
+array([[1, 2, 3],
+
+       [1, 2, 1]])
+
+# numpy.dot
+
+&gt;&gt;&gt; np.dot(a, b)
+
+array([[ 3,  6,  5],
+
+       [ 7, 14, 13]])
+
+# numpy.matmul
+
+&gt;&gt;&gt; np.matmul(a, b)
+
+array([[ 3,  6,  5],
+
        [ 7, 14, 13]])</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -866,7 +880,8 @@ array([[ 3,  6,  5],
             
                 <span class="badge badge-pill badge-success">TensorFlow</span>
             
-            <p><div class="col-md-11 col-xs-10"><p><br/></p><pre><code class="python">代码：product = tf.mul(X, w)
+            <p><div class="col-md-11 col-xs-10"><p><br/></p><pre><code class="python">代码：product = tf.mul(X, w)
+
 错误：module 'tensorflow' has no attribute 'mul'</code></pre><p>以前没遇到过这个问题</p></div></p >
             <hr>
             <h3>Answer</h3>

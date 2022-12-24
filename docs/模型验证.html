@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -475,22 +476,38 @@ auc(actual, prediction)</code></pre><p><br/></p></div></div>
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>pROC比较慢，github上有人贴出了一个<a href="https://gist.github.com/traversc/1446ebe1dcc2d84bccdca781d4f1fa2a" target="_blank">更快的版本</a>。代码如下：</p><pre><code class="python">fastROC &lt;- function(probs, class) {
-    class_sorted &lt;- class[order(probs, decreasing=T)]
-    TPR &lt;- cumsum(class_sorted) / sum(class)
-    FPR &lt;- cumsum(class_sorted == 0) / sum(class == 0)
-    return(list(tpr=TPR, fpr=FPR))
-}
-
-# Helpful function adapted from: https://stat.ethz.ch/pipermail/r-help/2005-September/079872.html
-fastAUC &lt;- function(probs, class) {
-    x &lt;- probs
-    y &lt;- class
-    x1 = x[y==1]; n1 = length(x1); 
-    x2 = x[y==0]; n2 = length(x2);
-    r = rank(c(x1,x2))  
-    auc = (sum(r[1:n1]) - n1*(n1+1)/2) / n1 / n2
-    return(auc)
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>pROC比较慢，github上有人贴出了一个<a href="https://gist.github.com/traversc/1446ebe1dcc2d84bccdca781d4f1fa2a" target="_blank">更快的版本</a>。代码如下：</p><pre><code class="python">fastROC &lt;- function(probs, class) {
+
+    class_sorted &lt;- class[order(probs, decreasing=T)]
+
+    TPR &lt;- cumsum(class_sorted) / sum(class)
+
+    FPR &lt;- cumsum(class_sorted == 0) / sum(class == 0)
+
+    return(list(tpr=TPR, fpr=FPR))
+
+}
+
+
+
+# Helpful function adapted from: https://stat.ethz.ch/pipermail/r-help/2005-September/079872.html
+
+fastAUC &lt;- function(probs, class) {
+
+    x &lt;- probs
+
+    y &lt;- class
+
+    x1 = x[y==1]; n1 = length(x1); 
+
+    x2 = x[y==0]; n2 = length(x2);
+
+    r = rank(c(x1,x2))  
+
+    auc = (sum(r[1:n1]) - n1*(n1+1)/2) / n1 / n2
+
+    return(auc)
+
 }</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -627,9 +644,12 @@ fastAUC &lt;- function(probs, class) {
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><b>1.</b> 通过聚类指标来看
-,包括RMSSTD，SPRSQ，RSQ，CCC，伪F，伪T等
-</p><p><b>2. </b>通过散点图看，是否聚类的是你想要的。
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><b>1.</b> 通过聚类指标来看
+
+,包括RMSSTD，SPRSQ，RSQ，CCC，伪F，伪T等
+
+</p><p><b>2. </b>通过散点图看，是否聚类的是你想要的。
+
 </p><p><b>3.</b> 看每个聚类的各个指标的平均值，如果各个指标的值都很明显区分，可以业务上解释，即为聚类效果好。</p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -835,14 +855,22 @@ fastAUC &lt;- function(probs, class) {
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>rand index的python实现。</p><p>代码很简单，看懂代码了就理解rand index了</p><pre><code class="python">def RandIndedx(x, y):
-    l = len(x)
-    agrees = 0
-    for i in range(l-1):
-        for j in range(i+1, l):
-            x_status = int(x[i] == x[j])
-            y_status = int(y[i] == y[j])
-            agrees += int(x_status == y_status)
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>rand index的python实现。</p><p>代码很简单，看懂代码了就理解rand index了</p><pre><code class="python">def RandIndedx(x, y):
+
+    l = len(x)
+
+    agrees = 0
+
+    for i in range(l-1):
+
+        for j in range(i+1, l):
+
+            x_status = int(x[i] == x[j])
+
+            y_status = int(y[i] == y[j])
+
+            agrees += int(x_status == y_status)
+
     return agrees * 2 / (l * (l - 1))</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -869,27 +897,46 @@ fastAUC &lt;- function(probs, class) {
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>可能大家接触比较多的是MAP，MAP考虑的是0和1的排序。而NDCG则是考虑到评分的排序。</p><p>说到NDCG就需要从CG开始说起。</p><p>CG（cumulative gain，累计增益）可以用于评价基于打分/评分的个性推荐系统。假设我们推荐$k$个物品，这个推荐列表的$CG_k$计算公式如下：
-</p><p>$$CG_k=\sum_{i=1}^k \text{rel}_i.$$
-</p><p>$\text{rel}_i$表示第$k$个物品的相关性或者评分。假设我们共推荐$k$个电影，$rel_i$可以是用户对第$i$部电影的评分。
-</p><p>比如豆瓣给用户推荐了五部电影，
-</p><p>$M_1$,$M_2$,$M_3$,$M_4$,$M_5$，
-<span style="font-size: 1rem;"></span></p><p>该用户对这五部电影的评分分别是
-</p><p>5, 3, 2, 1, 2
-</p><p>那么这个推荐列表的CG等于$$CG_5=5+3+2+1+2=13.$$
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>可能大家接触比较多的是MAP，MAP考虑的是0和1的排序。而NDCG则是考虑到评分的排序。</p><p>说到NDCG就需要从CG开始说起。</p><p>CG（cumulative gain，累计增益）可以用于评价基于打分/评分的个性推荐系统。假设我们推荐$k$个物品，这个推荐列表的$CG_k$计算公式如下：
+
+</p><p>$$CG_k=\sum_{i=1}^k \text{rel}_i.$$
+
+</p><p>$\text{rel}_i$表示第$k$个物品的相关性或者评分。假设我们共推荐$k$个电影，$rel_i$可以是用户对第$i$部电影的评分。
+
+</p><p>比如豆瓣给用户推荐了五部电影，
+
+</p><p>$M_1$,$M_2$,$M_3$,$M_4$,$M_5$，
+
+<span style="font-size: 1rem;"></span></p><p>该用户对这五部电影的评分分别是
+
+</p><p>5, 3, 2, 1, 2
+
+</p><p>那么这个推荐列表的CG等于$$CG_5=5+3+2+1+2=13.$$
+
 </p><p>
-</p><p>CG没有考虑推荐的次序，在此基础之后我们引入对物品顺序的考虑，就有了DCG(discounted CG)，折扣累积增益。公式如下：
-<span style="font-size: 1rem;"></span></p><p>$$DCG_k=\sum_{i=1}^k \frac{2^{\text{rel}_i}-1}{\log_2(i+1)}.$$
-</p><p>比如豆瓣给用户推荐了五部电影，
-</p><p>$M_1$,$M_2$,$M_3$,$M_4$,$M_5$，
-</p><p>该用户对这五部电影的评分分别是
-</p><p>5, 3, 2, 1, 2
-</p><p>那么这个推荐列表的DCG等于$$DCG_5=\frac{2^5-1}{\log_2 2}+\frac{2^3-1}{\log_2 3}+\frac{2^2-1}{\log_2 4}+\frac{2^1-1}{\log_2 5}+\frac{2^2-1}{\log_2 6}=31+4.4+1.5+0.4+1.2=38.5$$
+</p><p>CG没有考虑推荐的次序，在此基础之后我们引入对物品顺序的考虑，就有了DCG(discounted CG)，折扣累积增益。公式如下：
+
+<span style="font-size: 1rem;"></span></p><p>$$DCG_k=\sum_{i=1}^k \frac{2^{\text{rel}_i}-1}{\log_2(i+1)}.$$
+
+</p><p>比如豆瓣给用户推荐了五部电影，
+
+</p><p>$M_1$,$M_2$,$M_3$,$M_4$,$M_5$，
+
+</p><p>该用户对这五部电影的评分分别是
+
+</p><p>5, 3, 2, 1, 2
+
+</p><p>那么这个推荐列表的DCG等于$$DCG_5=\frac{2^5-1}{\log_2 2}+\frac{2^3-1}{\log_2 3}+\frac{2^2-1}{\log_2 4}+\frac{2^1-1}{\log_2 5}+\frac{2^2-1}{\log_2 6}=31+4.4+1.5+0.4+1.2=38.5$$
+
 </p><p>
-</p><p>
-DCG没有考虑到推荐列表和每个检索中真正有效结果个数，所以最后我们引入NDCG(normalized discounted CG)，顾名思义就是标准化之后的DCG。</p><p>$$NDCG_k=\frac{DCG_k}{IDCG_k}$$</p><p>其中$IDCG$是指ideal DCG，也就是完美结果下的DCG。</p><p>继续上面的例子，如果相关电影一共有7部</p><p>$M_1$,$M_2$,$M_3$,$M_4$,$M_5$,$M_6$,$M_7$</p><p>该用户对这七部电影的评分分别是
-</p><p>5, 3, 2, 1, 2
-, 4, 0</p><p>把这7部电影按评分排序</p><p>5, 4, 3, 2, 2, 1, 0</p><p>这个情况下的完美DCG是$$IDCG_5=\frac{2^5-1}{\log_2 2}+\frac{2^4-1}{\log_2 3}+\frac{2^3-1}{\log_2 4}+\frac{2^2-1}{\log_2 5}+\frac{2^2-1}{\log_2 6}=31+9.5+3.5+1.3+1.2=46.5$$
+</p><p>
+
+DCG没有考虑到推荐列表和每个检索中真正有效结果个数，所以最后我们引入NDCG(normalized discounted CG)，顾名思义就是标准化之后的DCG。</p><p>$$NDCG_k=\frac{DCG_k}{IDCG_k}$$</p><p>其中$IDCG$是指ideal DCG，也就是完美结果下的DCG。</p><p>继续上面的例子，如果相关电影一共有7部</p><p>$M_1$,$M_2$,$M_3$,$M_4$,$M_5$,$M_6$,$M_7$</p><p>该用户对这七部电影的评分分别是
+
+</p><p>5, 3, 2, 1, 2
+
+, 4, 0</p><p>把这7部电影按评分排序</p><p>5, 4, 3, 2, 2, 1, 0</p><p>这个情况下的完美DCG是$$IDCG_5=\frac{2^5-1}{\log_2 2}+\frac{2^4-1}{\log_2 3}+\frac{2^3-1}{\log_2 4}+\frac{2^2-1}{\log_2 5}+\frac{2^2-1}{\log_2 6}=31+9.5+3.5+1.3+1.2=46.5$$
+
 </p><p>所以</p><p>$$NDCG_5 = \frac{DCG_5}{IDCG_5}=\frac{38.5}{46.5}=0.827$$</p><p>NDCG是0到1的数，越接近1说明推荐越准确。</p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1173,7 +1220,8 @@ DCG没有考虑到推荐列表和每个检索中真正有效结果个数，所�
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>你可以按照定义手算。或者装一个MLmetrics的library，然后用里面的logloss</p><pre><code class="R">library(MLmetrics)
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>你可以按照定义手算。或者装一个MLmetrics的library，然后用里面的logloss</p><pre><code class="R">library(MLmetrics)
+
 LogLoss(y_pred, y_true)</code></pre></div></div>
                 <ul class="lvl2_answer">
                 

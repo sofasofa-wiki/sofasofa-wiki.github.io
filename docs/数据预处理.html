@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -1367,10 +1368,14 @@ data_array = min_max_scaler.fit_transform(data_array)</code></pre><p>这样的�
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>我觉得你不能分别对train和test做标准化，不然就会有问题。你应该对train做标准化，然后用标准化的结果作用在test上。</p><p>比如</p><pre><code class="python"># 对整个训练集标准化
-min_max_scaler = preprocessing.MinMaxScaler()
-train_scaled = min_max_scaler.fit_transform(train)
-# 利用上面的min_max_scaler对某一个测试样本进行标准化
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>我觉得你不能分别对train和test做标准化，不然就会有问题。你应该对train做标准化，然后用标准化的结果作用在test上。</p><p>比如</p><pre><code class="python"># 对整个训练集标准化
+
+min_max_scaler = preprocessing.MinMaxScaler()
+
+train_scaled = min_max_scaler.fit_transform(train)
+
+# 利用上面的min_max_scaler对某一个测试样本进行标准化
+
 test_sample_scaled = min_max_scaler.transform(test_sample)</code></pre><p>至于第二个问题，本来predict的时候就是一个个进行预测的，没有所谓的batch吧</p></div></div>
                 <ul class="lvl2_answer">
                 

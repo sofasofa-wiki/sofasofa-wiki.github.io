@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -1288,8 +1289,10 @@
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>线性回归的推导也可以从最大似然估计(MLE)入手。</p><p>$$y=X\beta+\epsilon$$</p><p>根据<a href="http://sofasofa.io/forum_main_post.php?postid=1000313" target="_blank">线性回归的假设</a>，我们知道$\epsilon$是多元正态分布，并且可以认为协方差矩阵为$\sigma_0^2I$，$I$是单位矩阵。</p><p>所以变量$y_i$的条件分布是均值为$X_i\beta$并且方差为$\sigma_0^2$的正态分布，所以概率密度函数为 
-</p><p>$$F_Y(y_i|\beta, X_i)=\frac{1}{\sqrt{2\pi\sigma_0^2}}e^{-\frac{(y_i-X_i\beta)^2}{2\sigma_0^2}}$$</p><p>所以似然函数就是</p><p>$$L(\beta, \sigma; X, y)=\prod_{i=1}^N\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y_i-X_i\beta)^2}{2\sigma^2}}$$</p><p>为了方便计算，两边同时取对数，</p><p>$$\log L(\beta, \sigma; X, y)=-N\log\sqrt{2\pi\sigma^2}+\sum_{i=1}^N(-\frac{(y_i-X_i\beta)^2}{2\sigma^2})$$
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>线性回归的推导也可以从最大似然估计(MLE)入手。</p><p>$$y=X\beta+\epsilon$$</p><p>根据<a href="http://sofasofa.io/forum_main_post.php?postid=1000313" target="_blank">线性回归的假设</a>，我们知道$\epsilon$是多元正态分布，并且可以认为协方差矩阵为$\sigma_0^2I$，$I$是单位矩阵。</p><p>所以变量$y_i$的条件分布是均值为$X_i\beta$并且方差为$\sigma_0^2$的正态分布，所以概率密度函数为 
+
+</p><p>$$F_Y(y_i|\beta, X_i)=\frac{1}{\sqrt{2\pi\sigma_0^2}}e^{-\frac{(y_i-X_i\beta)^2}{2\sigma_0^2}}$$</p><p>所以似然函数就是</p><p>$$L(\beta, \sigma; X, y)=\prod_{i=1}^N\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y_i-X_i\beta)^2}{2\sigma^2}}$$</p><p>为了方便计算，两边同时取对数，</p><p>$$\log L(\beta, \sigma; X, y)=-N\log\sqrt{2\pi\sigma^2}+\sum_{i=1}^N(-\frac{(y_i-X_i\beta)^2}{2\sigma^2})$$
+
 </p><p>对于给定的$\sigma$，为了最大化似然函数，我们就要最大化$-(y-X\beta)^2$，也就是最小化$(y-X\beta)^2$。</p><p>所以从MLE的角度可以推出我们的损失函数就是差的平方和（最小二乘）。</p><p>接下来的推导就是@sasa写的那样了。</p></div></div>
                 <ul class="lvl2_answer">
                 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -292,17 +293,28 @@
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>牛顿法求根的python代码</p><pre><code class="python">def findSqrt(x, tol=0.01):
-    if x == 0: return 0
-    if x &lt; 0: return findSqrt(-x) * 1j
-    init_guess = 1
-    while init_guess ** 2 &lt; x:
-        init_guess *= 2
-    r_o = init_guess
-    err = r_o ** 2 - x
-    while abs(err) &gt; tol:
-        r = r_o - err / (2 * r_o)
-        r_o, err = r, r ** 2 - x
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>牛顿法求根的python代码</p><pre><code class="python">def findSqrt(x, tol=0.01):
+
+    if x == 0: return 0
+
+    if x &lt; 0: return findSqrt(-x) * 1j
+
+    init_guess = 1
+
+    while init_guess ** 2 &lt; x:
+
+        init_guess *= 2
+
+    r_o = init_guess
+
+    err = r_o ** 2 - x
+
+    while abs(err) &gt; tol:
+
+        r = r_o - err / (2 * r_o)
+
+        r_o, err = r, r ** 2 - x
+
     return r_o</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -647,7 +659,8 @@
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>1.RMSProp是AdaGrad算法的改进。鉴于神经网络都是非凸条件下的，RMSProp在非凸条件下结果更好，改变梯度累积为指数衰减的移动平均以丢弃遥远的过去历史。
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>1.RMSProp是AdaGrad算法的改进。鉴于神经网络都是非凸条件下的，RMSProp在非凸条件下结果更好，改变梯度累积为指数衰减的移动平均以丢弃遥远的过去历史。
+
 </p><p>
 </p><p>2.经验上，RMSProp被证明有效且实用的深度学习网络优化算法。</p><p>与AdaGrad相比，RMSProp增加了一个衰减系数来控制历史信息的获取多少。</p><p>所以我建议题主先看一下adagrad的算法实现</p></div></div>
                 <ul class="lvl2_answer">
@@ -858,7 +871,8 @@
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>1牛顿法收敛速度为二阶，对于正定二次函数一步迭代即达最优解。</p><p>2牛顿法是局部收敛的，当初始点选择不当时，往往导致不收敛</p><p>3牛顿法不是下降算法，当二阶海塞矩阵非正定时，不能保证产生方向是下降方向。</p><p>4二阶海塞矩阵必须可逆，否则算法进行困难。</p><p>5对函数要求苛刻（二阶连续可微，海塞矩阵可逆），而且运算量大。
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>1牛顿法收敛速度为二阶，对于正定二次函数一步迭代即达最优解。</p><p>2牛顿法是局部收敛的，当初始点选择不当时，往往导致不收敛</p><p>3牛顿法不是下降算法，当二阶海塞矩阵非正定时，不能保证产生方向是下降方向。</p><p>4二阶海塞矩阵必须可逆，否则算法进行困难。</p><p>5对函数要求苛刻（二阶连续可微，海塞矩阵可逆），而且运算量大。
+
 </p><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 

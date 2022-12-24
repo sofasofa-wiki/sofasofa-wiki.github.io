@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -390,7 +391,8 @@
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>这个算法不是统计方法，也没有机器学习的模型，就是个贪婪的扫描算法。</p><p>最大正向匹配算法需要一个分词词典（也即是已经分词过的词典，包括所有的单个汉字）。</p><p>假定分词词典中的最长词有k个汉子字符串，则用被处理文档的当前字符串中的前k个字作为匹配字段，查找字典。若此时分词词典中存在这样一个字符串，则匹配成功，而此时被匹配的字段切分出来。如果匹配失败，将匹配字段中的最后一个字去掉，对此时剩下的字串重新与分词词典进行匹配，如此下去直到匹配成功。也即是切分出一个词或剩余字串的长度为零为止，这个时候才是匹配了一轮，接着进行下一个k字字串的匹配，方法同上，直到文档被扫描完为止。
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>这个算法不是统计方法，也没有机器学习的模型，就是个贪婪的扫描算法。</p><p>最大正向匹配算法需要一个分词词典（也即是已经分词过的词典，包括所有的单个汉字）。</p><p>假定分词词典中的最长词有k个汉子字符串，则用被处理文档的当前字符串中的前k个字作为匹配字段，查找字典。若此时分词词典中存在这样一个字符串，则匹配成功，而此时被匹配的字段切分出来。如果匹配失败，将匹配字段中的最后一个字去掉，对此时剩下的字串重新与分词词典进行匹配，如此下去直到匹配成功。也即是切分出一个词或剩余字串的长度为零为止，这个时候才是匹配了一轮，接着进行下一个k字字串的匹配，方法同上，直到文档被扫描完为止。
+
 </p><p>这样分词的效果是让每个被分出来的词尽量长，句子被分的次数少。</p></div></div>
                 <ul class="lvl2_answer">
                 

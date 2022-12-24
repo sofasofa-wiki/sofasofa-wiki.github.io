@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -413,11 +414,16 @@
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>having是跟在group by之后，对汇总后的数据进行筛选的。</p><p>where就是普通的筛选。</p><p>用的时候就是这样</p><pre><code class="python">SELECT column_name(s)
-FROM table_name
-WHERE condition
-GROUP BY column_name(s)
-HAVING condition
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>having是跟在group by之后，对汇总后的数据进行筛选的。</p><p>where就是普通的筛选。</p><p>用的时候就是这样</p><pre><code class="python">SELECT column_name(s)
+
+FROM table_name
+
+WHERE condition
+
+GROUP BY column_name(s)
+
+HAVING condition
+
 ORDER BY column_name(s);</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -442,16 +448,26 @@ ORDER BY column_name(s);</code></pre></div></div>
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>没有特别简单的方法，假设表的名字叫grades，你想得到grades中其中一列grade的中位数，代码如下</p><pre><code class="python">SET @rowindex := -1;
- 
-SELECT
-   AVG(g.grade)
-FROM
-   (SELECT @rowindex:=@rowindex + 1 AS rowindex,
-           grades.grade AS grade
-    FROM grades
-    ORDER BY grades.grade) AS g
-WHERE
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>没有特别简单的方法，假设表的名字叫grades，你想得到grades中其中一列grade的中位数，代码如下</p><pre><code class="python">SET @rowindex := -1;
+
+ 
+
+SELECT
+
+   AVG(g.grade)
+
+FROM
+
+   (SELECT @rowindex:=@rowindex + 1 AS rowindex,
+
+           grades.grade AS grade
+
+    FROM grades
+
+    ORDER BY grades.grade) AS g
+
+WHERE
+
 g.rowindex IN (FLOOR(@rowindex / 2) , CEIL(@rowindex / 2));</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -559,16 +575,26 @@ g.rowindex IN (FLOOR(@rowindex / 2) , CEIL(@rowindex / 2));</code></pre></div></
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>两种方法</p><p>第一种方法比较直接，先groupby挑出最大的，然后再回到原来的表里找到最大值所在的行</p><pre><code class="python">SELECT a.*
-FROM YourTable a
-INNER JOIN (
-    SELECT id, MAX(val) rev
-    FROM YourTable
-    GROUP BY id
-) b ON a.id = b.id AND a.val = b.val</code></pre><p>第二种方法比较机智，让自己和自己做join，但是要求左边的表中val的数值小于右表中的val，否则就为空。显然空着行就是val取最大值的行</p><pre><code class="python">SELECT a.*
-FROM YourTable a
-LEFT OUTER JOIN YourTable b
-    ON a.id = b.id AND a.val &lt; b.val
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>两种方法</p><p>第一种方法比较直接，先groupby挑出最大的，然后再回到原来的表里找到最大值所在的行</p><pre><code class="python">SELECT a.*
+
+FROM YourTable a
+
+INNER JOIN (
+
+    SELECT id, MAX(val) rev
+
+    FROM YourTable
+
+    GROUP BY id
+
+) b ON a.id = b.id AND a.val = b.val</code></pre><p>第二种方法比较机智，让自己和自己做join，但是要求左边的表中val的数值小于右表中的val，否则就为空。显然空着行就是val取最大值的行</p><pre><code class="python">SELECT a.*
+
+FROM YourTable a
+
+LEFT OUTER JOIN YourTable b
+
+    ON a.id = b.id AND a.val &lt; b.val
+
 WHERE b.id IS NULL;</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -728,8 +754,10 @@ new_data = data.groupby('ID').agg(percentiles)</code></pre><p><br/></p></div></d
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>下面三个方式都可以</p><pre><code class="python">select date(sysdate());
-selece date(now());
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>下面三个方式都可以</p><pre><code class="python">select date(sysdate());
+
+selece date(now());
+
 selece curdate();</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -792,13 +820,20 @@ selece curdate();</code></pre><p><br/></p></div></div>
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>要看用户的数据权限，如果你可以查看information_schema.Tables，才可以查看，可以试试下面的代码<br/></p><pre><code class="python">SELECT 
-	TABLE_NAME, CREATE_TIME, UPDATE_TIME 
-FROM 
-	information_schema.TABLES 
-WHERE 
-	information_schema.TABLES.TABLE_SCHEMA = <b>mydatabase</b> 
-AND
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>要看用户的数据权限，如果你可以查看information_schema.Tables，才可以查看，可以试试下面的代码<br/></p><pre><code class="python">SELECT 
+
+	TABLE_NAME, CREATE_TIME, UPDATE_TIME 
+
+FROM 
+
+	information_schema.TABLES 
+
+WHERE 
+
+	information_schema.TABLES.TABLE_SCHEMA = <b>mydatabase</b> 
+
+AND
+
 	information_schema.TABLES.TABLE_NAME = <b>mytable</b></code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 

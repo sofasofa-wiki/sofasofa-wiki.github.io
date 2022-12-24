@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -299,14 +300,22 @@
             
                 <span class="badge badge-pill badge-success">Python</span>
             
-            <p><div class="col-md-11 col-xs-10"><p>我有个关于defaultdict的疑问，我的理解是如果key不存在，defaultdict可以帮你返回一个你预设的值，比如0，而不是直接报错。我试着用了defaultdict，但是报错，不大理解defaultdict的用法。</p><pre><code class="python">&gt;&gt;&gt; from collections import defaultdict
-&gt;&gt;&gt; my_dict = defaultdict(0)
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-48-92bfb8c7cd6b> in <module>()
-      1 from collections import defaultdict
-----&gt; 2 my_dict = defaultdict(0)
-
+            <p><div class="col-md-11 col-xs-10"><p>我有个关于defaultdict的疑问，我的理解是如果key不存在，defaultdict可以帮你返回一个你预设的值，比如0，而不是直接报错。我试着用了defaultdict，但是报错，不大理解defaultdict的用法。</p><pre><code class="python">&gt;&gt;&gt; from collections import defaultdict
+
+&gt;&gt;&gt; my_dict = defaultdict(0)
+
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+<ipython-input-48-92bfb8c7cd6b> in <module>()
+
+      1 from collections import defaultdict
+
+----&gt; 2 my_dict = defaultdict(0)
+
+
+
 TypeError: first argument must be callable or None</module></ipython-input-48-92bfb8c7cd6b></code></pre></div></p >
             <hr>
             <h3>Answer</h3>
@@ -339,7 +348,8 @@ mydict = defaultdict(lambda: 0)</code></pre><p>然后你call一个不存在的ke
             
                 <span class="badge badge-pill badge-success">Python</span>
             
-            <p><div class="col-md-11 col-xs-10"><p>假设有两个dict，并且它们的key是没有交集的，比如</p><pre><code class="python">A = {'a': 1, 'b': 2}
+            <p><div class="col-md-11 col-xs-10"><p>假设有两个dict，并且它们的key是没有交集的，比如</p><pre><code class="python">A = {'a': 1, 'b': 2}
+
 B = {'c': 1, 'd': 2}</code></pre><p>怎么对它们进行合并？得到如下的新的dict</p><pre><code class="python">C = {'a': 1, 'b': 2, 'c': 1, 'd': 2}</code></pre><p>谢谢各位！</p></div></p >
             <hr>
             <h3>Answer</h3>
@@ -436,9 +446,12 @@ B = {'c': 1, 'd': 2}</code></pre><p>怎么对它们进行合并？得到如下�
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">import shutil
-src = 'a.txt'
-dst = 'folder_a/b.txt'
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">import shutil
+
+src = 'a.txt'
+
+dst = 'folder_a/b.txt'
+
 shutil.copyfile(src, dst)</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -563,10 +576,14 @@ print(t1-t0, t2-t1)</code></pre><pre><code class="python">1.3369219303131104 13.
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>对于或运算，只要有一个是True，整个就是True了</p><pre><code class="python">&gt;&gt;&gt; x = [True, False, True, False, False]
-&gt;&gt;&gt; True in x
-True</code></pre><p>也可以看整个list中的最大值</p><pre><code class="python">&gt;&gt;&gt; x = [True, False, True, False, False, False, False]
-&gt;&gt;&gt; max(x)
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>对于或运算，只要有一个是True，整个就是True了</p><pre><code class="python">&gt;&gt;&gt; x = [True, False, True, False, False]
+
+&gt;&gt;&gt; True in x
+
+True</code></pre><p>也可以看整个list中的最大值</p><pre><code class="python">&gt;&gt;&gt; x = [True, False, True, False, False, False, False]
+
+&gt;&gt;&gt; max(x)
+
 True</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -643,7 +660,8 @@ True
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">a = {1, 2}
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">a = {1, 2}
+
 s.add(3)</code></pre></div></div>
                 <ul class="lvl2_answer">
                 

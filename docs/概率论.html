@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -539,22 +540,38 @@ plt.show()</code></pre><p></p><p><img data-filename="download (12).png" src="dat
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>我用python验证了下高代兄的答案</p><pre><code class="python">import math
-import pandas as pd
-import numpy as np
-
-n = 3
-rounds = 10000
-p = 0
-for m in range(rounds):
-    bounds = pd.DataFrame(columns=['lower_bound', 'upper_bound'])
-    for i in range(n):
-        bounds.loc[i] = np.sort(np.random.uniform(0, 1, 2))
-    bounds.sort_values('lower_bound', inplace=True)
-    diff = np.diff(bounds['upper_bound'].values)
-    p += np.all(diff &lt;= 0) / float(rounds)
-print('simulation', p)
-print('true:', ((2 ** n) * math.factorial(n)) / math.factorial(2*n))</code></pre><p>得到的结果：</p><pre><code class="python">simulation： 0.0675
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>我用python验证了下高代兄的答案</p><pre><code class="python">import math
+
+import pandas as pd
+
+import numpy as np
+
+
+
+n = 3
+
+rounds = 10000
+
+p = 0
+
+for m in range(rounds):
+
+    bounds = pd.DataFrame(columns=['lower_bound', 'upper_bound'])
+
+    for i in range(n):
+
+        bounds.loc[i] = np.sort(np.random.uniform(0, 1, 2))
+
+    bounds.sort_values('lower_bound', inplace=True)
+
+    diff = np.diff(bounds['upper_bound'].values)
+
+    p += np.all(diff &lt;= 0) / float(rounds)
+
+print('simulation', p)
+
+print('true:', ((2 ** n) * math.factorial(n)) / math.factorial(2*n))</code></pre><p>得到的结果：</p><pre><code class="python">simulation： 0.0675
+
 true: 0.06666666666666667</code></pre></div></div>
                 <ul class="lvl2_answer">
                 

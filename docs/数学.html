@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="google-site-verification" content="Is2tq4_1M6kf-oyBa9BUN-q5zgCM0nV0blldfbX_PDA" />
     <link href="./assets/css/bundle.min.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
     <title>Questions | SofaSofa-wiki</title>
@@ -557,16 +558,26 @@
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>numpy里有linalg.eig直接计算特征值和特征向量。</p><p>例子</p><pre><code class="python">import numpy as np
-&gt;&gt;&gt; m = np.array([[1, 2], [0, 3]])
-&gt;&gt;&gt; m
-array([[1, 2],
-       [0, 3]])
-&gt;&gt;&gt; w, v = np.linalg.eig(m)
-&gt;&gt;&gt; w
-array([ 1.,  3.])
-&gt;&gt;&gt; v
-array([[ 1.        ,  0.70710678],
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>numpy里有linalg.eig直接计算特征值和特征向量。</p><p>例子</p><pre><code class="python">import numpy as np
+
+&gt;&gt;&gt; m = np.array([[1, 2], [0, 3]])
+
+&gt;&gt;&gt; m
+
+array([[1, 2],
+
+       [0, 3]])
+
+&gt;&gt;&gt; w, v = np.linalg.eig(m)
+
+&gt;&gt;&gt; w
+
+array([ 1.,  3.])
+
+&gt;&gt;&gt; v
+
+array([[ 1.        ,  0.70710678],
+
        [ 0.        ,  0.70710678]])</code></pre><p>w是特征值</p><p>v是特征向量，这个例子里第一列对应1的特征向量，第二列对应3的特征向量。</p><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -621,32 +632,58 @@ array([[ 1.        ,  0.70710678],
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>math里基本上都有了</p><pre><code class="python">&gt;&gt;&gt; import math
-# cos(x)
-&gt;&gt;&gt; math.cos(x)
-
-# sin(x)
-&gt;&gt;&gt; math.sin(x)
-
-# tan(x)
-&gt;&gt;&gt; math.tan(x)
-
-# acrcos(x)
-&gt;&gt;&gt; math.acos(x)
-
-# acrsin(x)
-&gt;&gt;&gt; math.asin(x)
-
-# acrtan(x)
-&gt;&gt;&gt; math.atan(x)
-
-# cosh(x)
-&gt;&gt;&gt; math.cosh(x)
-
-# sinh(x)
-&gt;&gt;&gt; math.sinh(x)
-
-# tanh(x)
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>math里基本上都有了</p><pre><code class="python">&gt;&gt;&gt; import math
+
+# cos(x)
+
+&gt;&gt;&gt; math.cos(x)
+
+
+
+# sin(x)
+
+&gt;&gt;&gt; math.sin(x)
+
+
+
+# tan(x)
+
+&gt;&gt;&gt; math.tan(x)
+
+
+
+# acrcos(x)
+
+&gt;&gt;&gt; math.acos(x)
+
+
+
+# acrsin(x)
+
+&gt;&gt;&gt; math.asin(x)
+
+
+
+# acrtan(x)
+
+&gt;&gt;&gt; math.atan(x)
+
+
+
+# cosh(x)
+
+&gt;&gt;&gt; math.cosh(x)
+
+
+
+# sinh(x)
+
+&gt;&gt;&gt; math.sinh(x)
+
+
+
+# tanh(x)
+
 &gt;&gt;&gt; math.tanh(x)</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -696,12 +733,18 @@ array([[ 1.        ,  0.70710678],
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>利用公式$lcm(a,b)=ab/gcd(a,b)$</p><pre><code class="python">from math import gcd
-def lcm(a,b): 
-    prod = abs(a * b)
-    gcd_ab = gcd(a,b)
-    if gcd_ab == 0:
-        return 0
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>利用公式$lcm(a,b)=ab/gcd(a,b)$</p><pre><code class="python">from math import gcd
+
+def lcm(a,b): 
+
+    prod = abs(a * b)
+
+    gcd_ab = gcd(a,b)
+
+    if gcd_ab == 0:
+
+        return 0
+
     return int(prod / gcd_ab)</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -754,10 +797,14 @@ def lcm(a,b):
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>可以直接使用scipy</p><pre><code class="python">&gt;&gt;&gt;from scipy.special import comb
-&gt;&gt;&gt;comb(10, 3, exact=True) #精确解
-120
-&gt;&gt;&gt;comb(10, 3, exact=False) #近似解
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>可以直接使用scipy</p><pre><code class="python">&gt;&gt;&gt;from scipy.special import comb
+
+&gt;&gt;&gt;comb(10, 3, exact=True) #精确解
+
+120
+
+&gt;&gt;&gt;comb(10, 3, exact=False) #近似解
+
 120.0</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -765,15 +812,24 @@ def lcm(a,b):
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>自己写一个也不费事</p><pre><code class="python">def binom_coef(n, k):
-    result = 1
-    for i in range(n-k+1, n+1):
-        result *= i
-    for i in range(1, k+1):
-        result /= i
-    return result</code></pre><p>例子</p><pre><code class="python">&gt;&gt;&gt;binom_coef(5, 2)
-10.0
-&gt;&gt;&gt;binom_coef(6, 1)
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>自己写一个也不费事</p><pre><code class="python">def binom_coef(n, k):
+
+    result = 1
+
+    for i in range(n-k+1, n+1):
+
+        result *= i
+
+    for i in range(1, k+1):
+
+        result /= i
+
+    return result</code></pre><p>例子</p><pre><code class="python">&gt;&gt;&gt;binom_coef(5, 2)
+
+10.0
+
+&gt;&gt;&gt;binom_coef(6, 1)
+
 6.0</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -795,7 +851,8 @@ def lcm(a,b):
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><a href="https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.linalg.solve.html" target="_blank">scipy.linalg.solve(A, b)</a></p><pre><code class="python">from scipy import linalg
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><a href="https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.linalg.solve.html" target="_blank">scipy.linalg.solve(A, b)</a></p><pre><code class="python">from scipy import linalg
+
 x = linalg.solve(A, b)</code></pre><p></p><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -915,14 +972,22 @@ x = linalg.solve(A, b)</code></pre><p></p><p><br/></p></div></div>
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>np.identity(n)可以生成$n\times n$的单位矩阵</p><pre><code class="python">&gt;&gt;&gt; np.identity(4)
-array([[ 1.,  0.,  0.,  0.],
-       [ 0.,  1.,  0.,  0.],
-       [ 0.,  0.,  1.,  0.],
-       [ 0.,  0.,  0.,  1.]])</code></pre><p>或者也可以用np.diag生成对角阵</p><pre><code class="python">&gt;&gt;&gt; np.diag([1] * 4)
-array([[1, 0, 0, 0],
-       [0, 1, 0, 0],
-       [0, 0, 1, 0],
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>np.identity(n)可以生成$n\times n$的单位矩阵</p><pre><code class="python">&gt;&gt;&gt; np.identity(4)
+
+array([[ 1.,  0.,  0.,  0.],
+
+       [ 0.,  1.,  0.,  0.],
+
+       [ 0.,  0.,  1.,  0.],
+
+       [ 0.,  0.,  0.,  1.]])</code></pre><p>或者也可以用np.diag生成对角阵</p><pre><code class="python">&gt;&gt;&gt; np.diag([1] * 4)
+
+array([[1, 0, 0, 0],
+
+       [0, 1, 0, 0],
+
+       [0, 0, 1, 0],
+
        [0, 0, 0, 1]])</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1029,7 +1094,8 @@ numpy.linalg.cond(A)</code></pre><p><br/></p></div></div>
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>itertools是方便做循环的package</p><pre><code class="python">import itertools
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>itertools是方便做循环的package</p><pre><code class="python">import itertools
+
 result = list(itertools.product(*[A, B]))</code></pre><p>得到的结果为</p><pre><code class="python">[('a', 1), ('a', 2), ('a', 3), ('b', 1), ('b', 2), ('b', 3)]</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1068,7 +1134,8 @@ result = list(itertools.product(*[A, B]))</code></pre><p>得到的结果为</p><
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>用int函数转换，设置base为16，不过要注意输入值类型需要是str</p><pre><code class="python">num16 = '4e'
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>用int函数转换，设置base为16，不过要注意输入值类型需要是str</p><pre><code class="python">num16 = '4e'
+
 num10 = int(num16, 16)</code></pre><p>num10的结果为</p><pre><code class="python">78</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1171,12 +1238,18 @@ num10 = int(num16, 16)</code></pre><p>num10的结果为</p><pre><code class="pyt
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">import numpy as np
-a = np.matrix([[1, 1], [1, 1]])
-try:
-    a_inverse = a.I
-    print('可逆')
-except:
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">import numpy as np
+
+a = np.matrix([[1, 1], [1, 1]])
+
+try:
+
+    a_inverse = a.I
+
+    print('可逆')
+
+except:
+
     print('不可逆')</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1184,16 +1257,26 @@ except:
             </div>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>提供两个思路</p><p>思路1：可逆矩阵的行列式不等于0，不可逆矩阵的行列式为0。可以利用numpy.linalg.det来算行列式</p><pre><code class="python">import numpy as np
-M = np.array([[1, 1], [2, 2]])
-if np.linalg.det(M) &gt; 0:
-    print('可逆')
-else:
-    print('不可逆')</code></pre><p>思路2：可逆矩阵的秩是n，不可逆矩阵的秩小于n。可以利用numpy.linalg.matrix_rank来算秩</p><pre><code class="python">import numpy as np
-M = np.array([[1, 1], [2, 2]])
-if np.linalg.matrix_rank(M) == M.shape[0]:
-    print('可逆')
-else:
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 2</span>: <div class="col-md-11 col-xs-10 p-r"><p>提供两个思路</p><p>思路1：可逆矩阵的行列式不等于0，不可逆矩阵的行列式为0。可以利用numpy.linalg.det来算行列式</p><pre><code class="python">import numpy as np
+
+M = np.array([[1, 1], [2, 2]])
+
+if np.linalg.det(M) &gt; 0:
+
+    print('可逆')
+
+else:
+
+    print('不可逆')</code></pre><p>思路2：可逆矩阵的秩是n，不可逆矩阵的秩小于n。可以利用numpy.linalg.matrix_rank来算秩</p><pre><code class="python">import numpy as np
+
+M = np.array([[1, 1], [2, 2]])
+
+if np.linalg.matrix_rank(M) == M.shape[0]:
+
+    print('可逆')
+
+else:
+
     print('不可逆')</code></pre><p><br/></p></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1222,12 +1305,18 @@ else:
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>np.tile就是专门干这个事情的</p><pre><code class="python">import numpy as np
-A = np.array([[1, 2], [3, 4]])
-np.tile(A, (1, 2))</code></pre><p>得到的就是</p><pre><code class="python">array([[1, 2, 1, 2],
-       [3, 4, 3, 4]])</code></pre><p>2行3列的话，就是</p><pre><code class="python">np.tile(A, (2, 3))</code></pre><p>结果为</p><pre><code class="python">array([[1, 2, 1, 2, 1, 2],
-       [3, 4, 3, 4, 3, 4],
-       [1, 2, 1, 2, 1, 2],
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>np.tile就是专门干这个事情的</p><pre><code class="python">import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+
+np.tile(A, (1, 2))</code></pre><p>得到的就是</p><pre><code class="python">array([[1, 2, 1, 2],
+
+       [3, 4, 3, 4]])</code></pre><p>2行3列的话，就是</p><pre><code class="python">np.tile(A, (2, 3))</code></pre><p>结果为</p><pre><code class="python">array([[1, 2, 1, 2, 1, 2],
+
+       [3, 4, 3, 4, 3, 4],
+
+       [1, 2, 1, 2, 1, 2],
+
        [3, 4, 3, 4, 3, 4]])</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1278,12 +1367,18 @@ np.tile(A, (1, 2))</code></pre><p>得到的就是</p><pre><code class="python">a
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">&gt;&gt;&gt; import numpy as np
-&gt;&gt;&gt; from scipy import sparse
-&gt;&gt;&gt; arr = np.array([[0,2,0],[0,0,3],[1,0,0],[0,0,4]])
-# numpy array转成稀疏
-&gt;&gt;&gt; arr_sparse = sparse.csr_matrix(arr) 
-# 稀疏矩阵转成numpy array
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p><br/></p><pre><code class="python">&gt;&gt;&gt; import numpy as np
+
+&gt;&gt;&gt; from scipy import sparse
+
+&gt;&gt;&gt; arr = np.array([[0,2,0],[0,0,3],[1,0,0],[0,0,4]])
+
+# numpy array转成稀疏
+
+&gt;&gt;&gt; arr_sparse = sparse.csr_matrix(arr) 
+
+# 稀疏矩阵转成numpy array
+
 &gt;&gt;&gt; arr_numpy = arr_sparse.A</code></pre></div></div>
                 <ul class="lvl2_answer">
                 
@@ -1305,10 +1400,14 @@ np.tile(A, (1, 2))</code></pre><p>得到的就是</p><pre><code class="python">a
             <h3>Answer</h3>
             
             <div>
-                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>可以对A遍历，如果A中的元素不在B中，那就不是子集</p><pre><code class="python">def IsSubset(A, B):
-    for item in A:
-        if item not in B:
-            return False
+                <div class="lvl1_answer"><span class="badge badge-warning">Answer 1</span>: <div class="col-md-11 col-xs-10 p-r"><p>可以对A遍历，如果A中的元素不在B中，那就不是子集</p><pre><code class="python">def IsSubset(A, B):
+
+    for item in A:
+
+        if item not in B:
+
+            return False
+
     return True</code></pre><p>调用上面的函数</p><pre><code class="python">IsSubset(['a'], ['b', 'a'])</code></pre><p>返回True</p></div></div>
                 <ul class="lvl2_answer">
                 
